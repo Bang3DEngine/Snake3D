@@ -1,0 +1,23 @@
+<GameObject id:String="FoodBall"{Hidden,Readonly}
+            enabled:Bool ="true"{Hidden,Readonly}
+            name:String="FoodBall"{Hidden,Readonly}
+           >
+    <Transform id:String="FoodBall_Component0"{Hidden,Readonly}
+               enabled:Bool ="true"{Hidden,Readonly}
+               closedInInspector:Bool ="false"{Hidden,Readonly}
+               Position:Vector3="(-10.1607, 0, -14.1683)"{}
+               Rotation:Vector3="(0, 0, 0)"{}
+               Scale:Vector3="(0.603242, 0.603242, 0.603242)"{}
+              >
+    </Transform>
+    <MeshRenderer id:String="FoodBall_Component1"{Hidden,Readonly}
+                  enabled:Bool ="true"{Hidden,Readonly}
+                  closedInInspector:Bool ="false"{Hidden,Readonly}
+                  Material:File="./FoodMaterial.bmat"{FileExtension="bmat"}
+                  LineWidth:Float="1"{Hidden}
+                  IsTransparent:Bool ="false"{Inline}
+                  DrawWireframe:Bool ="false"{Inline}
+                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                 >
+    </MeshRenderer>
+</GameObject>

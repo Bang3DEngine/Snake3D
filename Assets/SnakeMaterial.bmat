@@ -1,0 +1,8 @@
+<Material DiffuseColor:Color="(0.0901961, 0.690196, 0, 1)"{}
+          Shininess:Float="60"{}
+          ReceivesLighting:Bool ="true"{}
+          Texture:File=""{FileExtension="btex2d",IsEngineFile}
+          VertexShader:File="./Shaders/G_Default.vert"{FileExtension="vert",IsEngineFile}
+          FragmentShader:File="./Shaders/G_Default.frag"{FileExtension="frag",IsEngineFile}
+         >
+</Material>
