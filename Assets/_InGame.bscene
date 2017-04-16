@@ -1,0 +1,355 @@
+<Scene id:String="Scene_BANG_EditorCamera2_BANG_EditorYawNode0_Component1"{Hidden,Readonly}
+       enabled:Bool ="true"{Hidden,Readonly}
+       name:String="Scene"{Hidden,Readonly}
+      >
+    <Transform id:String="Scene_Component0"{Hidden,Readonly}
+               enabled:Bool ="true"{Hidden,Readonly}
+               closedInInspector:Bool ="false"{Hidden,Readonly}
+               Position:Vector3="(0, 0, 0)"{}
+               Rotation:Vector3="(0, 0, 0)"{}
+               Scale:Vector3="(1, 1, 1)"{}
+              >
+    </Transform>
+    <GameObject id:String="Scene_Snake5"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Snake"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Snake5_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(0, 1.11795, 0.0747027)"{}
+                   Rotation:Vector3="(0, -0, 0)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <Behaviour id:String="Scene_Snake5_Component1"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   BehaviourScript:File="./SnakeController.cpp"{FileExtension="cpp"}
+                  >
+        </Behaviour>
+        <GameObject id:String="Scene_Snake5_Body0"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    name:String="Body"{Hidden,Readonly}
+                   >
+            <Transform id:String="Scene_Snake5_Body0_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0, 0, 0)"{}
+                       Rotation:Vector3="(0, -0, 0)"{}
+                       Scale:Vector3="(1, 1, 1)"{}
+                      >
+            </Transform>
+            <GameObject id:String="Scene_Snake5_Body0_Head0"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Head"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Snake5_Body0_Head0_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(0, 0, -4.48059)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(1, 1, 1)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Snake5_Body0_Head0_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="./SnakeMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+                <GameObject id:String="Scene_Snake5_Body0_Head0_Eye0"{Hidden,Readonly}
+                            enabled:Bool ="true"{Hidden,Readonly}
+                            name:String="Eye"{Hidden,Readonly}
+                           >
+                    <Transform id:String="Scene_Snake5_Body0_Head0_Eye0_Component0"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               Position:Vector3="(-0.375828, 0.56747, -0.479713)"{}
+                               Rotation:Vector3="(0, -0, 0)"{}
+                               Scale:Vector3="(0.444112, 0.444112, 0.444112)"{}
+                              >
+                    </Transform>
+                    <MeshRenderer id:String="Scene_Snake5_Body0_Head0_Eye0_Component1"{Hidden,Readonly}
+                                  enabled:Bool ="true"{Hidden,Readonly}
+                                  closedInInspector:Bool ="false"{Hidden,Readonly}
+                                  Material:File="./EyeMaterial.bmat"{FileExtension="bmat"}
+                                  LineWidth:Float="1"{Hidden}
+                                  IsTransparent:Bool ="false"{Inline}
+                                  DrawWireframe:Bool ="false"{Inline}
+                                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                 >
+                    </MeshRenderer>
+                    <GameObject id:String="Scene_Snake5_Body0_Head0_Eye0_Black0"{Hidden,Readonly}
+                                enabled:Bool ="true"{Hidden,Readonly}
+                                name:String="Black"{Hidden,Readonly}
+                               >
+                        <Transform id:String="Scene_Snake5_Body0_Head0_Eye0_Black0_Component0"{Hidden,Readonly}
+                                   enabled:Bool ="true"{Hidden,Readonly}
+                                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                                   Position:Vector3="(-5.96047e-07, 0.563684, -0.447673)"{}
+                                   Rotation:Vector3="(0, -0, 0)"{}
+                                   Scale:Vector3="(0.464684, 0.464684, 0.464684)"{}
+                                  >
+                        </Transform>
+                        <MeshRenderer id:String="Scene_Snake5_Body0_Head0_Eye0_Black0_Component1"{Hidden,Readonly}
+                                      enabled:Bool ="true"{Hidden,Readonly}
+                                      closedInInspector:Bool ="false"{Hidden,Readonly}
+                                      Material:File="./BlackMaterial.bmat"{FileExtension="bmat"}
+                                      LineWidth:Float="1"{Hidden}
+                                      IsTransparent:Bool ="false"{Inline}
+                                      DrawWireframe:Bool ="false"{Inline}
+                                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                     >
+                        </MeshRenderer>
+                    </GameObject>
+                </GameObject>
+                <GameObject id:String="Scene_Snake5_Body0_Head0_Eye1"{Hidden,Readonly}
+                            enabled:Bool ="true"{Hidden,Readonly}
+                            name:String="Eye"{Hidden,Readonly}
+                           >
+                    <Transform id:String="Scene_Snake5_Body0_Head0_Eye1_Component0"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               Position:Vector3="(0.533954, 0.540406, -0.493163)"{}
+                               Rotation:Vector3="(0, -0, 0)"{}
+                               Scale:Vector3="(0.444112, 0.444112, 0.444112)"{}
+                              >
+                    </Transform>
+                    <MeshRenderer id:String="Scene_Snake5_Body0_Head0_Eye1_Component1"{Hidden,Readonly}
+                                  enabled:Bool ="true"{Hidden,Readonly}
+                                  closedInInspector:Bool ="false"{Hidden,Readonly}
+                                  Material:File="./EyeMaterial.bmat"{FileExtension="bmat"}
+                                  LineWidth:Float="1"{Hidden}
+                                  IsTransparent:Bool ="false"{Inline}
+                                  DrawWireframe:Bool ="false"{Inline}
+                                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                 >
+                    </MeshRenderer>
+                    <GameObject id:String="Scene_Snake5_Body0_Head0_Eye1_Black0"{Hidden,Readonly}
+                                enabled:Bool ="true"{Hidden,Readonly}
+                                name:String="Black"{Hidden,Readonly}
+                               >
+                        <Transform id:String="Scene_Snake5_Body0_Head0_Eye1_Black0_Component0"{Hidden,Readonly}
+                                   enabled:Bool ="true"{Hidden,Readonly}
+                                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                                   Position:Vector3="(1.01328e-06, 0.563688, -0.486835)"{}
+                                   Rotation:Vector3="(0, -0, 0)"{}
+                                   Scale:Vector3="(0.464684, 0.464684, 0.464684)"{}
+                                  >
+                        </Transform>
+                        <MeshRenderer id:String="Scene_Snake5_Body0_Head0_Eye1_Black0_Component1"{Hidden,Readonly}
+                                      enabled:Bool ="true"{Hidden,Readonly}
+                                      closedInInspector:Bool ="false"{Hidden,Readonly}
+                                      Material:File="./BlackMaterial.bmat"{FileExtension="bmat"}
+                                      LineWidth:Float="1"{Hidden}
+                                      IsTransparent:Bool ="false"{Inline}
+                                      DrawWireframe:Bool ="false"{Inline}
+                                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                     >
+                        </MeshRenderer>
+                    </GameObject>
+                </GameObject>
+                <GameObject id:String="Scene_Snake5_Body0_Head0_Tongue2"{Hidden,Readonly}
+                            enabled:Bool ="true"{Hidden,Readonly}
+                            name:String="Tongue"{Hidden,Readonly}
+                           >
+                    <Transform id:String="Scene_Snake5_Body0_Head0_Tongue2_Component0"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               Position:Vector3="(0.0717501, -0.221359, -0.947606)"{}
+                               Rotation:Vector3="(0, -0, 0)"{}
+                               Scale:Vector3="(0.444112, 0.12833, 0.865062)"{}
+                              >
+                    </Transform>
+                    <MeshRenderer id:String="Scene_Snake5_Body0_Head0_Tongue2_Component1"{Hidden,Readonly}
+                                  enabled:Bool ="true"{Hidden,Readonly}
+                                  closedInInspector:Bool ="false"{Hidden,Readonly}
+                                  Material:File="./TongueMaterial.bmat"{FileExtension="bmat"}
+                                  LineWidth:Float="1"{Hidden}
+                                  IsTransparent:Bool ="false"{Inline}
+                                  DrawWireframe:Bool ="false"{Inline}
+                                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                 >
+                    </MeshRenderer>
+                </GameObject>
+            </GameObject>
+            <GameObject id:String="Scene_Snake5_Body0_Tail1"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Tail"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Snake5_Body0_Tail1_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(0, 0, -3.07534)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(0.45, 0.45, 1.05993)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Snake5_Body0_Tail1_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="./SnakeMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Snake5_Body0_Tail2"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Tail"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Snake5_Body0_Tail2_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(0, 0, -1.53551)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(0.45, 0.45, 1.05993)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Snake5_Body0_Tail2_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="./SnakeMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+        </GameObject>
+        <GameObject id:String="Scene_Snake5_SnakeCamera1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    name:String="SnakeCamera"{Hidden,Readonly}
+                   >
+            <Transform id:String="Scene_Snake5_SnakeCamera1_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0.0120928, 4.74374, 4.0843)"{}
+                       Rotation:Vector3="(-31.8228, -0.632992, 3.06844e-07)"{}
+                       Scale:Vector3="(1, 1, 1)"{}
+                      >
+            </Transform>
+            <Camera id:String="Scene_Snake5_SnakeCamera1_Component1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    closedInInspector:Bool ="false"{Hidden,Readonly}
+                    ClearColor:Color="(0.2, 0.5, 1, 1)"{}
+                    ZNear:Float="0.1"{}
+                    ZFar:Float="100"{}
+                    ProjectionMode:Enum="1"{Readonly,EnumName0="Orthographic",EnumName1="Perspective"}
+                    OrthoHeight:Float="25"{Hidden}
+                    FOVDegrees:Float="60"{}
+                   >
+            </Camera>
+            <AudioListener id:String="Scene_Snake5_SnakeCamera1_Component2"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                          >
+            </AudioListener>
+            <Behaviour id:String="Scene_Snake5_SnakeCamera1_Component3"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       BehaviourScript:File="./SnakeCamera.cpp"{FileExtension="cpp"}
+                      >
+            </Behaviour>
+        </GameObject>
+        <GameObject id:String="Scene_Snake5_SkyCamera2"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    name:String="SkyCamera"{Hidden,Readonly}
+                   >
+            <Transform id:String="Scene_Snake5_SkyCamera2_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0.0120928, 4.74374, 4.0843)"{}
+                       Rotation:Vector3="(-31.8228, -0.632992, -3.06844e-07)"{}
+                       Scale:Vector3="(1, 1, 1)"{}
+                      >
+            </Transform>
+            <Camera id:String="Scene_Snake5_SkyCamera2_Component1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    closedInInspector:Bool ="false"{Hidden,Readonly}
+                    ClearColor:Color="(0.2, 0.5, 1, 1)"{}
+                    ZNear:Float="0.1"{}
+                    ZFar:Float="100"{}
+                    ProjectionMode:Enum="1"{Readonly,EnumName0="Orthographic",EnumName1="Perspective"}
+                    OrthoHeight:Float="25"{Hidden}
+                    FOVDegrees:Float="60"{}
+                   >
+            </Camera>
+            <AudioListener id:String="Scene_Snake5_SkyCamera2_Component2"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                          >
+            </AudioListener>
+            <Behaviour id:String="Scene_Snake5_SkyCamera2_Component3"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       BehaviourScript:File="./SnakeCamera.cpp"{FileExtension="cpp"}
+                      >
+            </Behaviour>
+        </GameObject>
+    </GameObject>
+    <GameObject id:String="Scene_Scenario6"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Scenario"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Scenario6_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(0, 0, 0)"{}
+                   Rotation:Vector3="(0, -0, 0)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <GameObject id:String="Scene_Scenario6_Floor0"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    name:String="Floor"{Hidden,Readonly}
+                   >
+            <Transform id:String="Scene_Scenario6_Floor0_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0, -2, 0)"{}
+                       Rotation:Vector3="(0, -0, 0)"{}
+                       Scale:Vector3="(1000, 1, 1000)"{}
+                      >
+            </Transform>
+            <MeshRenderer id:String="Scene_Scenario6_Floor0_Component1"{Hidden,Readonly}
+                          enabled:Bool ="true"{Hidden,Readonly}
+                          closedInInspector:Bool ="false"{Hidden,Readonly}
+                          Material:File="./GroundMaterial.bmat"{FileExtension="bmat"}
+                          LineWidth:Float="1"{Hidden}
+                          IsTransparent:Bool ="false"{Inline}
+                          DrawWireframe:Bool ="false"{Inline}
+                          Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                         >
+            </MeshRenderer>
+        </GameObject>
+    </GameObject>
+    <GameObject id:String="Scene_DirectionalLight7"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="DirectionalLight"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_DirectionalLight7_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(0, 0, 0)"{}
+                   Rotation:Vector3="(-47.0828, 0, 0)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <DirectionalLight id:String="Scene_DirectionalLight7_Component1"{Hidden,Readonly}
+                          enabled:Bool ="true"{Hidden,Readonly}
+                          closedInInspector:Bool ="false"{Hidden,Readonly}
+                          Intensity:Float="1"{}
+                          Color:Color="(1, 1, 1, 1)"{}
+                         >
+        </DirectionalLight>
+    </GameObject>
+</Scene>
