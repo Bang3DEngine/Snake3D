@@ -5,15 +5,15 @@
     <Transform id:String="FoodBall_Component0"{Hidden,Readonly}
                enabled:Bool ="true"{Hidden,Readonly}
                closedInInspector:Bool ="false"{Hidden,Readonly}
-               Position:Vector3="(-10.1607, 0, -14.1683)"{}
+               Position:Vector3="(-10.16, 0, -14.17)"{}
                Rotation:Vector3="(0, 0, 0)"{}
-               Scale:Vector3="(0.603242, 0.603242, 0.603242)"{}
+               Scale:Vector3="(1, 1, 1)"{}
               >
     </Transform>
     <MeshRenderer id:String="FoodBall_Component1"{Hidden,Readonly}
                   enabled:Bool ="true"{Hidden,Readonly}
                   closedInInspector:Bool ="false"{Hidden,Readonly}
-                  Material:File="./FoodMaterial.bmat"{FileExtension="bmat"}
+                  Material:File="./Materials/FoodMaterial.bmat"{FileExtension="bmat"}
                   LineWidth:Float="1"{Hidden}
                   IsTransparent:Bool ="false"{Inline}
                   DrawWireframe:Bool ="false"{Inline}

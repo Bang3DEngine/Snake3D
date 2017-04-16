@@ -2,12 +2,14 @@
 
 #include "Bang/Camera.h"
 
+#include "SkyCamera.h"
+#include "SnakeCamera.h"
+
 // This function will be executed once when created 
 void SnakeController::OnStart() 
 { 
     Behaviour::OnStart();
-    p_skyCamera   = GameObject::Find("SkyCamera")->GetComponent<Camera>();
-    p_snakeCamera = GameObject::Find("SnakeCamera")->GetComponent<Camera>();
+    p_camera   = GameObject::Find("Camera")->GetComponent<Camera>();
 
     p_body = gameObject->FindInChildren("Body");
     p_head = p_body->FindInChildren("Head");
@@ -21,10 +23,11 @@ void SnakeController::OnUpdate()
 
     if (Input::GetKeyDown(Input::Key::Z))
     {
-        m_skyView = !m_skyView;
+        m_cameraMode = (m_cameraMode + 1) % 3;
     }
-    Camera *cam = m_skyView ? p_skyCamera : p_snakeCamera;
-    SceneManager::GetActiveScene()->SetCamera(cam);
+    p_camera->gameObject->GetComponent<SkyCamera>()->SetEnabled( m_cameraMode == 0);
+    p_camera->gameObject->GetComponent<SnakeCamera>()->SetEnabled( m_cameraMode >= 1 );
+    p_camera->gameObject->GetComponent<SnakeCamera>()->camInFront = (m_cameraMode == 1);
 
     float sign = 0.0f;
     if (Input::GetKey(Input::Key::A)) { sign = 1.0f; }
@@ -40,7 +43,7 @@ void SnakeController::OnUpdate()
     p_head->transform->Translate(forward * m_moveSpeed * Time::deltaTime);
 
     m_time += Time::deltaTime;
-    if (m_time >= 0.3f)
+    if (m_time >= 0.05f)
     {
         m_time = 0.0f;
         m_headPositions.PushBack(p_head->transform->GetPosition());
@@ -57,7 +60,6 @@ void SnakeController::MoveBodyParts()
     Array<GameObject*> bodyParts = listBodyParts.ToArray();
     Array<Vector3> headPositions = m_headPositions.ToArray();
 
-    int latestUsefulHeadPos = m_headPositions.Size();
     for (GameObject *bodyPart : bodyParts)
     {
         if (bodyPart == p_head) { continue; }
@@ -73,18 +75,12 @@ void SnakeController::MoveBodyParts()
             if (Vector3::Dot(dirToPrev, dirToNext) < 0)
             {
                 nextPos = bodyPosNext;
-                latestUsefulHeadPos = Math::Min(latestUsefulHeadPos, i);
             }
         }
 
         Vector3 dir = (nextPos - bodyPart->transform->GetPosition()).Normalized();
         bodyPart->transform->Translate(dir * m_moveSpeed * Time::deltaTime);
         bodyPart->transform->LookAt(nextPos);
-    }
-
-    for (int i = 0; i < latestUsefulHeadPos; ++i)
-    {
-        //m_headPositions.PopFront();
     }
 }
 

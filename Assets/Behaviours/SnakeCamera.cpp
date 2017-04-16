@@ -9,17 +9,21 @@ void SnakeCamera::OnStart()
 } 
 
 // This function will be executed every frame 
-void SnakeCamera::OnUpdate() 
+void SnakeCamera::OnUpdate()
 { 
     Behaviour::OnUpdate(); 
 
     Vector3 snakeHeadPos = snakeHead->transform->GetPosition();
-    Vector3 newPosition = transform->GetPosition();
-    newPosition.x = snakeHeadPos.x;
-    newPosition.z = snakeHeadPos.z;
-    transform->SetPosition(newPosition);
-    transform->LookAt(snakeHeadPos +
-                      snakeHead->transform->GetForward() * 10.0f);
-} 
+    Vector3 snakeForward = snakeHead->transform->GetForward();
+
+    Vector3 offset = (camInFront ? 3.0f : -1.0f) * snakeForward +
+                      Vector3::Up * 2.5f;
+    transform->SetPosition(snakeHeadPos + offset);
+
+    Vector3 lookAtPos = snakeHeadPos;
+    lookAtPos += (camInFront ? 0.0f : 1.0f) *
+                  snakeHead->transform->GetForward() * 5.0f;
+    transform->LookAt(lookAtPos);
+}
 
 BANG_BEHAVIOUR_CLASS_IMPL(SnakeCamera);

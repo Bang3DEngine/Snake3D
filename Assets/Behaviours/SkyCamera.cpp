@@ -14,11 +14,10 @@ void SkyCamera::OnUpdate()
     Behaviour::OnUpdate();
 
     Vector3 snakeHeadPos = snakeHead->transform->GetPosition();
-    Vector3 newPosition = transform->GetPosition();
-    newPosition.x = snakeHeadPos.x;
-    newPosition.z = snakeHeadPos.z;
+    Vector3 newPosition = snakeHeadPos + Vector3::Up * 30.0f
+                          -snakeHead->transform->GetForward() * 25.0f;
     transform->SetPosition(newPosition);
-    //transform->LookAt(snakeHeadPos + snakeHead->transform->GetForward());
+    transform->LookAt(snakeHeadPos, snakeHead->transform->GetForward());
 } 
 
 BANG_BEHAVIOUR_CLASS_IMPL(SkyCamera);

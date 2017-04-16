@@ -14,14 +14,13 @@ public:
 
     void MoveBodyParts();
 
-    bool m_skyView = true;
-    Camera *p_skyCamera   = nullptr;
-    Camera *p_snakeCamera = nullptr;
+    int m_cameraMode = 0;
+    Camera *p_camera   = nullptr;
 
     GameObject *p_body = nullptr;
     GameObject *p_head = nullptr;
     const float c_rotSpeed  = 1.0f;
-    float m_moveSpeed = 4.0f;
+    float m_moveSpeed = 6.0f;
 
     float m_time = Math::Infinity<float>();
 

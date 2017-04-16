@@ -1,11 +1,11 @@
-/home/sephirot47/Snake/Assets/FoodGenerator.h
-/home/sephirot47/Snake/Assets/SkyCamera.h
-/home/sephirot47/Snake/Assets/SnakeCamera.h
-/home/sephirot47/Snake/Assets/SnakeController.h
-/home/sephirot47/Snake/Assets/FoodGenerator.cpp
-/home/sephirot47/Snake/Assets/SkyCamera.cpp
-/home/sephirot47/Snake/Assets/SnakeCamera.cpp
-/home/sephirot47/Snake/Assets/SnakeController.cpp
+/home/sephirot47/Snake/Assets/Behaviours/FoodGenerator.h
+/home/sephirot47/Snake/Assets/Behaviours/SkyCamera.h
+/home/sephirot47/Snake/Assets/Behaviours/SnakeCamera.h
+/home/sephirot47/Snake/Assets/Behaviours/SnakeController.h
+/home/sephirot47/Snake/Assets/Behaviours/FoodGenerator.cpp
+/home/sephirot47/Snake/Assets/Behaviours/SkyCamera.cpp
+/home/sephirot47/Snake/Assets/Behaviours/SnakeCamera.cpp
+/home/sephirot47/Snake/Assets/Behaviours/SnakeController.cpp
 /home/sephirot47/Bang/DependenciesProjects/freealut-1.1.0/include/AL/alut.h
 /home/sephirot47/Bang/DependenciesProjects/freealut-1.1.0/src/alutInternal.h
 /home/sephirot47/Bang/DependenciesProjects/freetype-2.7/devel/ftoption.h
@@ -307,6 +307,7 @@
 /home/sephirot47/Bang/include/Bang/DialogBrowseAssetFile.h
 /home/sephirot47/Bang/include/Bang/DirectionalLight.h
 /home/sephirot47/Bang/include/Bang/DragDropAgent.h
+/home/sephirot47/Bang/include/Bang/DragDropInfo.h
 /home/sephirot47/Bang/include/Bang/DragDropManager.h
 /home/sephirot47/Bang/include/Bang/DragDropQListView.h
 /home/sephirot47/Bang/include/Bang/DragDropQListWidget.h
@@ -701,6 +702,7 @@
 /home/sephirot47/Bang/src/View/Dialogs/DialogBrowseAssetFile.h
 /home/sephirot47/Bang/src/View/Dialogs/GameBuildDialog.h
 /home/sephirot47/Bang/src/View/DragDrop/DragDropAgent.h
+/home/sephirot47/Bang/src/View/DragDrop/DragDropInfo.h
 /home/sephirot47/Bang/src/View/DragDrop/DragDropManager.h
 /home/sephirot47/Bang/src/View/DragDrop/DragDropQListView.h
 /home/sephirot47/Bang/src/View/DragDrop/DragDropQListWidget.h

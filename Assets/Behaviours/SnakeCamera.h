@@ -9,6 +9,8 @@ class SnakeCamera : public Behaviour
 { 
 OBJECT(SnakeCamera) 
 public: 
+    bool camInFront = false;
+
     void OnStart() override; 
     void OnUpdate() override; 
 
