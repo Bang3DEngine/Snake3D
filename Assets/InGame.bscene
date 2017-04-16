@@ -384,7 +384,7 @@
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(1.36, 50.35, -1.88)"{}
-                   Rotation:Vector3="(0, 90, 0)"{}
+                   Rotation:Vector3="(0, 90, -90)"{}
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
