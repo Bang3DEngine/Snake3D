@@ -18,6 +18,8 @@ void SnakeCamera::OnUpdate()
     newPosition.x = snakeHeadPos.x;
     newPosition.z = snakeHeadPos.z;
     transform->SetPosition(newPosition);
+    transform->LookAt(snakeHeadPos +
+                      snakeHead->transform->GetForward() * 10.0f);
 } 
 
 BANG_BEHAVIOUR_CLASS_IMPL(SnakeCamera);

@@ -19,17 +19,13 @@ public:
     Camera *p_snakeCamera = nullptr;
 
     GameObject *p_body = nullptr;
-    const float c_rotSpeed  = 0.0f;
-    float m_moveSpeed = 1.0f;
+    GameObject *p_head = nullptr;
+    const float c_rotSpeed  = 1.0f;
+    float m_moveSpeed = 4.0f;
 
-    float m_time = 0.0f;
+    float m_time = Math::Infinity<float>();
 
-    struct BodyTransform
-    {
-        Vector3 positionDelta;
-        Quaternion rotationDelta;
-    };
-    List<BodyTransform> m_bodyTransforms;
+    List<Vector3> m_headPositions;
 }; 
 
 #endif // SnakeController_H 

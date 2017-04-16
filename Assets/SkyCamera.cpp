@@ -18,6 +18,7 @@ void SkyCamera::OnUpdate()
     newPosition.x = snakeHeadPos.x;
     newPosition.z = snakeHeadPos.z;
     transform->SetPosition(newPosition);
+    //transform->LookAt(snakeHeadPos + snakeHead->transform->GetForward());
 } 
 
 BANG_BEHAVIOUR_CLASS_IMPL(SkyCamera);

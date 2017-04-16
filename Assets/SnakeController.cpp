@@ -10,6 +10,8 @@ void SnakeController::OnStart()
     p_snakeCamera = GameObject::Find("SnakeCamera")->GetComponent<Camera>();
 
     p_body = gameObject->FindInChildren("Body");
+    p_head = p_body->FindInChildren("Head");
+    m_headPositions.PushBack(p_head->transform->GetPosition());
 } 
 
 // This function will be executed every frame 
@@ -20,44 +22,69 @@ void SnakeController::OnUpdate()
     if (Input::GetKeyDown(Input::Key::Z))
     {
         m_skyView = !m_skyView;
-        Camera *cam = m_skyView ? p_skyCamera : p_snakeCamera;
-        SceneManager::GetActiveScene()->SetCamera(cam);
     }
+    Camera *cam = m_skyView ? p_skyCamera : p_snakeCamera;
+    SceneManager::GetActiveScene()->SetCamera(cam);
 
     float sign = 0.0f;
     if (Input::GetKey(Input::Key::A)) { sign = 1.0f; }
     else if (Input::GetKey(Input::Key::D)) { sign = -1.0f; }
 
-    BodyTransform bodyTrans;
+    if (sign != 0.0f)
+    {
+        Quaternion rot = Quaternion::AngleAxis(sign * c_rotSpeed * Time::deltaTime,
+                                               Vector3::Up);
+        p_head->transform->RotateLocal(rot);
+    }
+    Vector3 forward = p_head->transform->GetForward();
+    p_head->transform->Translate(forward * m_moveSpeed * Time::deltaTime);
 
-    bodyTrans.rotationDelta =
-            Quaternion::AngleAxis(sign * c_rotSpeed * Time::deltaTime,
-                                  Vector3::Up);
-    bodyTrans.positionDelta =
-            m_moveSpeed * Vector3::Forward * bodyTrans.rotationDelta;
+    m_time += Time::deltaTime;
+    if (m_time >= 0.3f)
+    {
+        m_time = 0.0f;
+        m_headPositions.PushBack(p_head->transform->GetPosition());
+    }
 
-    m_bodyTransforms.PushBack(bodyTrans);
     MoveBodyParts();
 }
 
 void SnakeController::MoveBodyParts()
 {
+    ENSURE(m_headPositions.Size() >= 2);
+
     List<GameObject*> listBodyParts = p_body->GetChildren();
     Array<GameObject*> bodyParts = listBodyParts.ToArray();
+    Array<Vector3> headPositions = m_headPositions.ToArray();
 
-    int i = 0;
-    for (const BodyTransform &bodyTrans : m_bodyTransforms)
+    int latestUsefulHeadPos = m_headPositions.Size();
+    for (GameObject *bodyPart : bodyParts)
     {
-        if (i >= bodyParts.Size()) { break; }
+        if (bodyPart == p_head) { continue; }
 
-        bodyParts[i]->transform->RotateLocal(bodyTrans.rotationDelta);
-        bodyParts[i]->transform->TranslateLocal(bodyTrans.positionDelta);
-        ++i;
+        Vector3 bodyPos = bodyPart->transform->GetPosition();
+        Vector3 nextPos = m_headPositions.Front();
+        for (int i = 0; i < headPositions.Size() - 1; ++i)
+        {
+            const Vector3 &bodyPosPrev  = headPositions[i];
+            const Vector3 &bodyPosNext = headPositions[i+1];
+            Vector3 dirToPrev = bodyPosPrev - bodyPos;
+            Vector3 dirToNext = bodyPosNext - bodyPos;
+            if (Vector3::Dot(dirToPrev, dirToNext) < 0)
+            {
+                nextPos = bodyPosNext;
+                latestUsefulHeadPos = Math::Min(latestUsefulHeadPos, i);
+            }
+        }
+
+        Vector3 dir = (nextPos - bodyPart->transform->GetPosition()).Normalized();
+        bodyPart->transform->Translate(dir * m_moveSpeed * Time::deltaTime);
+        bodyPart->transform->LookAt(nextPos);
     }
 
-    if (m_bodyTransforms.Size() > bodyParts.Size())
+    for (int i = 0; i < latestUsefulHeadPos; ++i)
     {
-        m_bodyTransforms.PopFront();
+        //m_headPositions.PopFront();
     }
 }
 
