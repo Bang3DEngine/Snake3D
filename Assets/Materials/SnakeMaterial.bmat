@@ -1,4 +1,4 @@
-<Material DiffuseColor:Color="(0.0901961, 0.690196, 0, 1)"{}
+<Material DiffuseColor:Color="(0.686275, 0, 0.00784314, 1)"{}
           Shininess:Float="60"{}
           ReceivesLighting:Bool ="true"{}
           UvMultiply:Vector2="(1, 1)"{}

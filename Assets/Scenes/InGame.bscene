@@ -176,6 +176,12 @@
                                   Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                                  >
                     </MeshRenderer>
+                    <Behaviour id:String="Scene_Snake5_Body0_Head0_Tongue2_Component2"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               BehaviourScript:File="./Materials/TongueMove.cpp"{FileExtension="cpp"}
+                              >
+                    </Behaviour>
                 </GameObject>
                 <GameObject id:String="Scene_Snake5_Body0_Head0_Collider13"{Hidden,Readonly}
                             enabled:Bool ="true"{Hidden,Readonly}
@@ -378,7 +384,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube0_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -401,7 +407,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube1_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -424,7 +430,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube2_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -447,7 +453,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube3_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -470,7 +476,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube4_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -493,7 +499,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube5_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -516,7 +522,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube6_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -539,7 +545,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube7_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -562,7 +568,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube8_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -585,7 +591,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube9_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -608,7 +614,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube10_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -631,7 +637,7 @@
                 <MeshRenderer id:String="Scene_Scenario8_Walls1_Cube11_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                              Material:File="./Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
@@ -895,7 +901,7 @@
         <MeshRenderer id:String="Scene_Sphere11_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                      Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
@@ -918,7 +924,7 @@
         <MeshRenderer id:String="Scene_Sphere12_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                      Material:File="./Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
@@ -941,7 +947,7 @@
         <MeshRenderer id:String="Scene_Sphere13_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                      Material:File="./Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
@@ -964,7 +970,7 @@
         <MeshRenderer id:String="Scene_Sphere14_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                      Material:File="./Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
@@ -987,7 +993,7 @@
         <MeshRenderer id:String="Scene_Sphere15_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                      Material:File="./Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
@@ -1010,7 +1016,7 @@
         <MeshRenderer id:String="Scene_Sphere16_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                      Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
@@ -1033,7 +1039,7 @@
         <MeshRenderer id:String="Scene_Sphere17_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                      Material:File="./Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
