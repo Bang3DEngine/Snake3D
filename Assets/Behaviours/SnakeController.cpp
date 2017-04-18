@@ -4,6 +4,7 @@
 
 #include "SkyCamera.h"
 #include "SnakeCamera.h"
+#include "WallsManager.h"
 
 // This function will be executed once when created 
 void SnakeController::OnStart() 
@@ -11,15 +12,25 @@ void SnakeController::OnStart()
     Behaviour::OnStart();
     p_camera   = GameObject::Find("Camera")->GetComponent<Camera>();
 
+    p_tailPrefab = AssetsManager::Load<Prefab>("Prefabs/Tail.bprefab");
     p_body = gameObject->FindInChildren("Body");
     p_head = p_body->FindInChildren("Head");
-    m_headPositions.PushBack(p_head->transform->GetPosition());
+    p_collider1 = gameObject->FindInChildren("Collider1");
+    p_collider2 = gameObject->FindInChildren("Collider2");
+    p_collider3 = gameObject->FindInChildren("Collider3");
+
+    BodyPart bodyPart;
+    bodyPart.p_gameObject = p_head;
+    bodyPart.p_prevPart = nullptr;
+    m_bodyParts.PushBack(bodyPart);
 } 
 
 // This function will be executed every frame 
 void SnakeController::OnUpdate() 
 { 
     Behaviour::OnUpdate();
+
+    m_time += Time::deltaTime;
 
     if (Input::GetKeyDown(Input::Key::Z))
     {
@@ -29,59 +40,73 @@ void SnakeController::OnUpdate()
     p_camera->gameObject->GetComponent<SnakeCamera>()->SetEnabled( m_cameraMode >= 1 );
     p_camera->gameObject->GetComponent<SnakeCamera>()->camInFront = (m_cameraMode == 1);
 
-    float sign = 0.0f;
-    if (Input::GetKey(Input::Key::A)) { sign = 1.0f; }
-    else if (Input::GetKey(Input::Key::D)) { sign = -1.0f; }
-
-    if (sign != 0.0f)
-    {
-        Quaternion rot = Quaternion::AngleAxis(sign * c_rotSpeed * Time::deltaTime,
-                                               Vector3::Up);
-        p_head->transform->RotateLocal(rot);
-    }
-    Vector3 forward = p_head->transform->GetForward();
-    p_head->transform->Translate(forward * m_moveSpeed * Time::deltaTime);
-
-    m_time += Time::deltaTime;
-    if (m_time >= 0.05f)
-    {
-        m_time = 0.0f;
-        m_headPositions.PushBack(p_head->transform->GetPosition());
-    }
-
     MoveBodyParts();
+
+    if (WallsManager::CollidesWithWall(p_collider1) ||
+        WallsManager::CollidesWithWall(p_collider2) ||
+        WallsManager::CollidesWithWall(p_collider3))
+    {
+        SceneManager::LoadScene( SceneManager::GetActiveSceneFilepath() );
+    }
+}
+
+void SnakeController::OnFoodEat()
+{
+    GameObject *newTail = p_tailPrefab->Instantiate();
+
+    BodyPart bodyPart;
+    bodyPart.p_gameObject = newTail;
+    bodyPart.p_prevPart   = &(m_bodyParts.Back());
+    m_bodyParts.PushBack(bodyPart);
+
+    Vector3 latestTailPos = p_body->GetChildren().Back()->transform->GetPosition();
+    Vector3 newTailPos = latestTailPos - p_head->transform->GetForward() * 1.0f;
+    newTail->transform->SetPosition(newTailPos);
+    newTail->SetParent(p_body);
 }
 
 void SnakeController::MoveBodyParts()
 {
-    ENSURE(m_headPositions.Size() >= 2);
-
-    List<GameObject*> listBodyParts = p_body->GetChildren();
-    Array<GameObject*> bodyParts = listBodyParts.ToArray();
-    Array<Vector3> headPositions = m_headPositions.ToArray();
-
-    for (GameObject *bodyPart : bodyParts)
+    for (BodyPart &bodyPart : m_bodyParts)
     {
-        if (bodyPart == p_head) { continue; }
-
-        Vector3 bodyPos = bodyPart->transform->GetPosition();
-        Vector3 nextPos = m_headPositions.Front();
-        for (int i = 0; i < headPositions.Size() - 1; ++i)
-        {
-            const Vector3 &bodyPosPrev  = headPositions[i];
-            const Vector3 &bodyPosNext = headPositions[i+1];
-            Vector3 dirToPrev = bodyPosPrev - bodyPos;
-            Vector3 dirToNext = bodyPosNext - bodyPos;
-            if (Vector3::Dot(dirToPrev, dirToNext) < 0)
-            {
-                nextPos = bodyPosNext;
-            }
-        }
-
-        Vector3 dir = (nextPos - bodyPart->transform->GetPosition()).Normalized();
-        bodyPart->transform->Translate(dir * m_moveSpeed * Time::deltaTime);
-        bodyPart->transform->LookAt(nextPos);
+        bodyPart.MovePart();
     }
 }
+
+void BodyPart::MovePart()
+{
+    const float c_partSeparation = 1.2f;
+
+    const bool isTheHead = !p_prevPart;
+    float speedFactor = 1.0f;
+    Vector3 prevPos;
+    Vector3 currentPos = p_gameObject->transform->GetPosition();
+    Vector3 moveDir = p_gameObject->transform->GetForward();
+    if (isTheHead) // Head
+    {
+        float sign = 0.0f;
+        if (Input::GetKey(Input::Key::A)) { sign = 1.0f; }
+        else if (Input::GetKey(Input::Key::D)) { sign = -1.0f; }
+
+        if (sign != 0.0f)
+        {
+            Quaternion rot = Quaternion::AngleAxis(sign * c_rotSpeed * Time::deltaTime,
+                                                   Vector3::Up);
+            p_gameObject->transform->RotateLocal(rot);
+        }
+        moveDir = p_gameObject->transform->GetForward();
+    }
+    else // Move relative to its prevPart
+    {
+        prevPos = p_prevPart->p_gameObject->transform->GetPosition();
+        moveDir = (prevPos - currentPos).Normalized();
+        speedFactor = (prevPos - currentPos).Length() * c_partSeparation;
+    }
+
+    p_gameObject->transform->LookInDirection(moveDir);
+    p_gameObject->transform->Translate(moveDir * speedFactor *
+                                       m_moveSpeed * Time::deltaTime);
+}
+
 
 BANG_BEHAVIOUR_CLASS_IMPL(SnakeController);

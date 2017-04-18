@@ -1,11 +1,15 @@
+/home/sephirot47/Snake/Assets/Behaviours/Food.h
 /home/sephirot47/Snake/Assets/Behaviours/FoodGenerator.h
 /home/sephirot47/Snake/Assets/Behaviours/SkyCamera.h
 /home/sephirot47/Snake/Assets/Behaviours/SnakeCamera.h
 /home/sephirot47/Snake/Assets/Behaviours/SnakeController.h
+/home/sephirot47/Snake/Assets/Behaviours/WallsManager.h
+/home/sephirot47/Snake/Assets/Behaviours/Food.cpp
 /home/sephirot47/Snake/Assets/Behaviours/FoodGenerator.cpp
 /home/sephirot47/Snake/Assets/Behaviours/SkyCamera.cpp
 /home/sephirot47/Snake/Assets/Behaviours/SnakeCamera.cpp
 /home/sephirot47/Snake/Assets/Behaviours/SnakeController.cpp
+/home/sephirot47/Snake/Assets/Behaviours/WallsManager.cpp
 /home/sephirot47/Bang/DependenciesProjects/freealut-1.1.0/include/AL/alut.h
 /home/sephirot47/Bang/DependenciesProjects/freealut-1.1.0/src/alutInternal.h
 /home/sephirot47/Bang/DependenciesProjects/freetype-2.7/devel/ftoption.h
@@ -322,6 +326,7 @@
 /home/sephirot47/Bang/include/Bang/EditorFloor.h
 /home/sephirot47/Bang/include/Bang/EditorGizmo.h
 /home/sephirot47/Bang/include/Bang/EditorGizmosGameObject.h
+/home/sephirot47/Bang/include/Bang/EditorPlayFlow.h
 /home/sephirot47/Bang/include/Bang/EditorPlayStopFlowController.h
 /home/sephirot47/Bang/include/Bang/EditorRectTransformAnchorGizmo.h
 /home/sephirot47/Bang/include/Bang/EditorRectTransformCornerGizmo.h
@@ -688,7 +693,7 @@
 /home/sephirot47/Bang/src/View/Application.h
 /home/sephirot47/Bang/src/View/ContextMenu.h
 /home/sephirot47/Bang/src/View/Cursor.h
-/home/sephirot47/Bang/src/View/EditorPlayStopFlowController.h
+/home/sephirot47/Bang/src/View/EditorPlayFlow.h
 /home/sephirot47/Bang/src/View/EditorState.h
 /home/sephirot47/Bang/src/View/GameBuilderJob.h
 /home/sephirot47/Bang/src/View/GameObjectClipboard.h
@@ -921,6 +926,7 @@
 /home/sephirot47/Bang/src/Qt_MOCs/moc_DragDropQListWidget.cpp
 /home/sephirot47/Bang/src/Qt_MOCs/moc_DragDropQTreeWidget.cpp
 /home/sephirot47/Bang/src/Qt_MOCs/moc_DragDropQWidget.cpp
+/home/sephirot47/Bang/src/Qt_MOCs/moc_EditorPlayFlow.cpp
 /home/sephirot47/Bang/src/Qt_MOCs/moc_EditorPlayStopFlowController.cpp
 /home/sephirot47/Bang/src/Qt_MOCs/moc_EditorWindow.cpp
 /home/sephirot47/Bang/src/Qt_MOCs/moc_Explorer.cpp
@@ -944,7 +950,7 @@
 /home/sephirot47/Bang/src/View/Application.cpp
 /home/sephirot47/Bang/src/View/ContextMenu.cpp
 /home/sephirot47/Bang/src/View/Cursor.cpp
-/home/sephirot47/Bang/src/View/EditorPlayStopFlowController.cpp
+/home/sephirot47/Bang/src/View/EditorPlayFlow.cpp
 /home/sephirot47/Bang/src/View/EditorState.cpp
 /home/sephirot47/Bang/src/View/GameBuilderJob.cpp
 /home/sephirot47/Bang/src/View/GameObjectClipboard.cpp

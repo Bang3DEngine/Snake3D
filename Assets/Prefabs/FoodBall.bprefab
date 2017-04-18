@@ -20,4 +20,11 @@
                   Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                  >
     </MeshRenderer>
+    <Behaviour id:String="FoodBall_Component2"{Hidden,Readonly}
+               enabled:Bool ="true"{Hidden,Readonly}
+               closedInInspector:Bool ="false"{Hidden,Readonly}
+               BehaviourScript:File="./Behaviours/Food.cpp"{FileExtension="cpp"}
+               CreateNew...:Button="CreateNew..."{DontWriteToFile,Listener="0x41d9948"}
+              >
+    </Behaviour>
 </GameObject>

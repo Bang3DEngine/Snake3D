@@ -4,14 +4,14 @@
 void FoodGenerator::OnStart() 
 { 
     Behaviour::OnStart(); 
-    foodPrefab = AssetsManager::Load<Prefab>("FoodBall.bprefab");
+    foodPrefab = AssetsManager::Load<Prefab>("Prefabs/FoodBall.bprefab");
 } 
 
 // This function will be executed every frame 
 void FoodGenerator::OnUpdate() 
 { 
     Behaviour::OnUpdate();
-    while (currentFoodBalls.Size() < 5)
+    while (currentFoodBalls.Size() < 50)
     {
         GameObject *foodBall = foodPrefab->Instantiate();
 
