@@ -1,0 +1,448 @@
+<Scene id:String="Scene_BANG_EditorCamera2_BANG_EditorYawNode0_Component1"{Hidden,Readonly}
+       enabled:Bool ="true"{Hidden,Readonly}
+       name:String="Scene"{Hidden,Readonly}
+      >
+    <Transform id:String="Scene_Component0"{Hidden,Readonly}
+               enabled:Bool ="true"{Hidden,Readonly}
+               closedInInspector:Bool ="false"{Hidden,Readonly}
+               Position:Vector3="(0, 0, 0)"{}
+               Rotation:Vector3="(0, 0, 0)"{}
+               Scale:Vector3="(1, 1, 1)"{}
+              >
+    </Transform>
+    <GameObject id:String="Scene_Directional Light5"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Directional Light"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Directional Light5_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(-5, 5, -5)"{}
+                   Rotation:Vector3="(144.736, -45, 180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <DirectionalLight id:String="Scene_Directional Light5_Component1"{Hidden,Readonly}
+                          enabled:Bool ="true"{Hidden,Readonly}
+                          closedInInspector:Bool ="false"{Hidden,Readonly}
+                          Intensity:Float="1"{}
+                          Color:Color="(1, 1, 1, 1)"{}
+                         >
+        </DirectionalLight>
+    </GameObject>
+    <GameObject id:String="Scene_Camera6"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Camera"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Camera6_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(5, 5, -5)"{}
+                   Rotation:Vector3="(144.736, 45, -180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <Camera id:String="Scene_Camera6_Component1"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                closedInInspector:Bool ="false"{Hidden,Readonly}
+                ClearColor:Color="(0.2, 0.5, 1, 1)"{}
+                ZNear:Float="0.1"{}
+                ZFar:Float="100"{}
+                ProjectionMode:Enum="1"{Readonly,EnumName0="Orthographic",EnumName1="Perspective"}
+                OrthoHeight:Float="25"{Hidden}
+                FOVDegrees:Float="60"{}
+               >
+        </Camera>
+        <AudioListener id:String="Scene_Camera6_Component2"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                      >
+        </AudioListener>
+    </GameObject>
+    <GameObject id:String="Scene_BG7"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="BG"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-1"{}
+                       MarginTop:Int="0"{}
+                       MarginRight:Int="1"{}
+                       MarginBot:Int="0"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(-1, -1)"{}
+                       AnchorMax:Vector2="(1, 1)"{}
+                       id:String="Scene_BG7_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(-0.00270271, 0, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(1, 1, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIImage id:String="Scene_BG7_Component1"{Hidden,Readonly}
+                 enabled:Bool ="true"{Hidden,Readonly}
+                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 LineWidth:Float="1"{Hidden}
+                 IsTransparent:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Tint:Color="(0.231373, 0.231373, 0.231373, 1)"{}
+                 Image:File="./Textures/ballTexturita.btex2d"{FileExtension="btex2d"}
+                >
+        </UIImage>
+    </GameObject>
+    <GameObject id:String="Scene_LeftPanel8"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="LeftPanel"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="0"{}
+                       MarginTop:Int="0"{}
+                       MarginRight:Int="0"{}
+                       MarginBot:Int="0"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(-0.93977, -0.94)"{}
+                       AnchorMax:Vector2="(-0.29, 0.49458)"{}
+                       id:String="Scene_LeftPanel8_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(-0.63, -0.22, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.34, 0.72, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIImage id:String="Scene_LeftPanel8_Component1"{Hidden,Readonly}
+                 enabled:Bool ="true"{Hidden,Readonly}
+                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 LineWidth:Float="1"{Hidden}
+                 IsTransparent:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Tint:Color="(0.611765, 0.611765, 0.611765, 1)"{}
+                 Image:File=""{FileExtension="btex2d",IsEngineFile}
+                >
+        </UIImage>
+    </GameObject>
+    <GameObject id:String="Scene_DeadImage9"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="DeadImage"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-103"{}
+                       MarginTop:Int="-94"{}
+                       MarginRight:Int="-100"{}
+                       MarginBot:Int="-90"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(-0.605417, -0.172632)"{}
+                       AnchorMax:Vector2="(-0.611608, -0.172632)"{}
+                       id:String="Scene_DeadImage9_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(-0.64, -0.17, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.2, 0.34, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIImage id:String="Scene_DeadImage9_Component1"{Hidden,Readonly}
+                 enabled:Bool ="true"{Hidden,Readonly}
+                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 LineWidth:Float="1"{Hidden}
+                 IsTransparent:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Tint:Color="(1, 1, 1, 1)"{}
+                 Image:File="./Textures/DefaultUIImageTexture.btex2d"{FileExtension="btex2d",IsEngineFile}
+                >
+        </UIImage>
+    </GameObject>
+    <GameObject id:String="Scene_RightPanel10"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="RightPanel"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-1"{}
+                       MarginTop:Int="1"{}
+                       MarginRight:Int="0"{}
+                       MarginBot:Int="0"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(-0.20902, -0.578552)"{}
+                       AnchorMax:Vector2="(0.936505, 0.5)"{}
+                       id:String="Scene_RightPanel10_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0.362391, -0.0417391, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.574113, 0.536813, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIImage id:String="Scene_RightPanel10_Component1"{Hidden,Readonly}
+                 enabled:Bool ="true"{Hidden,Readonly}
+                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 LineWidth:Float="1"{Hidden}
+                 IsTransparent:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Tint:Color="(0.611765, 0.611765, 0.611765, 1)"{}
+                 Image:File=""{FileExtension="btex2d",IsEngineFile}
+                >
+        </UIImage>
+    </GameObject>
+    <GameObject id:String="Scene_RightPanelHeader11"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="RightPanelHeader"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-1"{}
+                       MarginTop:Int="1"{}
+                       MarginRight:Int="0"{}
+                       MarginBot:Int="0"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(-0.20902, 0.224403)"{}
+                       AnchorMax:Vector2="(0.94191, 0.5)"{}
+                       id:String="Scene_RightPanelHeader11_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0.362391, -0.0417391, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.574113, 0.536813, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIImage id:String="Scene_RightPanelHeader11_Component1"{Hidden,Readonly}
+                 enabled:Bool ="true"{Hidden,Readonly}
+                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 LineWidth:Float="1"{Hidden}
+                 IsTransparent:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Tint:Color="(0.611765, 0, 0, 1)"{}
+                 Image:File=""{FileExtension="btex2d",IsEngineFile}
+                >
+        </UIImage>
+    </GameObject>
+    <GameObject id:String="Scene_ButtonPanel12"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="ButtonPanel"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="1"{}
+                       MarginTop:Int="-23"{}
+                       MarginRight:Int="-1"{}
+                       MarginBot:Int="-17"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(-0.20902, -0.821159)"{}
+                       AnchorMax:Vector2="(0.936505, -0.810145)"{}
+                       id:String="Scene_ButtonPanel12_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0.366445, -0.800874, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.572762, 0.10403, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIImage id:String="Scene_ButtonPanel12_Component1"{Hidden,Readonly}
+                 enabled:Bool ="true"{Hidden,Readonly}
+                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 LineWidth:Float="1"{Hidden}
+                 IsTransparent:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Tint:Color="(0, 0.447059, 0.611765, 1)"{}
+                 Image:File=""{FileExtension="btex2d",IsEngineFile}
+                >
+        </UIImage>
+    </GameObject>
+    <GameObject id:String="Scene_PressSpaceToReplayButton13"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="PressSpaceToReplayButton"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-15"{}
+                       MarginTop:Int="-19"{}
+                       MarginRight:Int="-18"{}
+                       MarginBot:Int="-13"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(0.377868, -0.790762)"{}
+                       AnchorMax:Vector2="(0.379437, -0.794396)"{}
+                       id:String="Scene_PressSpaceToReplayButton13_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0.382706, -0.777801, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.0453791, 0.0770008, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIText id:String="Scene_PressSpaceToReplayButton13_Component1"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                closedInInspector:Bool ="false"{Hidden,Readonly}
+                Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                LineWidth:Float="1"{Hidden}
+                IsTransparent:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool ="false"{Inline,Hidden}
+                Mesh:File=""{FileExtension="bmesh",IsEngineFile,Hidden}
+                Tint:Color="(1, 1, 1, 1)"{Hidden}
+                Font:File="./Fonts/UbuntuFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Color:Color="(1, 1, 1, 1)"{}
+                Content:String="Space to replay"{Inline}
+                TextSize:Float="55"{}
+                HSpacing:Float="5"{}
+                Kerning:Bool ="false"{}
+                VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
+                HorizontalAlign:Enum="1"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
+               >
+        </UIText>
+        <Behaviour id:String="Scene_PressSpaceToReplayButton13_Component2"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   BehaviourScript:File="./Behaviours/MenuSpaceButton.cpp"{FileExtension="cpp"}
+                  >
+        </Behaviour>
+    </GameObject>
+    <GameObject id:String="Scene_YouLosePanel14"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="YouLosePanel"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-1"{}
+                       MarginTop:Int="-36"{}
+                       MarginRight:Int="-2"{}
+                       MarginBot:Int="-25"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(-0.936708, 0.716355)"{}
+                       AnchorMax:Vector2="(0.926432, 0.707143)"{}
+                       id:String="Scene_YouLosePanel14_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(-0.015273, 0.738842, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.351164, 0.125936, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIImage id:String="Scene_YouLosePanel14_Component1"{Hidden,Readonly}
+                 enabled:Bool ="true"{Hidden,Readonly}
+                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 LineWidth:Float="1"{Hidden}
+                 IsTransparent:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Tint:Color="(0, 0.447059, 0.611765, 1)"{}
+                 Image:File=""{FileExtension="btex2d",IsEngineFile}
+                >
+        </UIImage>
+    </GameObject>
+    <GameObject id:String="Scene_YouLoseText15"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="YouLoseText"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-31"{}
+                       MarginTop:Int="-34"{}
+                       MarginRight:Int="-34"{}
+                       MarginBot:Int="-32"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(-0.022973, 0.746798)"{}
+                       AnchorMax:Vector2="(-0.0121621, 0.739409)"{}
+                       id:String="Scene_YouLoseText15_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(-0.0175676, 0.724631, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.0891892, 0.160099, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIText id:String="Scene_YouLoseText15_Component1"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                closedInInspector:Bool ="false"{Hidden,Readonly}
+                Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                LineWidth:Float="1"{Hidden}
+                IsTransparent:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool ="false"{Inline,Hidden}
+                Mesh:File=""{FileExtension="bmesh",IsEngineFile,Hidden}
+                Tint:Color="(1, 1, 1, 1)"{Hidden}
+                Font:File="./Fonts/UbuntuFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Color:Color="(1, 1, 1, 1)"{}
+                Content:String="You lose"{Inline}
+                TextSize:Float="40"{}
+                HSpacing:Float="5"{}
+                Kerning:Bool ="false"{}
+                VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
+                HorizontalAlign:Enum="1"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
+               >
+        </UIText>
+    </GameObject>
+    <GameObject id:String="Scene_ScoreLabel16"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="ScoreLabel"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-15"{}
+                       MarginTop:Int="-14"{}
+                       MarginRight:Int="-18"{}
+                       MarginBot:Int="-18"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(0.342733, 0.36441)"{}
+                       AnchorMax:Vector2="(0.351058, 0.375555)"{}
+                       id:String="Scene_ScoreLabel16_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0.35095, 0.36013, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.0487575, 0.08439, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIText id:String="Scene_ScoreLabel16_Component1"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                closedInInspector:Bool ="false"{Hidden,Readonly}
+                Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                LineWidth:Float="1"{Hidden}
+                IsTransparent:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool ="false"{Inline,Hidden}
+                Mesh:File=""{FileExtension="bmesh",IsEngineFile,Hidden}
+                Tint:Color="(1, 1, 1, 1)"{Hidden}
+                Font:File="./Fonts/UbuntuFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Color:Color="(1, 1, 1, 1)"{}
+                Content:String="Score"{Inline}
+                TextSize:Float="55"{}
+                HSpacing:Float="5"{}
+                Kerning:Bool ="false"{}
+                VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
+                HorizontalAlign:Enum="1"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
+               >
+        </UIText>
+    </GameObject>
+    <GameObject id:String="Scene_ScoreText17"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="ScoreText"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-16"{}
+                       MarginTop:Int="-24"{}
+                       MarginRight:Int="-17"{}
+                       MarginBot:Int="-8"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(0.36976, -0.197166)"{}
+                       AnchorMax:Vector2="(0.374032, -0.178632)"{}
+                       id:String="Scene_ScoreText17_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0.373247, -0.14849, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.0467305, 0.0880845, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIText id:String="Scene_ScoreText17_Component1"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                closedInInspector:Bool ="false"{Hidden,Readonly}
+                Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                LineWidth:Float="1"{Hidden}
+                IsTransparent:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool ="false"{Inline,Hidden}
+                Mesh:File=""{FileExtension="bmesh",IsEngineFile,Hidden}
+                Tint:Color="(1, 0, 0, 1)"{Hidden}
+                Font:File="./Fonts/UbuntuFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Color:Color="(1, 0, 0, 1)"{}
+                Content:String="12345"{Inline}
+                TextSize:Float="200"{}
+                HSpacing:Float="5"{}
+                Kerning:Bool ="false"{}
+                VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
+                HorizontalAlign:Enum="1"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
+               >
+        </UIText>
+    </GameObject>
+</Scene>

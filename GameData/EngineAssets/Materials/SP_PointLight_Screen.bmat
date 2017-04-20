@@ -1,0 +1,7 @@
+<Material DiffuseColor:Color="(1, 1, 1, 1)"{}
+          ReceivesLighting:Bool="false"{}
+          FragmentShader:File="./Shaders/SP_PointLight.frag"{FileExtension="frag",IsEngineFile}
+          TextureCount:Int="0"{}
+          VertexShader:File="./Shaders/SP_ScreenPass.vert"{FileExtension="vert",IsEngineFile}
+         >
+</Material>

@@ -20,8 +20,9 @@ void SnakeController::OnStart()
     p_collider3 = gameObject->FindInChildren("Collider3");
 
     BodyPart bodyPart;
+    bodyPart.snake        = this;
     bodyPart.p_gameObject = p_head;
-    bodyPart.p_prevPart = nullptr;
+    bodyPart.p_prevPart   = nullptr;
     m_bodyParts.PushBack(bodyPart);
 } 
 
@@ -31,6 +32,8 @@ void SnakeController::OnUpdate()
     Behaviour::OnUpdate();
 
     m_time += Time::deltaTime;
+    m_level = m_bodyParts.Size();
+    m_moveSpeed = 5.0f + m_level * 1.5f;
 
     if (Input::GetKeyDown(Input::Key::Z))
     {
@@ -42,12 +45,14 @@ void SnakeController::OnUpdate()
 
     MoveBodyParts();
 
+    /*
     if (WallsManager::CollidesWithWall(p_collider1) ||
         WallsManager::CollidesWithWall(p_collider2) ||
         WallsManager::CollidesWithWall(p_collider3))
     {
-        SceneManager::LoadScene( SceneManager::GetActiveSceneFilepath() );
+        SceneManager::LoadScene( "Scenes/Lose" );
     }
+    */
 }
 
 void SnakeController::OnFoodEat()
@@ -55,6 +60,7 @@ void SnakeController::OnFoodEat()
     GameObject *newTail = p_tailPrefab->Instantiate();
 
     BodyPart bodyPart;
+    bodyPart.snake        = this;
     bodyPart.p_gameObject = newTail;
     bodyPart.p_prevPart   = &(m_bodyParts.Back());
     m_bodyParts.PushBack(bodyPart);
@@ -75,11 +81,12 @@ void SnakeController::MoveBodyParts()
 
 void BodyPart::MovePart()
 {
-    const float c_partSeparation = 1.2f;
+    const float c_minSeparation = 0.3f;
 
+    float speedFactor = snake->m_moveSpeed;
     const bool isTheHead = !p_prevPart;
-    float speedFactor = 1.0f;
-    Vector3 prevPos;
+    Vector3 prevBodyPos = p_prevPart ? p_prevPart->p_gameObject->transform->GetPosition() :
+                                       Vector3::Zero;
     Vector3 currentPos = p_gameObject->transform->GetPosition();
     Vector3 moveDir = p_gameObject->transform->GetForward();
     if (isTheHead) // Head
@@ -90,22 +97,28 @@ void BodyPart::MovePart()
 
         if (sign != 0.0f)
         {
-            Quaternion rot = Quaternion::AngleAxis(sign * c_rotSpeed * Time::deltaTime,
-                                                   Vector3::Up);
+            Quaternion rot =
+             Quaternion::AngleAxis(sign * snake->c_rotSpeed * Time::deltaTime,
+                                   Vector3::Up);
             p_gameObject->transform->RotateLocal(rot);
         }
         moveDir = p_gameObject->transform->GetForward();
     }
     else // Move relative to its prevPart
     {
-        prevPos = p_prevPart->p_gameObject->transform->GetPosition();
-        moveDir = (prevPos - currentPos).Normalized();
-        speedFactor = (prevPos - currentPos).Length() * c_partSeparation;
+        moveDir = (prevBodyPos - currentPos).Normalized();
+        speedFactor = Vector3::Distance(prevBodyPos, currentPos) * 20.0f;
     }
 
     p_gameObject->transform->LookInDirection(moveDir);
-    p_gameObject->transform->Translate(moveDir * speedFactor *
-                                       m_moveSpeed * Time::deltaTime);
+    Vector3 translation = moveDir * speedFactor * Time::deltaTime;
+    Vector3 newPos = currentPos + translation;
+    p_gameObject->transform->SetPosition(newPos);
+
+    if ( Vector3::Distance(newPos, prevBodyPos) < c_minSeparation)
+    {
+        p_gameObject->transform->SetPosition(prevBodyPos - moveDir * c_minSeparation);
+    }
 }
 
 
