@@ -15,7 +15,7 @@ void TongueMove::OnUpdate()
     m_time += Time::deltaTime;
     Vector3 movement = Vector3::Forward *
                         (Math::Sin(m_time * 5.0f) * 0.25f - 0.01f);
-    transform->SetLocalPosition(m_originalPos + movement);
+    transform->SetLocalPosition(m_originalPos  + movement);
 } 
 
 BANG_BEHAVIOUR_CLASS_IMPL(TongueMove);

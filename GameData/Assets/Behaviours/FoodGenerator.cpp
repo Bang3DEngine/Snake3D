@@ -1,5 +1,7 @@
 #include "FoodGenerator.h" 
 
+#include "WallsManager.h"
+
 // This function will be executed once when created 
 void FoodGenerator::OnStart() 
 { 
@@ -11,7 +13,7 @@ void FoodGenerator::OnStart()
 void FoodGenerator::OnUpdate() 
 { 
     Behaviour::OnUpdate();
-    while (currentFoodBalls.Size() < 50)
+    while (currentFoodBalls.Size() < 100)
     {
         GameObject *foodBall = foodPrefab->Instantiate();
 
@@ -25,14 +27,14 @@ void FoodGenerator::OnUpdate()
         {
             Vector3 randOffset = Vector3::Zero;
             randOffset.x = Math::Lerp(-randomRangeAroundHead,
-                                      randomRangeAroundHead,
-                                      Random::Value());
+                                       randomRangeAroundHead,
+                                       Random::Value());
             randOffset.z = Math::Lerp(-randomRangeAroundHead,
-                                      randomRangeAroundHead,
-                                      Random::Value());
+                                       randomRangeAroundHead,
+                                       Random::Value());
             foodBallPos = headPos + randOffset;
         }
-        while ( PointInsideSomeFoodBall(foodBallPos) );
+        while ( FoodBallPositionInvalid(foodBallPos) );
 
         foodBall->transform->SetPosition(foodBallPos);
 
@@ -40,12 +42,18 @@ void FoodGenerator::OnUpdate()
     }
 }
 
-bool FoodGenerator::PointInsideSomeFoodBall(const Vector3 &point) const
+bool FoodGenerator::FoodBallPositionInvalid(const Vector3 &point) const
 {
     for (GameObject *foodBall : currentFoodBalls)
     {
         if (foodBall->GetAABBox().Contains(point)) { return true; }
     }
+
+    if (WallsManager::CollidesWithWall(point))
+    {
+        return true;
+    }
+
     return false;
 }
 

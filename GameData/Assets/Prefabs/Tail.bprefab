@@ -5,9 +5,9 @@
     <Transform id:String="Tail_Component0"{Hidden,Readonly}
                enabled:Bool ="true"{Hidden,Readonly}
                closedInInspector:Bool ="false"{Hidden,Readonly}
-               Position:Vector3="(0, 0, -3.2194)"{}
+               Position:Vector3="(0, 0, -3.22)"{}
                Rotation:Vector3="(0, -0, 0)"{}
-               Scale:Vector3="(0.729981, 0.729981, 1.17445)"{}
+               Scale:Vector3="(0.73, 0.73, 0.73)"{}
               >
     </Transform>
     <MeshRenderer id:String="Tail_Component1"{Hidden,Readonly}

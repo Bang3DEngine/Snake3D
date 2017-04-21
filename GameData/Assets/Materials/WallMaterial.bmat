@@ -1,8 +1,8 @@
 <Material DiffuseColor:Color="(0, 0.439216, 0.909804, 1)"{}
           Shininess:Float="200"{}
           ReceivesLighting:Bool ="true"{}
-          UvMultiply:Vector2="(10, 10)"{}
-          Texture:File="./Textures/ballTexturita.btex2d"{FileExtension="btex2d"}
+          UvMultiply:Vector2="(1, 1)"{}
+          Texture:File="./Textures/wall.btex2d"{FileExtension="btex2d"}
           VertexShader:File="./Shaders/G_Default.vert"{FileExtension="vert",IsEngineFile}
           FragmentShader:File="./Shaders/G_Default.frag"{FileExtension="frag",IsEngineFile}
          >

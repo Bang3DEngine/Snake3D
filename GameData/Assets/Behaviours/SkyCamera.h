@@ -5,10 +5,16 @@
 
 // Here go your includes 
 
+class SnakeController;
 class SkyCamera : public Behaviour 
 { 
 OBJECT(SkyCamera) 
 public: 
+    SnakeController *p_snakeController = nullptr;
+    float m_angleVertical     = 0.0f;
+    float m_angleVerticalDest = -30.0f;
+    float m_zoom = 0.0f;
+
     void OnStart() override; 
     void OnUpdate() override; 
 

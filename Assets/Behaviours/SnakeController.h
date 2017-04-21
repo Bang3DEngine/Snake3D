@@ -21,10 +21,11 @@ public:
     void OnUpdate() override; 
 
     void OnFoodEat();
+    void CheckSelfCollision();
     void MoveBodyParts();
+    void Lose();
 
-    const float c_rotSpeed  = 2.0f;
-    float m_moveSpeed;
+    float m_rotSpeed, m_moveSpeed;
 
     int m_cameraMode = 0;
     Camera *p_camera   = nullptr;

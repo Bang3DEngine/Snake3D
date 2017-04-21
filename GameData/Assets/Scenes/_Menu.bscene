@@ -117,7 +117,7 @@
                 LineWidth:Float="1"{Hidden}
                 IsTransparent:Bool ="false"{Inline,Hidden}
                 DrawWireframe:Bool ="false"{Inline,Hidden}
-                Mesh:File=""{FileExtension="bmesh",IsEngineFile,Hidden}
+                Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 0.501961, 0, 1)"{Hidden}
                 Font:File="./Fonts/UbuntuFont.bfont"{FileExtension="bfont",IsEngineFile}
                 Color:Color="(1, 0.501961, 0, 1)"{}
@@ -156,7 +156,7 @@
                 LineWidth:Float="1"{Hidden}
                 IsTransparent:Bool ="false"{Inline,Hidden}
                 DrawWireframe:Bool ="false"{Inline,Hidden}
-                Mesh:File=""{FileExtension="bmesh",IsEngineFile,Hidden}
+                Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 0, 0, 1)"{Hidden}
                 Font:File="./Fonts/UbuntuFont.bfont"{FileExtension="bfont",IsEngineFile}
                 Color:Color="(1, 0, 0, 1)"{}
@@ -195,7 +195,7 @@
                 LineWidth:Float="1"{Hidden}
                 IsTransparent:Bool ="false"{Inline,Hidden}
                 DrawWireframe:Bool ="false"{Inline,Hidden}
-                Mesh:File=""{FileExtension="bmesh",IsEngineFile,Hidden}
+                Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 0, 0, 1)"{Hidden}
                 Font:File="./Fonts/UbuntuFont.bfont"{FileExtension="bfont",IsEngineFile}
                 Color:Color="(1, 0, 0, 1)"{}

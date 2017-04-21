@@ -1,11 +1,14 @@
 #include "SkyCamera.h" 
 
+#include "SnakeController.h"
+
 // This function will be executed once when created 
 void SkyCamera::OnStart() 
 { 
     Behaviour::OnStart(); 
     snakeHead = GameObject::Find("Snake")->FindInChildren("Body")->
                 FindInChildren("Head");
+    p_snakeController = snakeHead->GetComponentInParent<SnakeController>();
 } 
 
 // This function will be executed every frame 
@@ -14,10 +17,25 @@ void SkyCamera::OnUpdate()
     Behaviour::OnUpdate();
 
     Vector3 snakeHeadPos = snakeHead->transform->GetPosition();
-    Vector3 newPosition = snakeHeadPos + Vector3::Up * 30.0f
-                          -snakeHead->transform->GetForward() * 25.0f;
+
+    m_angleVerticalDest += Input::GetMouseAxisY() * 60.0f;
+    m_angleVertical      = Math::Lerp(m_angleVertical, m_angleVerticalDest, Time::deltaTime);
+    m_angleVertical      = Math::Clamp(m_angleVertical, -60.0f, -5.0f);
+
+    Vector3 offset = -snakeHead->transform->GetForward();
+    offset = Quaternion::AngleAxis(Math::Deg2Rad(m_angleVertical),
+                                   snakeHead->transform->GetRight()) * offset;
+
+    float newZoom = (25.0f + p_snakeController->m_level * 0.5f);
+    m_zoom = Math::Lerp(m_zoom, newZoom, Time::deltaTime);
+    m_zoom = Math::Max(m_zoom, 25.0f);
+
+    offset *= m_zoom;
+
+    Vector3 newPosition = snakeHeadPos + offset;
+
     transform->SetPosition(newPosition);
-    transform->LookAt(snakeHeadPos, snakeHead->transform->GetForward());
+    transform->LookAt(snakeHeadPos, Vector3::Up);
 } 
 
 BANG_BEHAVIOUR_CLASS_IMPL(SkyCamera);

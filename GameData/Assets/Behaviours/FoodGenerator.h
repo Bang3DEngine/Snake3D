@@ -11,9 +11,9 @@ OBJECT(FoodGenerator)
 public: 
     void OnStart() override; 
     void OnUpdate() override; 
-    bool PointInsideSomeFoodBall(const Vector3& point) const;
+    bool FoodBallPositionInvalid(const Vector3& point) const;
 
-    const float randomRangeAroundHead = 20.0f;
+    const float randomRangeAroundHead = 100.0f;
 
     Prefab *foodPrefab = nullptr;
 

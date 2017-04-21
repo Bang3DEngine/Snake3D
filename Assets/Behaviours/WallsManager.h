@@ -13,6 +13,7 @@ public:
     void OnUpdate() override;
 
     static bool CollidesWithWall(GameObject *go);
+    static bool CollidesWithWall(const Vector3& point);
 
 private:
     static List<GameObject*> s_walls;

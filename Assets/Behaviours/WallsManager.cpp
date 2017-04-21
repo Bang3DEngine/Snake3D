@@ -36,4 +36,16 @@ bool WallsManager::CollidesWithWall(GameObject *go)
     return false;
 }
 
+bool WallsManager::CollidesWithWall(const Vector3 &point)
+{
+    for (GameObject *wall : WallsManager::s_walls)
+    {
+        if (wall->GetAABBox().Contains(point))
+        {
+            return true;
+        }
+    }
+    return false;
+}
+
 BANG_BEHAVIOUR_CLASS_IMPL(WallsManager);
