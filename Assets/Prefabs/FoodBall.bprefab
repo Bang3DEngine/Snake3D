@@ -17,14 +17,14 @@
                   LineWidth:Float="1"{Hidden}
                   IsTransparent:Bool ="false"{Inline}
                   DrawWireframe:Bool ="false"{Inline}
-                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                  Mesh:File="./Models/Apple.bmesh"{FileExtension="bmesh"}
                  >
     </MeshRenderer>
     <Behaviour id:String="FoodBall_Component2"{Hidden,Readonly}
                enabled:Bool ="true"{Hidden,Readonly}
                closedInInspector:Bool ="false"{Hidden,Readonly}
                BehaviourScript:File="./Behaviours/Food.cpp"{FileExtension="cpp"}
-               CreateNew...:Button="CreateNew..."{DontWriteToFile,Listener="0x3093cc8"}
+               CreateNew...:Button="CreateNew..."{DontWriteToFile,Listener="0x3686cc8"}
               >
     </Behaviour>
 </GameObject>

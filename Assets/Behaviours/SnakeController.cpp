@@ -58,6 +58,9 @@ void SnakeController::OnUpdate()
 
 void SnakeController::OnFoodEat()
 {
+    AudioSource *as = gameObject->GetComponent<AudioSource>();
+    as->Play();
+
     GameObject *newTail = p_tailPrefab->Instantiate();
     // newTail->GetComponent<Renderer>()->UseMaterialCopy();
     // newTail->GetComponent<Renderer>()->GetMaterial()->SetDiffuseColor(

@@ -58,6 +58,17 @@
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                       >
         </AudioListener>
+        <AudioSource id:String="Scene_Camera5_Component3"{Hidden,Readonly}
+                     enabled:Bool ="true"{Hidden,Readonly}
+                     closedInInspector:Bool ="false"{Hidden,Readonly}
+                     AudioClip:File="./Music/MenuMusic.baudioclip"{FileExtension="baudioclip"}
+                     Volume:Float="1"{}
+                     Pitch:Float="1"{}
+                     Range:Float="1"{}
+                     Looping:Bool ="true"{}
+                     PlayOnStart:Bool ="true"{}
+                    >
+        </AudioSource>
     </GameObject>
     <GameObject id:String="Scene_BG6"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}

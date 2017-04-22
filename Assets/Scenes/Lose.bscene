@@ -90,6 +90,17 @@
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                       >
         </AudioListener>
+        <AudioSource id:String="Scene_Camera6_Component3"{Hidden,Readonly}
+                     enabled:Bool ="true"{Hidden,Readonly}
+                     closedInInspector:Bool ="false"{Hidden,Readonly}
+                     AudioClip:File="./Music/LoseMusic.baudioclip"{FileExtension="baudioclip"}
+                     Volume:Float="0.65"{}
+                     Pitch:Float="1"{}
+                     Range:Float="5"{}
+                     Looping:Bool ="false"{}
+                     PlayOnStart:Bool ="true"{}
+                    >
+        </AudioSource>
     </GameObject>
     <GameObject id:String="Scene_ButtonPanel7"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
@@ -123,58 +134,26 @@
                 >
         </UIImage>
     </GameObject>
-    <GameObject id:String="Scene_LeftPanel8"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                name:String="LeftPanel"{Hidden,Readonly}
-               >
-        <RectTransform MarginLeft:Int="0"{}
-                       MarginTop:Int="-1"{}
-                       MarginRight:Int="-2"{}
-                       MarginBot:Int="0"{}
-                       PivotPosition:Vector2="(0, 0)"{}
-                       AnchorMin:Vector2="(-0.93977, -0.94)"{}
-                       AnchorMax:Vector2="(-0.29, 0.49458)"{}
-                       id:String="Scene_LeftPanel8_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(-0.614885, -0.22271, 0)"{Hidden}
-                       Rotation:Vector3="(0, -0, 0)"{Hidden}
-                       Scale:Vector3="(0.324885, 0.71729, 1)"{Hidden}
-                      >
-        </RectTransform>
-        <UIImage id:String="Scene_LeftPanel8_Component1"{Hidden,Readonly}
-                 enabled:Bool ="true"{Hidden,Readonly}
-                 closedInInspector:Bool ="false"{Hidden,Readonly}
-                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
-                 LineWidth:Float="1"{Hidden}
-                 IsTransparent:Bool ="false"{Inline,Hidden}
-                 DrawWireframe:Bool ="false"{Inline,Hidden}
-                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
-                 Tint:Color="(1, 1, 1, 1)"{}
-                 Image:File=""{FileExtension="btex2d"}
-                >
-        </UIImage>
-    </GameObject>
-    <GameObject id:String="Scene_DeadImage9"{Hidden,Readonly}
+    <GameObject id:String="Scene_DeadImage8"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="DeadImage"{Hidden,Readonly}
                >
-        <RectTransform MarginLeft:Int="-103"{}
-                       MarginTop:Int="-94"{}
-                       MarginRight:Int="-100"{}
-                       MarginBot:Int="-90"{}
+        <RectTransform MarginLeft:Int="-162"{}
+                       MarginTop:Int="-209"{}
+                       MarginRight:Int="-69"{}
+                       MarginBot:Int="1"{}
                        PivotPosition:Vector2="(0, 0)"{}
-                       AnchorMin:Vector2="(-0.605417, -0.172632)"{}
-                       AnchorMax:Vector2="(-0.611608, -0.172632)"{}
-                       id:String="Scene_DeadImage9_Component0"{Hidden,Readonly}
+                       AnchorMin:Vector2="(-0.5, -0.9)"{}
+                       AnchorMax:Vector2="(-0.5, -0.9)"{}
+                       id:String="Scene_DeadImage8_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(-0.61214, -0.161333, 0)"{Hidden}
+                       Position:Vector3="(-0.61, -0.16, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
-                       Scale:Vector3="(0.24237, 0.519774, 1)"{Hidden}
+                       Scale:Vector3="(0.24, 0.52, 1)"{Hidden}
                       >
         </RectTransform>
-        <UIImage id:String="Scene_DeadImage9_Component1"{Hidden,Readonly}
+        <UIImage id:String="Scene_DeadImage8_Component1"{Hidden,Readonly}
                  enabled:Bool ="true"{Hidden,Readonly}
                  closedInInspector:Bool ="false"{Hidden,Readonly}
                  Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
@@ -187,7 +166,7 @@
                 >
         </UIImage>
     </GameObject>
-    <GameObject id:String="Scene_RightPanel10"{Hidden,Readonly}
+    <GameObject id:String="Scene_RightPanel9"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="RightPanel"{Hidden,Readonly}
                >
@@ -198,7 +177,7 @@
                        PivotPosition:Vector2="(0, 0)"{}
                        AnchorMin:Vector2="(-0.20902, -0.578552)"{}
                        AnchorMax:Vector2="(0.936505, 0.5)"{}
-                       id:String="Scene_RightPanel10_Component0"{Hidden,Readonly}
+                       id:String="Scene_RightPanel9_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                        Position:Vector3="(0.362533, -0.0421009, 0)"{Hidden}
@@ -206,7 +185,7 @@
                        Scale:Vector3="(0.573972, 0.536451, 1)"{Hidden}
                       >
         </RectTransform>
-        <UIImage id:String="Scene_RightPanel10_Component1"{Hidden,Readonly}
+        <UIImage id:String="Scene_RightPanel9_Component1"{Hidden,Readonly}
                  enabled:Bool ="true"{Hidden,Readonly}
                  closedInInspector:Bool ="false"{Hidden,Readonly}
                  Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
@@ -219,7 +198,7 @@
                 >
         </UIImage>
     </GameObject>
-    <GameObject id:String="Scene_RightPanelHeader11"{Hidden,Readonly}
+    <GameObject id:String="Scene_RightPanelHeader10"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="RightPanelHeader"{Hidden,Readonly}
                >
@@ -230,7 +209,7 @@
                        PivotPosition:Vector2="(0, 0)"{}
                        AnchorMin:Vector2="(-0.20902, 0.224403)"{}
                        AnchorMax:Vector2="(0.94191, 0.5)"{}
-                       id:String="Scene_RightPanelHeader11_Component0"{Hidden,Readonly}
+                       id:String="Scene_RightPanelHeader10_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                        Position:Vector3="(0.365236, 0.359377, 0)"{Hidden}
@@ -238,7 +217,7 @@
                        Scale:Vector3="(0.576674, 0.134974, 1)"{Hidden}
                       >
         </RectTransform>
-        <UIImage id:String="Scene_RightPanelHeader11_Component1"{Hidden,Readonly}
+        <UIImage id:String="Scene_RightPanelHeader10_Component1"{Hidden,Readonly}
                  enabled:Bool ="true"{Hidden,Readonly}
                  closedInInspector:Bool ="false"{Hidden,Readonly}
                  Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
@@ -251,7 +230,7 @@
                 >
         </UIImage>
     </GameObject>
-    <GameObject id:String="Scene_ButtonPanel12"{Hidden,Readonly}
+    <GameObject id:String="Scene_ButtonPanel11"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ButtonPanel"{Hidden,Readonly}
                >
@@ -262,7 +241,7 @@
                        PivotPosition:Vector2="(0, 0)"{}
                        AnchorMin:Vector2="(-0.20902, -0.821159)"{}
                        AnchorMax:Vector2="(0.936505, -0.810145)"{}
-                       id:String="Scene_ButtonPanel12_Component0"{Hidden,Readonly}
+                       id:String="Scene_ButtonPanel11_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                        Position:Vector3="(0.366161, -0.798703, 0)"{Hidden}
@@ -270,7 +249,7 @@
                        Scale:Vector3="(0.572762, 0.118501, 1)"{Hidden}
                       >
         </RectTransform>
-        <UIImage id:String="Scene_ButtonPanel12_Component1"{Hidden,Readonly}
+        <UIImage id:String="Scene_ButtonPanel11_Component1"{Hidden,Readonly}
                  enabled:Bool ="true"{Hidden,Readonly}
                  closedInInspector:Bool ="false"{Hidden,Readonly}
                  Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
@@ -283,7 +262,7 @@
                 >
         </UIImage>
     </GameObject>
-    <GameObject id:String="Scene_PressSpaceToReplayButton13"{Hidden,Readonly}
+    <GameObject id:String="Scene_PressSpaceToReplayButton12"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="PressSpaceToReplayButton"{Hidden,Readonly}
                >
@@ -294,7 +273,7 @@
                        PivotPosition:Vector2="(0, 0)"{}
                        AnchorMin:Vector2="(0.377868, -0.790762)"{}
                        AnchorMax:Vector2="(0.379437, -0.794396)"{}
-                       id:String="Scene_PressSpaceToReplayButton13_Component0"{Hidden,Readonly}
+                       id:String="Scene_PressSpaceToReplayButton12_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                        Position:Vector3="(0.38228, -0.792579, 0)"{Hidden}
@@ -302,7 +281,7 @@
                        Scale:Vector3="(0.0406878, 0.0885785, 1)"{Hidden}
                       >
         </RectTransform>
-        <UIText id:String="Scene_PressSpaceToReplayButton13_Component1"{Hidden,Readonly}
+        <UIText id:String="Scene_PressSpaceToReplayButton12_Component1"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 closedInInspector:Bool ="false"{Hidden,Readonly}
                 Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
@@ -321,14 +300,14 @@
                 HorizontalAlign:Enum="1"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
                >
         </UIText>
-        <Behaviour id:String="Scene_PressSpaceToReplayButton13_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Scene_PressSpaceToReplayButton12_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="./Behaviours/MenuSpaceButton.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_YouLoseText14"{Hidden,Readonly}
+    <GameObject id:String="Scene_YouLoseText13"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="YouLoseText"{Hidden,Readonly}
                >
@@ -339,7 +318,7 @@
                        PivotPosition:Vector2="(0, 0)"{}
                        AnchorMin:Vector2="(-0.022973, 0.746798)"{}
                        AnchorMax:Vector2="(-0.0121621, 0.739409)"{}
-                       id:String="Scene_YouLoseText14_Component0"{Hidden,Readonly}
+                       id:String="Scene_YouLoseText13_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                        Position:Vector3="(-0.01394, 0.748753, 0)"{Hidden}
@@ -347,7 +326,7 @@
                        Scale:Vector3="(0.0840028, 0.182746, 1)"{Hidden}
                       >
         </RectTransform>
-        <UIText id:String="Scene_YouLoseText14_Component1"{Hidden,Readonly}
+        <UIText id:String="Scene_YouLoseText13_Component1"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 closedInInspector:Bool ="false"{Hidden,Readonly}
                 Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
@@ -367,7 +346,7 @@
                >
         </UIText>
     </GameObject>
-    <GameObject id:String="Scene_ScoreLabel15"{Hidden,Readonly}
+    <GameObject id:String="Scene_ScoreLabel14"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ScoreLabel"{Hidden,Readonly}
                >
@@ -378,7 +357,7 @@
                        PivotPosition:Vector2="(0, 0)"{}
                        AnchorMin:Vector2="(0.342733, 0.36441)"{}
                        AnchorMax:Vector2="(0.351058, 0.375555)"{}
-                       id:String="Scene_ScoreLabel15_Component0"{Hidden,Readonly}
+                       id:String="Scene_ScoreLabel14_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                        Position:Vector3="(0.350523, 0.358683, 0)"{Hidden}
@@ -386,7 +365,7 @@
                        Scale:Vector3="(0.0440658, 0.095968, 1)"{Hidden}
                       >
         </RectTransform>
-        <UIText id:String="Scene_ScoreLabel15_Component1"{Hidden,Readonly}
+        <UIText id:String="Scene_ScoreLabel14_Component1"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 closedInInspector:Bool ="false"{Hidden,Readonly}
                 Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
@@ -406,7 +385,7 @@
                >
         </UIText>
     </GameObject>
-    <GameObject id:String="Scene_ScoreText16"{Hidden,Readonly}
+    <GameObject id:String="Scene_ScoreText15"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ScoreText"{Hidden,Readonly}
                >
@@ -417,7 +396,7 @@
                        PivotPosition:Vector2="(0, 0)"{}
                        AnchorMin:Vector2="(0.374335, -0.16022)"{}
                        AnchorMax:Vector2="(0.385425, -0.149075)"{}
-                       id:String="Scene_ScoreText16_Component0"{Hidden,Readonly}
+                       id:String="Scene_ScoreText15_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                        Position:Vector3="(0.373105, -0.142701, 0)"{Hidden}
@@ -425,7 +404,7 @@
                        Scale:Vector3="(0.0420393, 0.0996625, 1)"{Hidden}
                       >
         </RectTransform>
-        <UIText id:String="Scene_ScoreText16_Component1"{Hidden,Readonly}
+        <UIText id:String="Scene_ScoreText15_Component1"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 closedInInspector:Bool ="false"{Hidden,Readonly}
                 Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}

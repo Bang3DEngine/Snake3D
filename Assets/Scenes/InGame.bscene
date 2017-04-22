@@ -22,7 +22,18 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <Behaviour id:String="Scene_Snake4_Component1"{Hidden,Readonly}
+        <AudioSource id:String="Scene_Snake4_Component1"{Hidden,Readonly}
+                     enabled:Bool ="true"{Hidden,Readonly}
+                     closedInInspector:Bool ="false"{Hidden,Readonly}
+                     AudioClip:File="./Music/AppleSound.baudioclip"{FileExtension="baudioclip"}
+                     Volume:Float="1"{}
+                     Pitch:Float="1"{}
+                     Range:Float="500"{}
+                     Looping:Bool ="false"{}
+                     PlayOnStart:Bool ="false"{}
+                    >
+        </AudioSource>
+        <Behaviour id:String="Scene_Snake4_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="./Behaviours/SnakeController.cpp"{FileExtension="cpp"}
@@ -283,13 +294,24 @@
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                       >
         </AudioListener>
-        <Behaviour id:String="Scene_Camera5_Component3"{Hidden,Readonly}
+        <AudioSource id:String="Scene_Camera5_Component3"{Hidden,Readonly}
+                     enabled:Bool ="true"{Hidden,Readonly}
+                     closedInInspector:Bool ="false"{Hidden,Readonly}
+                     AudioClip:File="./Music/GameMusic.baudioclip"{FileExtension="baudioclip"}
+                     Volume:Float="1"{}
+                     Pitch:Float="1"{}
+                     Range:Float="5"{}
+                     Looping:Bool ="true"{}
+                     PlayOnStart:Bool ="true"{}
+                    >
+        </AudioSource>
+        <Behaviour id:String="Scene_Camera5_Component4"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="./Behaviours/SkyCamera.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
-        <Behaviour id:String="Scene_Camera5_Component4"{Hidden,Readonly}
+        <Behaviour id:String="Scene_Camera5_Component5"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="./Behaviours/SnakeCamera.cpp"{FileExtension="cpp"}
@@ -1439,7 +1461,7 @@
         <Transform id:String="Scene_Directional Light20_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   Position:Vector3="(191.359, 14.8559, 45.4967)"{}
+                   Position:Vector3="(213.601, 14.8559, 45.4967)"{}
                    Rotation:Vector3="(144.736, -45, 180)"{}
                    Scale:Vector3="(1, -0.429497, 0.494586)"{}
                   >
