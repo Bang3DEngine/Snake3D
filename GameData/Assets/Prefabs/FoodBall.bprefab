@@ -5,7 +5,7 @@
     <Transform id:String="FoodBall_Component0"{Hidden,Readonly}
                enabled:Bool ="true"{Hidden,Readonly}
                closedInInspector:Bool ="false"{Hidden,Readonly}
-               Position:Vector3="(-10.16, 0, -14.17)"{}
+               Position:Vector3="(0, 0, 0)"{}
                Rotation:Vector3="(0, 0, 0)"{}
                Scale:Vector3="(1, 1, 1)"{}
               >
@@ -13,18 +13,18 @@
     <MeshRenderer id:String="FoodBall_Component1"{Hidden,Readonly}
                   enabled:Bool ="true"{Hidden,Readonly}
                   closedInInspector:Bool ="false"{Hidden,Readonly}
-                  Material:File="./Materials/FoodMaterial.bmat"{FileExtension="bmat"}
+                  Material:File="Materials/FoodMaterial.bmat"{FileExtension="bmat"}
                   LineWidth:Float="1"{Hidden}
                   IsTransparent:Bool ="false"{Inline}
                   DrawWireframe:Bool ="false"{Inline}
-                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                  Mesh:File="Models/Apple.bmesh"{FileExtension="bmesh"}
                  >
     </MeshRenderer>
     <Behaviour id:String="FoodBall_Component2"{Hidden,Readonly}
                enabled:Bool ="true"{Hidden,Readonly}
                closedInInspector:Bool ="false"{Hidden,Readonly}
-               BehaviourScript:File="./Behaviours/Food.cpp"{FileExtension="cpp"}
-               CreateNew...:Button="CreateNew..."{DontWriteToFile,Listener="0x3093cc8"}
+               BehaviourScript:File="Behaviours/Food.cpp"{FileExtension="cpp"}
+               CreateNew...:Button="CreateNew..."{DontWriteToFile,Listener="0x47d7f38"}
               >
     </Behaviour>
 </GameObject>

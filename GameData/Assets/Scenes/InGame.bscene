@@ -22,10 +22,21 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <Behaviour id:String="Scene_Snake4_Component1"{Hidden,Readonly}
+        <AudioSource id:String="Scene_Snake4_Component1"{Hidden,Readonly}
+                     enabled:Bool ="true"{Hidden,Readonly}
+                     closedInInspector:Bool ="false"{Hidden,Readonly}
+                     AudioClip:File="Music/AppleSound.baudioclip"{FileExtension="baudioclip"}
+                     Volume:Float="1"{}
+                     Pitch:Float="1"{}
+                     Range:Float="500"{}
+                     Looping:Bool ="false"{}
+                     PlayOnStart:Bool ="false"{}
+                    >
+        </AudioSource>
+        <Behaviour id:String="Scene_Snake4_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   BehaviourScript:File="./Behaviours/SnakeController.cpp"{FileExtension="cpp"}
+                   BehaviourScript:File="Behaviours/SnakeController.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
         <GameObject id:String="Scene_Snake4_Body0"{Hidden,Readonly}
@@ -55,11 +66,11 @@
                 <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/SnakeMaterial.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/SnakeMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
                 <GameObject id:String="Scene_Snake4_Body0_Head0_Eye0"{Hidden,Readonly}
@@ -77,11 +88,11 @@
                     <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Eye0_Component1"{Hidden,Readonly}
                                   enabled:Bool ="true"{Hidden,Readonly}
                                   closedInInspector:Bool ="false"{Hidden,Readonly}
-                                  Material:File="./Materials/EyeMaterial.bmat"{FileExtension="bmat"}
+                                  Material:File="Materials/EyeMaterial.bmat"{FileExtension="bmat"}
                                   LineWidth:Float="1"{Hidden}
                                   IsTransparent:Bool ="false"{Inline}
                                   DrawWireframe:Bool ="false"{Inline}
-                                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                                  >
                     </MeshRenderer>
                     <GameObject id:String="Scene_Snake4_Body0_Head0_Eye0_Black0"{Hidden,Readonly}
@@ -91,7 +102,7 @@
                         <Transform id:String="Scene_Snake4_Body0_Head0_Eye0_Black0_Component0"{Hidden,Readonly}
                                    enabled:Bool ="true"{Hidden,Readonly}
                                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                                   Position:Vector3="(-1.3113e-06, 0.563685, -0.447674)"{}
+                                   Position:Vector3="(-1.4305e-06, 0.563685, -0.447674)"{}
                                    Rotation:Vector3="(0, -0, 0)"{}
                                    Scale:Vector3="(0.464685, 0.464685, 0.464685)"{}
                                   >
@@ -99,11 +110,11 @@
                         <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Eye0_Black0_Component1"{Hidden,Readonly}
                                       enabled:Bool ="true"{Hidden,Readonly}
                                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                                      Material:File="./Materials/BlackMaterial.bmat"{FileExtension="bmat"}
+                                      Material:File="Materials/BlackMaterial.bmat"{FileExtension="bmat"}
                                       LineWidth:Float="1"{Hidden}
                                       IsTransparent:Bool ="false"{Inline}
                                       DrawWireframe:Bool ="false"{Inline}
-                                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                                      >
                         </MeshRenderer>
                     </GameObject>
@@ -123,11 +134,11 @@
                     <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Eye1_Component1"{Hidden,Readonly}
                                   enabled:Bool ="true"{Hidden,Readonly}
                                   closedInInspector:Bool ="false"{Hidden,Readonly}
-                                  Material:File="./Materials/EyeMaterial.bmat"{FileExtension="bmat"}
+                                  Material:File="Materials/EyeMaterial.bmat"{FileExtension="bmat"}
                                   LineWidth:Float="1"{Hidden}
                                   IsTransparent:Bool ="false"{Inline}
                                   DrawWireframe:Bool ="false"{Inline}
-                                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                                  >
                     </MeshRenderer>
                     <GameObject id:String="Scene_Snake4_Body0_Head0_Eye1_Black0"{Hidden,Readonly}
@@ -137,7 +148,7 @@
                         <Transform id:String="Scene_Snake4_Body0_Head0_Eye1_Black0_Component0"{Hidden,Readonly}
                                    enabled:Bool ="true"{Hidden,Readonly}
                                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                                   Position:Vector3="(2.4438e-06, 0.56369, -0.486837)"{}
+                                   Position:Vector3="(2.68222e-06, 0.56369, -0.486837)"{}
                                    Rotation:Vector3="(0, -0, 0)"{}
                                    Scale:Vector3="(0.464685, 0.464685, 0.464685)"{}
                                   >
@@ -145,11 +156,11 @@
                         <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Eye1_Black0_Component1"{Hidden,Readonly}
                                       enabled:Bool ="true"{Hidden,Readonly}
                                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                                      Material:File="./Materials/BlackMaterial.bmat"{FileExtension="bmat"}
+                                      Material:File="Materials/BlackMaterial.bmat"{FileExtension="bmat"}
                                       LineWidth:Float="1"{Hidden}
                                       IsTransparent:Bool ="false"{Inline}
                                       DrawWireframe:Bool ="false"{Inline}
-                                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                                      >
                         </MeshRenderer>
                     </GameObject>
@@ -169,17 +180,17 @@
                     <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Tongue2_Component1"{Hidden,Readonly}
                                   enabled:Bool ="true"{Hidden,Readonly}
                                   closedInInspector:Bool ="false"{Hidden,Readonly}
-                                  Material:File="./Materials/TongueMaterial.bmat"{FileExtension="bmat"}
+                                  Material:File="Materials/TongueMaterial.bmat"{FileExtension="bmat"}
                                   LineWidth:Float="1"{Hidden}
                                   IsTransparent:Bool ="false"{Inline}
                                   DrawWireframe:Bool ="false"{Inline}
-                                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                                  >
                     </MeshRenderer>
                     <Behaviour id:String="Scene_Snake4_Body0_Head0_Tongue2_Component2"{Hidden,Readonly}
                                enabled:Bool ="true"{Hidden,Readonly}
                                closedInInspector:Bool ="false"{Hidden,Readonly}
-                               BehaviourScript:File="./Materials/TongueMove.cpp"{FileExtension="cpp"}
+                               BehaviourScript:File="Behaviours/TongueMove.cpp"{FileExtension="cpp"}
                               >
                     </Behaviour>
                 </GameObject>
@@ -198,11 +209,11 @@
                     <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Collider13_Component1"{Hidden,Readonly}
                                   enabled:Bool ="true"{Hidden,Readonly}
                                   closedInInspector:Bool ="false"{Hidden,Readonly}
-                                  Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                                  Material:File="Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
                                   LineWidth:Float="1"{Hidden}
                                   IsTransparent:Bool ="false"{Inline}
                                   DrawWireframe:Bool ="false"{Inline}
-                                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                                  >
                     </MeshRenderer>
                 </GameObject>
@@ -221,11 +232,11 @@
                     <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Collider24_Component1"{Hidden,Readonly}
                                   enabled:Bool ="true"{Hidden,Readonly}
                                   closedInInspector:Bool ="false"{Hidden,Readonly}
-                                  Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                                  Material:File="Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
                                   LineWidth:Float="1"{Hidden}
                                   IsTransparent:Bool ="false"{Inline}
                                   DrawWireframe:Bool ="false"{Inline}
-                                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                                  >
                     </MeshRenderer>
                 </GameObject>
@@ -244,11 +255,11 @@
                     <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Collider35_Component1"{Hidden,Readonly}
                                   enabled:Bool ="true"{Hidden,Readonly}
                                   closedInInspector:Bool ="false"{Hidden,Readonly}
-                                  Material:File="./Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                                  Material:File="Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
                                   LineWidth:Float="1"{Hidden}
                                   IsTransparent:Bool ="false"{Inline}
                                   DrawWireframe:Bool ="false"{Inline}
-                                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                                  >
                     </MeshRenderer>
                 </GameObject>
@@ -283,16 +294,35 @@
                        closedInInspector:Bool ="false"{Hidden,Readonly}
                       >
         </AudioListener>
-        <Behaviour id:String="Scene_Camera5_Component3"{Hidden,Readonly}
+        <AudioSource id:String="Scene_Camera5_Component3"{Hidden,Readonly}
+                     enabled:Bool ="true"{Hidden,Readonly}
+                     closedInInspector:Bool ="false"{Hidden,Readonly}
+                     AudioClip:File="Music/GameMusic.baudioclip"{FileExtension="baudioclip"}
+                     Volume:Float="1"{}
+                     Pitch:Float="1"{}
+                     Range:Float="5"{}
+                     Looping:Bool ="true"{}
+                     PlayOnStart:Bool ="true"{}
+                    >
+        </AudioSource>
+        <PostProcessEffect id:String="Scene_Camera5_Component4"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           PostProcessShader:File="Shaders/SP_FXAA.frag_pp"{FileExtension="frag_pp",IsEngineFile}
+                           Priority:Int="1"{}
+                           Type:Enum="0"{EnumName0="AfterScene",EnumName1="AfterCanvas"}
+                          >
+        </PostProcessEffect>
+        <Behaviour id:String="Scene_Camera5_Component5"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   BehaviourScript:File="./Behaviours/SkyCamera.cpp"{FileExtension="cpp"}
+                   BehaviourScript:File="Behaviours/SkyCamera.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
-        <Behaviour id:String="Scene_Camera5_Component4"{Hidden,Readonly}
+        <Behaviour id:String="Scene_Camera5_Component6"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   BehaviourScript:File="./Behaviours/SnakeCamera.cpp"{FileExtension="cpp"}
+                   BehaviourScript:File="Behaviours/SnakeCamera.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
@@ -311,7 +341,7 @@
         <DirectionalLight id:String="Scene_Directional Light6_Component1"{Hidden,Readonly}
                           enabled:Bool ="true"{Hidden,Readonly}
                           closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Intensity:Float="0.65"{}
+                          Intensity:Float="0"{}
                           Color:Color="(1, 1, 1, 1)"{}
                          >
         </DirectionalLight>
@@ -335,19 +365,19 @@
             <Transform id:String="Scene_Scenario7_Floor0_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(3.65556, -2, 0)"{}
+                       Position:Vector3="(60.4945, -2, 0)"{}
                        Rotation:Vector3="(0, -0, 0)"{}
-                       Scale:Vector3="(272.376, 1, 304.626)"{}
+                       Scale:Vector3="(627.579, 1, 535.509)"{}
                       >
             </Transform>
             <MeshRenderer id:String="Scene_Scenario7_Floor0_Component1"{Hidden,Readonly}
                           enabled:Bool ="true"{Hidden,Readonly}
                           closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Material:File="./Materials/GroundMaterial.bmat"{FileExtension="bmat"}
+                          Material:File="Materials/GroundMaterial.bmat"{FileExtension="bmat"}
                           LineWidth:Float="1"{Hidden}
                           IsTransparent:Bool ="false"{Inline}
                           DrawWireframe:Bool ="false"{Inline}
-                          Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                          Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                          >
             </MeshRenderer>
         </GameObject>
@@ -366,7 +396,7 @@
             <Behaviour id:String="Scene_Scenario7_Walls1_Component1"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       BehaviourScript:File="./Behaviours/WallsManager.cpp"{FileExtension="cpp"}
+                       BehaviourScript:File="Behaviours/WallsManager.cpp"{FileExtension="cpp"}
                       >
             </Behaviour>
             <GameObject id:String="Scene_Scenario7_Walls1_Cube0"{Hidden,Readonly}
@@ -384,11 +414,11 @@
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube0_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -407,11 +437,11 @@
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube1_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -430,11 +460,11 @@
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube2_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -453,11 +483,11 @@
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube3_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -476,11 +506,11 @@
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube4_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -491,19 +521,19 @@
                 <Transform id:String="Scene_Scenario7_Walls1_Cube5_Component0"{Hidden,Readonly}
                            enabled:Bool ="true"{Hidden,Readonly}
                            closedInInspector:Bool ="false"{Hidden,Readonly}
-                           Position:Vector3="(-44.4871, 3.55207, 20.0705)"{}
+                           Position:Vector3="(-44.4871, 1.21021, 20.0705)"{}
                            Rotation:Vector3="(0, -0, 0)"{}
-                           Scale:Vector3="(23.7295, 18.6385, 60.0448)"{}
+                           Scale:Vector3="(23.7295, 3.21793, 60.0448)"{}
                           >
                 </Transform>
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube5_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -514,19 +544,19 @@
                 <Transform id:String="Scene_Scenario7_Walls1_Cube6_Component0"{Hidden,Readonly}
                            enabled:Bool ="true"{Hidden,Readonly}
                            closedInInspector:Bool ="false"{Hidden,Readonly}
-                           Position:Vector3="(121.055, 0.0464754, -9.00479)"{}
+                           Position:Vector3="(121.055, 14.9339, -61.6298)"{}
                            Rotation:Vector3="(0, -0, 0)"{}
-                           Scale:Vector3="(44.5534, 5, 287.841)"{}
+                           Scale:Vector3="(44.5534, 43.3802, 133.598)"{}
                           >
                 </Transform>
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube6_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -545,11 +575,11 @@
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube7_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -568,11 +598,11 @@
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube8_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -591,11 +621,11 @@
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube9_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -614,11 +644,11 @@
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube10_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -637,11 +667,333 @@
                 <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube11_Component1"{Hidden,Readonly}
                               enabled:Bool ="true"{Hidden,Readonly}
                               closedInInspector:Bool ="false"{Hidden,Readonly}
-                              Material:File="./Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
+                              Material:File="Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
                               LineWidth:Float="1"{Hidden}
                               IsTransparent:Bool ="false"{Inline}
                               DrawWireframe:Bool ="false"{Inline}
-                              Mesh:File="./Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube12"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube12_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(-44.4871, 4.58559, 20.0705)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(21.4682, 4.13479, 41.4316)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube12_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube13"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube13_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(-44.4871, 8.23094, 20.0705)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(16.2686, 3.21793, 29.2944)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube13_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube14"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube14_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(-44.4871, 11.5359, 20.0705)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(10.672, 3.59748, 19.6186)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube14_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube15"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube15_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(-44.4871, 15.2582, 20.0705)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(6.72571, 3.59748, 10.3526)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube15_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube16"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube16_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(121.055, 14.9339, 102.749)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(44.5534, 43.3802, 100.205)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube16_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube17"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube17_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(317.304, 30.8877, 69.4018)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(130.393, 10.3147, 325.363)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube17_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube18"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube18_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(185.654, 14.9339, -14.9783)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(128.62, 43.3802, 38.2355)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube18_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube19"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube19_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(185.654, 14.9339, 73.9466)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(128.62, 43.3802, 38.2355)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube19_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube20"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube20_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(250.255, 14.9339, -61.6298)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(44.5534, 43.3802, 133.598)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube20_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube21"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube21_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(250.255, 14.9339, 160.554)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(44.5534, 43.3802, 183.286)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube21_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube22"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube22_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(391.583, 14.9339, 79.8529)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(44.5534, 43.3802, 412.913)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube22_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube23"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube23_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(312.853, 14.93, -109.012)"{}
+                           Rotation:Vector3="(-180, -90, 180)"{}
+                           Scale:Vector3="(44.55, 43.38, 133.6)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube23_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube24"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube24_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(312.853, 14.93, 241.727)"{}
+                           Rotation:Vector3="(-180, -90, 180)"{}
+                           Scale:Vector3="(44.55, 43.38, 133.6)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube24_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario7_Walls1_Cube25"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Cube"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario7_Walls1_Cube25_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(180.57, 29.3789, 27.7484)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(155.047, 10.3147, 89.3802)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario7_Walls1_Cube25_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                              >
                 </MeshRenderer>
             </GameObject>
@@ -662,7 +1014,7 @@
         <Behaviour id:String="Scene_FoodGenerator8_Component1"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   BehaviourScript:File="./Behaviours/FoodGenerator.cpp"{FileExtension="cpp"}
+                   BehaviourScript:File="Behaviours/FoodGenerator.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
@@ -693,11 +1045,11 @@
             <MeshRenderer id:String="Scene_Mountains9_Mountain0_Component1"{Hidden,Readonly}
                           enabled:Bool ="true"{Hidden,Readonly}
                           closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Material:File="./Materials/MountainMaterial.bmat"{FileExtension="bmat"}
+                          Material:File="Materials/MountainMaterial.bmat"{FileExtension="bmat"}
                           LineWidth:Float="1"{Hidden}
                           IsTransparent:Bool ="false"{Inline}
                           DrawWireframe:Bool ="false"{Inline}
-                          Mesh:File="./Models/Rock.bmesh"{FileExtension="bmesh"}
+                          Mesh:File="Models/Rock.bmesh"{FileExtension="bmesh"}
                          >
             </MeshRenderer>
         </GameObject>
@@ -708,19 +1060,19 @@
             <Transform id:String="Scene_Mountains9_Mountain1_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(-100.741, -4.64138, -150.337)"{}
-                       Rotation:Vector3="(-180, -86.6363, 180)"{}
-                       Scale:Vector3="(73.6306, 150.949, 81.4162)"{}
+                       Position:Vector3="(-135.599, -4.64138, 189.882)"{}
+                       Rotation:Vector3="(-9.92069e-06, 16.7762, 3.0696e-07)"{}
+                       Scale:Vector3="(68.4272, 75.3197, 102.601)"{}
                       >
             </Transform>
             <MeshRenderer id:String="Scene_Mountains9_Mountain1_Component1"{Hidden,Readonly}
                           enabled:Bool ="true"{Hidden,Readonly}
                           closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Material:File="./Materials/MountainMaterial.bmat"{FileExtension="bmat"}
+                          Material:File="Materials/MountainMaterial.bmat"{FileExtension="bmat"}
                           LineWidth:Float="1"{Hidden}
                           IsTransparent:Bool ="false"{Inline}
                           DrawWireframe:Bool ="false"{Inline}
-                          Mesh:File="./Meshes/Cone.bmesh"{FileExtension="bmesh",IsEngineFile}
+                          Mesh:File="Models/Rock.bmesh"{FileExtension="bmesh"}
                          >
             </MeshRenderer>
         </GameObject>
@@ -731,7 +1083,7 @@
             <Transform id:String="Scene_Mountains9_Mountain2_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(-135.599, -4.64138, 189.882)"{}
+                       Position:Vector3="(-174.625, -4.64138, 10.853)"{}
                        Rotation:Vector3="(-9.92069e-06, 16.7762, 3.0696e-07)"{}
                        Scale:Vector3="(68.4272, 75.3197, 102.601)"{}
                       >
@@ -739,11 +1091,11 @@
             <MeshRenderer id:String="Scene_Mountains9_Mountain2_Component1"{Hidden,Readonly}
                           enabled:Bool ="true"{Hidden,Readonly}
                           closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Material:File="./Materials/MountainMaterial.bmat"{FileExtension="bmat"}
+                          Material:File="Materials/MountainMaterial.bmat"{FileExtension="bmat"}
                           LineWidth:Float="1"{Hidden}
                           IsTransparent:Bool ="false"{Inline}
                           DrawWireframe:Bool ="false"{Inline}
-                          Mesh:File="./Models/Rock.bmesh"{FileExtension="bmesh"}
+                          Mesh:File="Models/Rock.bmesh"{FileExtension="bmesh"}
                          >
             </MeshRenderer>
         </GameObject>
@@ -754,19 +1106,19 @@
             <Transform id:String="Scene_Mountains9_Mountain3_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(-174.625, -4.64138, 10.853)"{}
-                       Rotation:Vector3="(-9.92069e-06, 16.7762, 3.0696e-07)"{}
+                       Position:Vector3="(-136.262, -4.64138, -148.392)"{}
+                       Rotation:Vector3="(-1.017e-05, -28.6739, 3.34974e-07)"{}
                        Scale:Vector3="(68.4272, 75.3197, 102.601)"{}
                       >
             </Transform>
             <MeshRenderer id:String="Scene_Mountains9_Mountain3_Component1"{Hidden,Readonly}
                           enabled:Bool ="true"{Hidden,Readonly}
                           closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Material:File="./Materials/MountainMaterial.bmat"{FileExtension="bmat"}
+                          Material:File="Materials/MountainMaterial.bmat"{FileExtension="bmat"}
                           LineWidth:Float="1"{Hidden}
                           IsTransparent:Bool ="false"{Inline}
                           DrawWireframe:Bool ="false"{Inline}
-                          Mesh:File="./Models/Rock.bmesh"{FileExtension="bmesh"}
+                          Mesh:File="Models/Rock.bmesh"{FileExtension="bmesh"}
                          >
             </MeshRenderer>
         </GameObject>
@@ -777,19 +1129,19 @@
             <Transform id:String="Scene_Mountains9_Mountain4_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(-136.262, -4.64138, -148.392)"{}
-                       Rotation:Vector3="(-1.017e-05, -28.6739, 3.34975e-07)"{}
-                       Scale:Vector3="(68.4272, 75.3197, 102.601)"{}
+                       Position:Vector3="(12.3137, -4.6414, -207.771)"{}
+                       Rotation:Vector3="(-179.999, -88.9872, 179.999)"{}
+                       Scale:Vector3="(62.736, 75.3197, 102.601)"{}
                       >
             </Transform>
             <MeshRenderer id:String="Scene_Mountains9_Mountain4_Component1"{Hidden,Readonly}
                           enabled:Bool ="true"{Hidden,Readonly}
                           closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Material:File="./Materials/MountainMaterial.bmat"{FileExtension="bmat"}
+                          Material:File="Materials/MountainMaterial.bmat"{FileExtension="bmat"}
                           LineWidth:Float="1"{Hidden}
                           IsTransparent:Bool ="false"{Inline}
                           DrawWireframe:Bool ="false"{Inline}
-                          Mesh:File="./Models/Rock.bmesh"{FileExtension="bmesh"}
+                          Mesh:File="Models/Rock.bmesh"{FileExtension="bmesh"}
                          >
             </MeshRenderer>
         </GameObject>
@@ -800,19 +1152,19 @@
             <Transform id:String="Scene_Mountains9_Mountain5_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(12.3137, -4.6414, -207.771)"{}
-                       Rotation:Vector3="(-179.999, -88.9872, 179.999)"{}
-                       Scale:Vector3="(62.736, 75.3197, 102.601)"{}
+                       Position:Vector3="(173.673, -4.64141, -178.473)"{}
+                       Rotation:Vector3="(-180, -49.4916, 180)"{}
+                       Scale:Vector3="(68.4272, 75.3197, 102.601)"{}
                       >
             </Transform>
             <MeshRenderer id:String="Scene_Mountains9_Mountain5_Component1"{Hidden,Readonly}
                           enabled:Bool ="true"{Hidden,Readonly}
                           closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Material:File="./Materials/MountainMaterial.bmat"{FileExtension="bmat"}
+                          Material:File="Materials/MountainMaterial.bmat"{FileExtension="bmat"}
                           LineWidth:Float="1"{Hidden}
                           IsTransparent:Bool ="false"{Inline}
                           DrawWireframe:Bool ="false"{Inline}
-                          Mesh:File="./Models/Rock.bmesh"{FileExtension="bmesh"}
+                          Mesh:File="Models/Rock.bmesh"{FileExtension="bmesh"}
                          >
             </MeshRenderer>
         </GameObject>
@@ -823,19 +1175,19 @@
             <Transform id:String="Scene_Mountains9_Mountain6_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(173.673, -4.64141, -178.473)"{}
-                       Rotation:Vector3="(-180, -49.4916, 180)"{}
+                       Position:Vector3="(187.49, -4.64139, -125.987)"{}
+                       Rotation:Vector3="(-180, -2.7612, 180)"{}
                        Scale:Vector3="(68.4272, 75.3197, 102.601)"{}
                       >
             </Transform>
             <MeshRenderer id:String="Scene_Mountains9_Mountain6_Component1"{Hidden,Readonly}
                           enabled:Bool ="true"{Hidden,Readonly}
                           closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Material:File="./Materials/MountainMaterial.bmat"{FileExtension="bmat"}
+                          Material:File="Materials/MountainMaterial.bmat"{FileExtension="bmat"}
                           LineWidth:Float="1"{Hidden}
                           IsTransparent:Bool ="false"{Inline}
                           DrawWireframe:Bool ="false"{Inline}
-                          Mesh:File="./Models/Rock.bmesh"{FileExtension="bmesh"}
+                          Mesh:File="Models/Rock.bmesh"{FileExtension="bmesh"}
                          >
             </MeshRenderer>
         </GameObject>
@@ -846,42 +1198,19 @@
             <Transform id:String="Scene_Mountains9_Mountain7_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(187.49, -4.64139, -24.6231)"{}
-                       Rotation:Vector3="(-180, -2.7612, 180)"{}
+                       Position:Vector3="(172.724, -4.64136, 229.558)"{}
+                       Rotation:Vector3="(-180, 27.0109, -180)"{}
                        Scale:Vector3="(68.4272, 75.3197, 102.601)"{}
                       >
             </Transform>
             <MeshRenderer id:String="Scene_Mountains9_Mountain7_Component1"{Hidden,Readonly}
                           enabled:Bool ="true"{Hidden,Readonly}
                           closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Material:File="./Materials/MountainMaterial.bmat"{FileExtension="bmat"}
+                          Material:File="Materials/MountainMaterial.bmat"{FileExtension="bmat"}
                           LineWidth:Float="1"{Hidden}
                           IsTransparent:Bool ="false"{Inline}
                           DrawWireframe:Bool ="false"{Inline}
-                          Mesh:File="./Models/Rock.bmesh"{FileExtension="bmesh"}
-                         >
-            </MeshRenderer>
-        </GameObject>
-        <GameObject id:String="Scene_Mountains9_Mountain8"{Hidden,Readonly}
-                    enabled:Bool ="true"{Hidden,Readonly}
-                    name:String="Mountain"{Hidden,Readonly}
-                   >
-            <Transform id:String="Scene_Mountains9_Mountain8_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(172.724, -4.64136, 151.711)"{}
-                       Rotation:Vector3="(-180, 27.0109, -180)"{}
-                       Scale:Vector3="(68.4272, 75.3197, 102.601)"{}
-                      >
-            </Transform>
-            <MeshRenderer id:String="Scene_Mountains9_Mountain8_Component1"{Hidden,Readonly}
-                          enabled:Bool ="true"{Hidden,Readonly}
-                          closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Material:File="./Materials/MountainMaterial.bmat"{FileExtension="bmat"}
-                          LineWidth:Float="1"{Hidden}
-                          IsTransparent:Bool ="false"{Inline}
-                          DrawWireframe:Bool ="false"{Inline}
-                          Mesh:File="./Models/Rock.bmesh"{FileExtension="bmesh"}
+                          Mesh:File="Models/Rock.bmesh"{FileExtension="bmesh"}
                          >
             </MeshRenderer>
         </GameObject>
@@ -901,11 +1230,11 @@
         <MeshRenderer id:String="Scene_Sphere10_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                      Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
-                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
@@ -924,11 +1253,11 @@
         <MeshRenderer id:String="Scene_Sphere11_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
+                      Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
-                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
@@ -947,11 +1276,11 @@
         <MeshRenderer id:String="Scene_Sphere12_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
+                      Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
-                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
@@ -970,11 +1299,11 @@
         <MeshRenderer id:String="Scene_Sphere13_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
+                      Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
-                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
@@ -985,7 +1314,7 @@
         <Transform id:String="Scene_Sphere14_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   Position:Vector3="(84.4113, 5.20057, 34.928)"{}
+                   Position:Vector3="(93.4462, 5.20057, 54.1196)"{}
                    Rotation:Vector3="(0, -0, 0)"{}
                    Scale:Vector3="(7.06624, 17.7796, 7.06624)"{}
                   >
@@ -993,11 +1322,11 @@
         <MeshRenderer id:String="Scene_Sphere14_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
+                      Material:File="Materials/WallMaterial_3.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
-                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
@@ -1016,11 +1345,11 @@
         <MeshRenderer id:String="Scene_Sphere15_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/WallMaterial.bmat"{FileExtension="bmat"}
+                      Material:File="Materials/WallMaterial.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
-                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
@@ -1031,7 +1360,7 @@
         <Transform id:String="Scene_Sphere16_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   Position:Vector3="(84.4113, 0.140051, 24.6781)"{}
+                   Position:Vector3="(93.8677, 0.140051, -0.0878924)"{}
                    Rotation:Vector3="(0, -0, 0)"{}
                    Scale:Vector3="(7.06624, 13.2208, 7.06624)"{}
                   >
@@ -1039,11 +1368,11 @@
         <MeshRenderer id:String="Scene_Sphere16_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
-                      Material:File="./Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
+                      Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
                       IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
-                      Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
@@ -1086,6 +1415,69 @@
                     Intensity:Float="0.5"{}
                     Color:Color="(1, 1, 1, 1)"{}
                     Range:Float="100"{}
+                   >
+        </PointLight>
+    </GameObject>
+    <GameObject id:String="Scene_Directional Light19"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Directional Light"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Directional Light19_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(14.221, 43.8095, 17.8168)"{}
+                   Rotation:Vector3="(144.736, -45, 180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <PointLight id:String="Scene_Directional Light19_Component1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    closedInInspector:Bool ="false"{Hidden,Readonly}
+                    Intensity:Float="0.5"{}
+                    Color:Color="(1, 1, 1, 1)"{}
+                    Range:Float="2000"{}
+                   >
+        </PointLight>
+    </GameObject>
+    <GameObject id:String="Scene_Directional Light20"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Directional Light"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Directional Light20_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(213.601, 14.8559, 45.4967)"{}
+                   Rotation:Vector3="(11.0608, -5.26428, -155.797)"{}
+                   Scale:Vector3="(1, 0.429497, 0.494586)"{}
+                  >
+        </Transform>
+        <PointLight id:String="Scene_Directional Light20_Component1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    closedInInspector:Bool ="false"{Hidden,Readonly}
+                    Intensity:Float="2"{}
+                    Color:Color="(0.886275, 0, 1, 1)"{}
+                    Range:Float="40"{}
+                   >
+        </PointLight>
+    </GameObject>
+    <GameObject id:String="Scene_Directional Light21"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Directional Light"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Directional Light21_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(239.157, 14.8559, 14.9684)"{}
+                   Rotation:Vector3="(11.0608, -5.26428, -155.797)"{}
+                   Scale:Vector3="(1, 0.429497, 0.494586)"{}
+                  >
+        </Transform>
+        <PointLight id:String="Scene_Directional Light21_Component1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    closedInInspector:Bool ="false"{Hidden,Readonly}
+                    Intensity:Float="2"{}
+                    Color:Color="(0.180392, 1, 0, 1)"{}
+                    Range:Float="40"{}
                    >
         </PointLight>
     </GameObject>

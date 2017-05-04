@@ -58,7 +58,13 @@ void SnakeController::OnUpdate()
 
 void SnakeController::OnFoodEat()
 {
+    AudioSource *as = gameObject->GetComponent<AudioSource>();
+    as->Play();
+
     GameObject *newTail = p_tailPrefab->Instantiate();
+    // newTail->GetComponent<Renderer>()->UseMaterialCopy();
+    // newTail->GetComponent<Renderer>()->GetMaterial()->SetDiffuseColor(
+    //          Random::GetColorOpaque());
 
     BodyPart bodyPart;
     bodyPart.snake        = this;
@@ -74,7 +80,7 @@ void SnakeController::OnFoodEat()
 
 void SnakeController::CheckSelfCollision()
 {
-    Array<GameObject*> children = p_body->GetChildren().ToArray();
+    Array<GameObject*> children = p_body->GetChildren().To<Array>();
     ENSURE(children.Size() >= 2);
 
     GameObject *head = p_head;
@@ -92,6 +98,7 @@ void SnakeController::CheckSelfCollision()
 
 void SnakeController::MoveBodyParts()
 {
+    float i = 0.0f;
     for (BodyPart &bodyPart : m_bodyParts)
     {
         bodyPart.MovePart();

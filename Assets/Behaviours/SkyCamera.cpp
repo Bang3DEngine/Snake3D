@@ -30,7 +30,7 @@ void SkyCamera::OnUpdate()
     m_zoom = Math::Lerp(m_zoom, newZoom, Time::deltaTime);
     m_zoom = Math::Max(m_zoom, 25.0f);
 
-    offset *= m_zoom;
+    offset *= m_zoom;;
 
     Vector3 newPosition = snakeHeadPos + offset;
 

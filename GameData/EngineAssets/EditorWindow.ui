@@ -242,19 +242,6 @@
               </spacer>
              </item>
              <item>
-              <widget class="QToolButton" name="buttonFXAA">
-               <property name="text">
-                <string>FXAA</string>
-               </property>
-               <property name="checkable">
-                <bool>true</bool>
-               </property>
-               <property name="checked">
-                <bool>true</bool>
-               </property>
-              </widget>
-             </item>
-             <item>
               <widget class="QToolButton" name="buttonShowGizmos">
                <property name="text">
                 <string>Gizmos</string>
@@ -320,6 +307,10 @@
                <property name="text">
                 <string>P</string>
                </property>
+               <property name="icon">
+                <iconset resource="QtResources.qrc">
+                 <normaloff>:/Bang/Icons/Pause.png</normaloff>:/Bang/Icons/Pause.png</iconset>
+               </property>
                <property name="checkable">
                 <bool>true</bool>
                </property>
@@ -329,6 +320,10 @@
               <widget class="QToolButton" name="buttonStepFrame">
                <property name="text">
                 <string>&gt;</string>
+               </property>
+               <property name="icon">
+                <iconset resource="QtResources.qrc">
+                 <normaloff>:/Bang/Icons/Step.png</normaloff>:/Bang/Icons/Step.png</iconset>
                </property>
                <property name="checkable">
                 <bool>false</bool>
@@ -409,7 +404,7 @@
      <x>0</x>
      <y>0</y>
      <width>1062</width>
-     <height>25</height>
+     <height>22</height>
     </rect>
    </property>
    <property name="nativeMenuBar">
@@ -486,6 +481,8 @@
     <addaction name="actionAddComponentCanvas"/>
     <addaction name="actionAddComponentUIImage"/>
     <addaction name="actionAddComponentUIText"/>
+    <addaction name="separator"/>
+    <addaction name="actionAddComponentPostProcessEffect"/>
    </widget>
    <widget class="QMenu" name="menuEdit">
     <property name="title">
@@ -645,12 +642,18 @@
        <item>
         <layout class="QHBoxLayout" name="horizontalLayout_7">
          <item>
-          <widget class="QLabel" name="labelInspectorGameObjectName">
+          <widget class="QLabel" name="labelInspectorName">
            <property name="sizePolicy">
             <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
              <horstretch>0</horstretch>
              <verstretch>0</verstretch>
             </sizepolicy>
+           </property>
+           <property name="maximumSize">
+            <size>
+             <width>200</width>
+             <height>16777215</height>
+            </size>
            </property>
            <property name="font">
             <font>
@@ -662,7 +665,7 @@
           </widget>
          </item>
          <item>
-          <widget class="QCheckBox" name="enableGameObjectCheckBox">
+          <widget class="QCheckBox" name="enabledInspectorCheckBox">
            <property name="text">
             <string>Enabled</string>
            </property>
@@ -1236,8 +1239,8 @@
              <rect>
               <x>0</x>
               <y>0</y>
-              <width>406</width>
-              <height>76</height>
+              <width>416</width>
+              <height>68</height>
              </rect>
             </property>
             <layout class="QGridLayout" name="gridLayout">
@@ -1316,7 +1319,7 @@
   <action name="actionCreateMesh">
    <property name="icon">
     <iconset resource="QtResources.qrc">
-     <normaloff>:/Bang/Icons/MeshAssetIcon.png</normaloff>:/Bang/Icons/MeshAssetIcon.png</iconset>
+     <normaloff>:/Bang/Icons/MeshIcon.png</normaloff>:/Bang/Icons/MeshIcon.png</iconset>
    </property>
    <property name="text">
     <string>Mesh</string>
@@ -1463,7 +1466,7 @@
   <action name="actionCreateCube">
    <property name="icon">
     <iconset resource="qdarkstyle/style.qrc">
-     <normaloff>:/qss_icons/Icons/MeshAssetIcon.png</normaloff>:/qss_icons/Icons/MeshAssetIcon.png</iconset>
+     <normaloff>:/qss_icons/Icons/MeshIcon.png</normaloff>:/qss_icons/Icons/MeshIcon.png</iconset>
    </property>
    <property name="text">
     <string>Cube</string>
@@ -1687,6 +1690,15 @@
   <action name="actionRedo">
    <property name="text">
     <string>Redo</string>
+   </property>
+  </action>
+  <action name="actionAddComponentPostProcessEffect">
+   <property name="icon">
+    <iconset resource="QtResources.qrc">
+     <normaloff>:/Bang/Icons/ImageIcon.png</normaloff>:/Bang/Icons/ImageIcon.png</iconset>
+   </property>
+   <property name="text">
+    <string>PostProcess Effect</string>
    </property>
   </action>
   <zorder>dockExplorer</zorder>

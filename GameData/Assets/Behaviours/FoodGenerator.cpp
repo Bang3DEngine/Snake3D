@@ -13,7 +13,7 @@ void FoodGenerator::OnStart()
 void FoodGenerator::OnUpdate() 
 { 
     Behaviour::OnUpdate();
-    while (currentFoodBalls.Size() < 100)
+    while (currentFoodBalls.Size() < 25)
     {
         GameObject *foodBall = foodPrefab->Instantiate();
 

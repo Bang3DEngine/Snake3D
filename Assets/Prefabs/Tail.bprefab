@@ -13,11 +13,11 @@
     <MeshRenderer id:String="Tail_Component1"{Hidden,Readonly}
                   enabled:Bool ="true"{Hidden,Readonly}
                   closedInInspector:Bool ="false"{Hidden,Readonly}
-                  Material:File="./Materials/SnakeMaterial.bmat"{FileExtension="bmat"}
+                  Material:File="Materials/SnakeMaterial.bmat"{FileExtension="bmat"}
                   LineWidth:Float="1"{Hidden}
                   IsTransparent:Bool ="false"{Inline}
                   DrawWireframe:Bool ="false"{Inline}
-                  Mesh:File="./Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                  >
     </MeshRenderer>
 </GameObject>

@@ -32,13 +32,13 @@
         <UIImage id:String="Scene_BG4_Component1"{Hidden,Readonly}
                  enabled:Bool ="true"{Hidden,Readonly}
                  closedInInspector:Bool ="false"{Hidden,Readonly}
-                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
                  IsTransparent:Bool ="false"{Inline,Hidden}
                  DrawWireframe:Bool ="false"{Inline,Hidden}
-                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(1, 1, 1, 1)"{}
-                 Image:File="./Textures/SnakeBG.btex2d"{FileExtension="btex2d"}
+                 Image:File="Textures/SnakeBG.btex2d"{FileExtension="btex2d"}
                 >
         </UIImage>
     </GameObject>
@@ -93,7 +93,7 @@
         <AudioSource id:String="Scene_Camera6_Component3"{Hidden,Readonly}
                      enabled:Bool ="true"{Hidden,Readonly}
                      closedInInspector:Bool ="false"{Hidden,Readonly}
-                     AudioClip:File="./Music/LoseMusic.baudioclip"{FileExtension="baudioclip"}
+                     AudioClip:File="Music/LoseMusic.baudioclip"{FileExtension="baudioclip"}
                      Volume:Float="0.65"{}
                      Pitch:Float="1"{}
                      Range:Float="5"{}
@@ -124,11 +124,11 @@
         <UIImage id:String="Scene_ButtonPanel7_Component1"{Hidden,Readonly}
                  enabled:Bool ="true"{Hidden,Readonly}
                  closedInInspector:Bool ="false"{Hidden,Readonly}
-                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
                  IsTransparent:Bool ="false"{Inline,Hidden}
                  DrawWireframe:Bool ="false"{Inline,Hidden}
-                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(0, 0.447059, 0.611765, 0.784314)"{}
                  Image:File=""{FileExtension="btex2d"}
                 >
@@ -156,13 +156,13 @@
         <UIImage id:String="Scene_DeadImage8_Component1"{Hidden,Readonly}
                  enabled:Bool ="true"{Hidden,Readonly}
                  closedInInspector:Bool ="false"{Hidden,Readonly}
-                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
                  IsTransparent:Bool ="false"{Inline,Hidden}
                  DrawWireframe:Bool ="false"{Inline,Hidden}
-                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(1, 1, 1, 1)"{}
-                 Image:File="./Textures/deadSnake.btex2d"{FileExtension="btex2d"}
+                 Image:File="Textures/deadSnake.btex2d"{FileExtension="btex2d"}
                 >
         </UIImage>
     </GameObject>
@@ -188,11 +188,11 @@
         <UIImage id:String="Scene_RightPanel9_Component1"{Hidden,Readonly}
                  enabled:Bool ="true"{Hidden,Readonly}
                  closedInInspector:Bool ="false"{Hidden,Readonly}
-                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
                  IsTransparent:Bool ="false"{Inline,Hidden}
                  DrawWireframe:Bool ="false"{Inline,Hidden}
-                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(1, 1, 1, 0.784314)"{}
                  Image:File=""{FileExtension="btex2d"}
                 >
@@ -220,11 +220,11 @@
         <UIImage id:String="Scene_RightPanelHeader10_Component1"{Hidden,Readonly}
                  enabled:Bool ="true"{Hidden,Readonly}
                  closedInInspector:Bool ="false"{Hidden,Readonly}
-                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
                  IsTransparent:Bool ="false"{Inline,Hidden}
                  DrawWireframe:Bool ="false"{Inline,Hidden}
-                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(0.611765, 0, 0, 1)"{}
                  Image:File=""{FileExtension="btex2d"}
                 >
@@ -252,11 +252,11 @@
         <UIImage id:String="Scene_ButtonPanel11_Component1"{Hidden,Readonly}
                  enabled:Bool ="true"{Hidden,Readonly}
                  closedInInspector:Bool ="false"{Hidden,Readonly}
-                 Material:File="./Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
                  IsTransparent:Bool ="false"{Inline,Hidden}
                  DrawWireframe:Bool ="false"{Inline,Hidden}
-                 Mesh:File="./Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(0, 0.447059, 0.611765, 0.784314)"{}
                  Image:File=""{FileExtension="btex2d"}
                 >
@@ -284,13 +284,13 @@
         <UIText id:String="Scene_PressSpaceToReplayButton12_Component1"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 closedInInspector:Bool ="false"{Hidden,Readonly}
-                Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
                 IsTransparent:Bool ="false"{Inline,Hidden}
                 DrawWireframe:Bool ="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 1, 1, 1)"{Hidden}
-                Font:File="./Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
                 Color:Color="(1, 1, 1, 1)"{}
                 Content:String="Space to replay"{Inline}
                 TextSize:Float="55"{}
@@ -303,7 +303,7 @@
         <Behaviour id:String="Scene_PressSpaceToReplayButton12_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   BehaviourScript:File="./Behaviours/MenuSpaceButton.cpp"{FileExtension="cpp"}
+                   BehaviourScript:File="Behaviours/MenuSpaceButton.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
@@ -329,13 +329,13 @@
         <UIText id:String="Scene_YouLoseText13_Component1"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 closedInInspector:Bool ="false"{Hidden,Readonly}
-                Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
                 IsTransparent:Bool ="false"{Inline,Hidden}
                 DrawWireframe:Bool ="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 1, 1, 1)"{Hidden}
-                Font:File="./Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
                 Color:Color="(1, 1, 1, 1)"{}
                 Content:String="You lose"{Inline}
                 TextSize:Float="40"{}
@@ -368,13 +368,13 @@
         <UIText id:String="Scene_ScoreLabel14_Component1"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 closedInInspector:Bool ="false"{Hidden,Readonly}
-                Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
                 IsTransparent:Bool ="false"{Inline,Hidden}
                 DrawWireframe:Bool ="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 1, 1, 1)"{Hidden}
-                Font:File="./Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
                 Color:Color="(1, 1, 1, 1)"{}
                 Content:String="Score"{Inline}
                 TextSize:Float="60"{}
@@ -407,13 +407,13 @@
         <UIText id:String="Scene_ScoreText15_Component1"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 closedInInspector:Bool ="false"{Hidden,Readonly}
-                Material:File="./Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
                 IsTransparent:Bool ="false"{Inline,Hidden}
                 DrawWireframe:Bool ="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 0, 0, 1)"{Hidden}
-                Font:File="./Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
                 Color:Color="(1, 0, 0, 1)"{}
                 Content:String="12345"{Inline}
                 TextSize:Float="200"{}

@@ -80,7 +80,7 @@ void SnakeController::OnFoodEat()
 
 void SnakeController::CheckSelfCollision()
 {
-    Array<GameObject*> children = p_body->GetChildren().ToArray();
+    Array<GameObject*> children = p_body->GetChildren().To<Array>();
     ENSURE(children.Size() >= 2);
 
     GameObject *head = p_head;
