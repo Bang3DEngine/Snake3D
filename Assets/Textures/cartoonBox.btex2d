@@ -1,0 +1,5 @@
+<Texture2D ImageFilepath:File="Images/cartoonBox.png"{FileExtension="jpg png bmp tga tiff gif bmp"}
+           FilterMode:Enum="2"{EnumName0="Nearest",EnumName1="Linear",EnumName2="Trilinear"}
+           AlphaCutoff:Float="0.1"{}
+          >
+</Texture2D>

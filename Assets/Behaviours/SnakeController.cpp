@@ -36,13 +36,9 @@ void SnakeController::OnUpdate()
     m_moveSpeed = 15.0f + m_level * 0.5f;
     m_rotSpeed  = 2.0f + m_level * 0.1f;
 
-    if (Input::GetKeyDown(Input::Key::Z))
-    {
-        m_cameraMode = (m_cameraMode + 1) % 3;
-    }
-    p_camera->gameObject->GetComponent<SkyCamera>()->SetEnabled( m_cameraMode == 0);
-    p_camera->gameObject->GetComponent<SnakeCamera>()->SetEnabled( m_cameraMode >= 1 );
-    p_camera->gameObject->GetComponent<SnakeCamera>()->camInFront = (m_cameraMode == 1);
+    if (Input::GetKeyDown(Input::Key::Z)) { m_fpsCamera = !m_fpsCamera; }
+    p_camera->gameObject->GetComponent<SkyCamera>()->SetEnabled(!m_fpsCamera);
+    p_camera->gameObject->GetComponent<SnakeCamera>()->SetEnabled(m_fpsCamera);
 
     MoveBodyParts();
 

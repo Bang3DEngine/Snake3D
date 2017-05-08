@@ -32,7 +32,7 @@ void FoodGenerator::OnUpdate()
             randOffset.z = Math::Lerp(-randomRangeAroundHead,
                                        randomRangeAroundHead,
                                        Random::Value());
-            foodBallPos = headPos + randOffset;
+            foodBallPos = headPos + randOffset + Vector3::Up;
         }
         while ( FoodBallPositionInvalid(foodBallPos) );
 

@@ -27,7 +27,7 @@ public:
 
     float m_rotSpeed, m_moveSpeed;
 
-    int m_cameraMode = 0;
+    bool m_fpsCamera = true;
     Camera *p_camera   = nullptr;
 
     int m_level = 0;

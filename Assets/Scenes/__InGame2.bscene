@@ -1,0 +1,735 @@
+<Scene id:String="Scene_BANG_EditorCamera2_BANG_EditorYawNode0_Component1"{Hidden,Readonly}
+       enabled:Bool ="true"{Hidden,Readonly}
+       name:String="Scene"{Hidden,Readonly}
+      >
+    <Transform id:String="Scene_Component0"{Hidden,Readonly}
+               enabled:Bool ="true"{Hidden,Readonly}
+               closedInInspector:Bool ="false"{Hidden,Readonly}
+               Position:Vector3="(0, 0, 0)"{}
+               Rotation:Vector3="(0, 0, 0)"{}
+               Scale:Vector3="(1, 1, 1)"{}
+              >
+    </Transform>
+    <GameObject id:String="Scene_Snake4"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Snake"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Snake4_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(0, 0.637108, 0)"{}
+                   Rotation:Vector3="(0, -0, 0)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <AudioSource id:String="Scene_Snake4_Component1"{Hidden,Readonly}
+                     enabled:Bool ="true"{Hidden,Readonly}
+                     closedInInspector:Bool ="false"{Hidden,Readonly}
+                     AudioClip:File="Music/AppleSound.baudioclip"{FileExtension="baudioclip"}
+                     Volume:Float="1"{}
+                     Pitch:Float="1"{}
+                     Range:Float="500"{}
+                     Looping:Bool ="false"{}
+                     PlayOnStart:Bool ="false"{}
+                    >
+        </AudioSource>
+        <Behaviour id:String="Scene_Snake4_Component2"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   BehaviourScript:File="Behaviours/SnakeController.cpp"{FileExtension="cpp"}
+                  >
+        </Behaviour>
+        <GameObject id:String="Scene_Snake4_Body0"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    name:String="Body"{Hidden,Readonly}
+                   >
+            <Transform id:String="Scene_Snake4_Body0_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0, 0, 0)"{}
+                       Rotation:Vector3="(0, -0, 0)"{}
+                       Scale:Vector3="(1, 1, 1)"{}
+                      >
+            </Transform>
+            <GameObject id:String="Scene_Snake4_Body0_Head0"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Head"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Snake4_Body0_Head0_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(0, 0, -4.48059)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(1, 1, 1)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/SnakeMaterial.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+                <GameObject id:String="Scene_Snake4_Body0_Head0_Eye0"{Hidden,Readonly}
+                            enabled:Bool ="true"{Hidden,Readonly}
+                            name:String="Eye"{Hidden,Readonly}
+                           >
+                    <Transform id:String="Scene_Snake4_Body0_Head0_Eye0_Component0"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               Position:Vector3="(-0.375828, 0.56747, -0.479713)"{}
+                               Rotation:Vector3="(0, -0, 0)"{}
+                               Scale:Vector3="(0.444112, 0.444112, 0.444112)"{}
+                              >
+                    </Transform>
+                    <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Eye0_Component1"{Hidden,Readonly}
+                                  enabled:Bool ="true"{Hidden,Readonly}
+                                  closedInInspector:Bool ="false"{Hidden,Readonly}
+                                  Material:File="Materials/EyeMaterial.bmat"{FileExtension="bmat"}
+                                  LineWidth:Float="1"{Hidden}
+                                  IsTransparent:Bool ="false"{Inline}
+                                  DrawWireframe:Bool ="false"{Inline}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                 >
+                    </MeshRenderer>
+                    <GameObject id:String="Scene_Snake4_Body0_Head0_Eye0_Black0"{Hidden,Readonly}
+                                enabled:Bool ="true"{Hidden,Readonly}
+                                name:String="Black"{Hidden,Readonly}
+                               >
+                        <Transform id:String="Scene_Snake4_Body0_Head0_Eye0_Black0_Component0"{Hidden,Readonly}
+                                   enabled:Bool ="true"{Hidden,Readonly}
+                                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                                   Position:Vector3="(-1.78812e-06, 0.563685, -0.447674)"{}
+                                   Rotation:Vector3="(0, -0, 0)"{}
+                                   Scale:Vector3="(0.464685, 0.464685, 0.464685)"{}
+                                  >
+                        </Transform>
+                        <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Eye0_Black0_Component1"{Hidden,Readonly}
+                                      enabled:Bool ="true"{Hidden,Readonly}
+                                      closedInInspector:Bool ="false"{Hidden,Readonly}
+                                      Material:File="Materials/BlackMaterial.bmat"{FileExtension="bmat"}
+                                      LineWidth:Float="1"{Hidden}
+                                      IsTransparent:Bool ="false"{Inline}
+                                      DrawWireframe:Bool ="false"{Inline}
+                                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                     >
+                        </MeshRenderer>
+                    </GameObject>
+                </GameObject>
+                <GameObject id:String="Scene_Snake4_Body0_Head0_Eye1"{Hidden,Readonly}
+                            enabled:Bool ="true"{Hidden,Readonly}
+                            name:String="Eye"{Hidden,Readonly}
+                           >
+                    <Transform id:String="Scene_Snake4_Body0_Head0_Eye1_Component0"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               Position:Vector3="(0.533954, 0.540406, -0.49979)"{}
+                               Rotation:Vector3="(0, -0, 0)"{}
+                               Scale:Vector3="(0.444112, 0.444112, 0.444112)"{}
+                              >
+                    </Transform>
+                    <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Eye1_Component1"{Hidden,Readonly}
+                                  enabled:Bool ="true"{Hidden,Readonly}
+                                  closedInInspector:Bool ="false"{Hidden,Readonly}
+                                  Material:File="Materials/EyeMaterial.bmat"{FileExtension="bmat"}
+                                  LineWidth:Float="1"{Hidden}
+                                  IsTransparent:Bool ="false"{Inline}
+                                  DrawWireframe:Bool ="false"{Inline}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                 >
+                    </MeshRenderer>
+                    <GameObject id:String="Scene_Snake4_Body0_Head0_Eye1_Black0"{Hidden,Readonly}
+                                enabled:Bool ="true"{Hidden,Readonly}
+                                name:String="Black"{Hidden,Readonly}
+                               >
+                        <Transform id:String="Scene_Snake4_Body0_Head0_Eye1_Black0_Component0"{Hidden,Readonly}
+                                   enabled:Bool ="true"{Hidden,Readonly}
+                                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                                   Position:Vector3="(3.39748e-06, 0.56369, -0.486837)"{}
+                                   Rotation:Vector3="(0, -0, 0)"{}
+                                   Scale:Vector3="(0.464685, 0.464685, 0.464685)"{}
+                                  >
+                        </Transform>
+                        <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Eye1_Black0_Component1"{Hidden,Readonly}
+                                      enabled:Bool ="true"{Hidden,Readonly}
+                                      closedInInspector:Bool ="false"{Hidden,Readonly}
+                                      Material:File="Materials/BlackMaterial.bmat"{FileExtension="bmat"}
+                                      LineWidth:Float="1"{Hidden}
+                                      IsTransparent:Bool ="false"{Inline}
+                                      DrawWireframe:Bool ="false"{Inline}
+                                      Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                     >
+                        </MeshRenderer>
+                    </GameObject>
+                </GameObject>
+                <GameObject id:String="Scene_Snake4_Body0_Head0_Tongue2"{Hidden,Readonly}
+                            enabled:Bool ="true"{Hidden,Readonly}
+                            name:String="Tongue"{Hidden,Readonly}
+                           >
+                    <Transform id:String="Scene_Snake4_Body0_Head0_Tongue2_Component0"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               Position:Vector3="(-0.0591029, -0.221359, -0.78316)"{}
+                               Rotation:Vector3="(0, -0, 0)"{}
+                               Scale:Vector3="(0.444112, 0.12833, 0.865062)"{}
+                              >
+                    </Transform>
+                    <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Tongue2_Component1"{Hidden,Readonly}
+                                  enabled:Bool ="true"{Hidden,Readonly}
+                                  closedInInspector:Bool ="false"{Hidden,Readonly}
+                                  Material:File="Materials/TongueMaterial.bmat"{FileExtension="bmat"}
+                                  LineWidth:Float="1"{Hidden}
+                                  IsTransparent:Bool ="false"{Inline}
+                                  DrawWireframe:Bool ="false"{Inline}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                 >
+                    </MeshRenderer>
+                    <Behaviour id:String="Scene_Snake4_Body0_Head0_Tongue2_Component2"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               BehaviourScript:File="Behaviours/TongueMove.cpp"{FileExtension="cpp"}
+                              >
+                    </Behaviour>
+                </GameObject>
+                <GameObject id:String="Scene_Snake4_Body0_Head0_Collider13"{Hidden,Readonly}
+                            enabled:Bool ="true"{Hidden,Readonly}
+                            name:String="Collider1"{Hidden,Readonly}
+                           >
+                    <Transform id:String="Scene_Snake4_Body0_Head0_Collider13_Component0"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               Position:Vector3="(0.892757, 0.267468, 0.0928684)"{}
+                               Rotation:Vector3="(0, -0, 0)"{}
+                               Scale:Vector3="(0.1, 0.1, 0.1)"{}
+                              >
+                    </Transform>
+                    <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Collider13_Component1"{Hidden,Readonly}
+                                  enabled:Bool ="true"{Hidden,Readonly}
+                                  closedInInspector:Bool ="false"{Hidden,Readonly}
+                                  Material:File="Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                                  LineWidth:Float="1"{Hidden}
+                                  IsTransparent:Bool ="false"{Inline}
+                                  DrawWireframe:Bool ="false"{Inline}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                 >
+                    </MeshRenderer>
+                </GameObject>
+                <GameObject id:String="Scene_Snake4_Body0_Head0_Collider24"{Hidden,Readonly}
+                            enabled:Bool ="true"{Hidden,Readonly}
+                            name:String="Collider2"{Hidden,Readonly}
+                           >
+                    <Transform id:String="Scene_Snake4_Body0_Head0_Collider24_Component0"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               Position:Vector3="(-0.879182, 0.267468, 0.0928684)"{}
+                               Rotation:Vector3="(0, -0, 0)"{}
+                               Scale:Vector3="(0.1, 0.1, 0.1)"{}
+                              >
+                    </Transform>
+                    <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Collider24_Component1"{Hidden,Readonly}
+                                  enabled:Bool ="true"{Hidden,Readonly}
+                                  closedInInspector:Bool ="false"{Hidden,Readonly}
+                                  Material:File="Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                                  LineWidth:Float="1"{Hidden}
+                                  IsTransparent:Bool ="false"{Inline}
+                                  DrawWireframe:Bool ="false"{Inline}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                 >
+                    </MeshRenderer>
+                </GameObject>
+                <GameObject id:String="Scene_Snake4_Body0_Head0_Collider35"{Hidden,Readonly}
+                            enabled:Bool ="true"{Hidden,Readonly}
+                            name:String="Collider3"{Hidden,Readonly}
+                           >
+                    <Transform id:String="Scene_Snake4_Body0_Head0_Collider35_Component0"{Hidden,Readonly}
+                               enabled:Bool ="true"{Hidden,Readonly}
+                               closedInInspector:Bool ="false"{Hidden,Readonly}
+                               Position:Vector3="(-0.0324781, 0.267468, -0.87247)"{}
+                               Rotation:Vector3="(0, -0, 0)"{}
+                               Scale:Vector3="(0.1, 0.1, 0.1)"{}
+                              >
+                    </Transform>
+                    <MeshRenderer id:String="Scene_Snake4_Body0_Head0_Collider35_Component1"{Hidden,Readonly}
+                                  enabled:Bool ="true"{Hidden,Readonly}
+                                  closedInInspector:Bool ="false"{Hidden,Readonly}
+                                  Material:File="Materials/G_Default.bmat"{FileExtension="bmat",IsEngineFile}
+                                  LineWidth:Float="1"{Hidden}
+                                  IsTransparent:Bool ="false"{Inline}
+                                  DrawWireframe:Bool ="false"{Inline}
+                                  Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
+                                 >
+                    </MeshRenderer>
+                </GameObject>
+            </GameObject>
+        </GameObject>
+    </GameObject>
+    <GameObject id:String="Scene_Camera5"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Camera"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Camera5_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(1.36, 7.47725, -1.88)"{}
+                   Rotation:Vector3="(-180, 89.9802, 180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <Camera id:String="Scene_Camera5_Component1"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                closedInInspector:Bool ="false"{Hidden,Readonly}
+                ClearColor:Color="(0.2, 0.5, 1, 1)"{}
+                ZNear:Float="0.1"{}
+                ZFar:Float="1000"{}
+                ProjectionMode:Enum="1"{Readonly,EnumName0="Orthographic",EnumName1="Perspective"}
+                OrthoHeight:Float="25"{Hidden}
+                FOVDegrees:Float="60"{}
+               >
+        </Camera>
+        <AudioListener id:String="Scene_Camera5_Component2"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                      >
+        </AudioListener>
+        <AudioSource id:String="Scene_Camera5_Component3"{Hidden,Readonly}
+                     enabled:Bool ="true"{Hidden,Readonly}
+                     closedInInspector:Bool ="false"{Hidden,Readonly}
+                     AudioClip:File="Music/GameMusic.baudioclip"{FileExtension="baudioclip"}
+                     Volume:Float="1"{}
+                     Pitch:Float="1"{}
+                     Range:Float="5"{}
+                     Looping:Bool ="true"{}
+                     PlayOnStart:Bool ="true"{}
+                    >
+        </AudioSource>
+        <PostProcessEffect id:String="Scene_Camera5_Component4"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           PostProcessShader:File="Shaders/Outline.frag_pp"{FileExtension="frag_pp",IsEngineFile}
+                           Priority:Int="1"{}
+                           Type:Enum="0"{EnumName0="AfterScene",EnumName1="AfterCanvas"}
+                          >
+        </PostProcessEffect>
+        <PostProcessEffect id:String="Scene_Camera5_Component5"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           PostProcessShader:File="Shaders/SP_FXAA.frag_pp"{FileExtension="frag_pp",IsEngineFile}
+                           Priority:Int="5"{}
+                           Type:Enum="0"{EnumName0="AfterScene",EnumName1="AfterCanvas"}
+                          >
+        </PostProcessEffect>
+        <Behaviour id:String="Scene_Camera5_Component6"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   BehaviourScript:File="Behaviours/SkyCamera.cpp"{FileExtension="cpp"}
+                  >
+        </Behaviour>
+        <Behaviour id:String="Scene_Camera5_Component7"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   BehaviourScript:File="Behaviours/SnakeCamera.cpp"{FileExtension="cpp"}
+                  >
+        </Behaviour>
+    </GameObject>
+    <GameObject id:String="Scene_Directional Light6"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Directional Light"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Directional Light6_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(-237.922, 69.1467, -5)"{}
+                   Rotation:Vector3="(144.736, -45, 180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <DirectionalLight id:String="Scene_Directional Light6_Component1"{Hidden,Readonly}
+                          enabled:Bool ="true"{Hidden,Readonly}
+                          closedInInspector:Bool ="false"{Hidden,Readonly}
+                          Intensity:Float="0.6"{}
+                          Color:Color="(1, 1, 1, 1)"{}
+                         >
+        </DirectionalLight>
+    </GameObject>
+    <GameObject id:String="Scene_PointLight17"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="PointLight1"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_PointLight17_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(-237.922, 91.5112, 231.66)"{}
+                   Rotation:Vector3="(144.736, -45, 180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <PointLight id:String="Scene_PointLight17_Component1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    closedInInspector:Bool ="false"{Hidden,Readonly}
+                    Intensity:Float="0.5"{}
+                    Color:Color="(0.980392, 1, 0.745098, 1)"{}
+                    Range:Float="1000"{}
+                   >
+        </PointLight>
+    </GameObject>
+    <GameObject id:String="Scene_PointLight18"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="PointLight1"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_PointLight18_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(-237.922, 91.5112, -242.35)"{}
+                   Rotation:Vector3="(144.736, -45, 180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <PointLight id:String="Scene_PointLight18_Component1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    closedInInspector:Bool ="false"{Hidden,Readonly}
+                    Intensity:Float="0.5"{}
+                    Color:Color="(1, 0.980392, 0.690196, 1)"{}
+                    Range:Float="1000"{}
+                   >
+        </PointLight>
+    </GameObject>
+    <GameObject id:String="Scene_Scenario9"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="Scenario"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_Scenario9_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(0, 0, 0)"{}
+                   Rotation:Vector3="(0, -0, 0)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <GameObject id:String="Scene_Scenario9_Floor0"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    name:String="Floor"{Hidden,Readonly}
+                   >
+            <Transform id:String="Scene_Scenario9_Floor0_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(60.4945, -2, 0)"{}
+                       Rotation:Vector3="(0, -0, 0)"{}
+                       Scale:Vector3="(627.579, 1, 535.509)"{}
+                      >
+            </Transform>
+            <MeshRenderer id:String="Scene_Scenario9_Floor0_Component1"{Hidden,Readonly}
+                          enabled:Bool ="true"{Hidden,Readonly}
+                          closedInInspector:Bool ="false"{Hidden,Readonly}
+                          Material:File="Materials/FloorMaterial.bmat"{FileExtension="bmat"}
+                          LineWidth:Float="1"{Hidden}
+                          IsTransparent:Bool ="false"{Inline}
+                          DrawWireframe:Bool ="false"{Inline}
+                          Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                         >
+            </MeshRenderer>
+        </GameObject>
+        <GameObject id:String="Scene_Scenario9_Walls1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    name:String="Walls"{Hidden,Readonly}
+                   >
+            <Transform id:String="Scene_Scenario9_Walls1_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(0, 0, 0)"{}
+                       Rotation:Vector3="(0, -0, 0)"{}
+                       Scale:Vector3="(1, 1, 1)"{}
+                      >
+            </Transform>
+            <Behaviour id:String="Scene_Scenario9_Walls1_Component1"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       BehaviourScript:File="Behaviours/WallsManager.cpp"{FileExtension="cpp"}
+                      >
+            </Behaviour>
+            <GameObject id:String="Scene_Scenario9_Walls1_BigWall0"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="BigWall"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario9_Walls1_BigWall0_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(-243.653, 43.9298, -0.637964)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(23.7295, 95.2763, 571.696)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario9_Walls1_BigWall0_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario9_Walls1_Box1"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Box"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario9_Walls1_Box1_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(0, 5.17938, -38.8796)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(13.0578, 13.0578, 13.0578)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario9_Walls1_Box1_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/cartoonBox.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario9_Walls1_BigWall2"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="BigWall"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario9_Walls1_BigWall2_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(380.906, 43.9298, -0.637964)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(23.7295, 95.2763, 571.696)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario9_Walls1_BigWall2_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario9_Walls1_BigWall3"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="BigWall"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario9_Walls1_BigWall3_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(66.0874, 43.93, -274.814)"{}
+                           Rotation:Vector3="(-180, 90, 180)"{}
+                           Scale:Vector3="(23.7301, 95.28, 608.155)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario9_Walls1_BigWall3_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario9_Walls1_BigWall4"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="BigWall"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario9_Walls1_BigWall4_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(66.0874, 43.93, 273.43)"{}
+                           Rotation:Vector3="(-180, 90, 180)"{}
+                           Scale:Vector3="(23.7301, 95.28, 608.155)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario9_Walls1_BigWall4_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario9_Walls1_Box5"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Box"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario9_Walls1_Box5_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(26.4538, 3.50085, -38.8796)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(9.19122, 9.19122, 9.19122)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario9_Walls1_Box5_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/cartoonBox.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+            <GameObject id:String="Scene_Scenario9_Walls1_Box6"{Hidden,Readonly}
+                        enabled:Bool ="true"{Hidden,Readonly}
+                        name:String="Box"{Hidden,Readonly}
+                       >
+                <Transform id:String="Scene_Scenario9_Walls1_Box6_Component0"{Hidden,Readonly}
+                           enabled:Bool ="true"{Hidden,Readonly}
+                           closedInInspector:Bool ="false"{Hidden,Readonly}
+                           Position:Vector3="(-0.393818, 15.2246, -38.8796)"{}
+                           Rotation:Vector3="(0, -0, 0)"{}
+                           Scale:Vector3="(7.53174, 7.53174, 7.53174)"{}
+                          >
+                </Transform>
+                <MeshRenderer id:String="Scene_Scenario9_Walls1_Box6_Component1"{Hidden,Readonly}
+                              enabled:Bool ="true"{Hidden,Readonly}
+                              closedInInspector:Bool ="false"{Hidden,Readonly}
+                              Material:File="Materials/cartoonBox.bmat"{FileExtension="bmat"}
+                              LineWidth:Float="1"{Hidden}
+                              IsTransparent:Bool ="false"{Inline}
+                              DrawWireframe:Bool ="false"{Inline}
+                              Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
+                             >
+                </MeshRenderer>
+            </GameObject>
+        </GameObject>
+    </GameObject>
+    <GameObject id:String="Scene_FoodGenerator10"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="FoodGenerator"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_FoodGenerator10_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(0, 0, 0)"{}
+                   Rotation:Vector3="(0, -0, 0)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <Behaviour id:String="Scene_FoodGenerator10_Component1"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   BehaviourScript:File="Behaviours/FoodGenerator.cpp"{FileExtension="cpp"}
+                  >
+        </Behaviour>
+    </GameObject>
+    <GameObject id:String="Scene_LowPolyTree11"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="LowPolyTree"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_LowPolyTree11_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(139.733, 2.83151, -69.9658)"{}
+                   Rotation:Vector3="(0, -0, 0)"{}
+                   Scale:Vector3="(12.3298, 9.38711, 13.5503)"{}
+                  >
+        </Transform>
+        <GameObject id:String="Scene_LowPolyTree11_Top0"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    name:String="Top"{Hidden,Readonly}
+                   >
+            <Transform id:String="Scene_LowPolyTree11_Top0_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(4.76837e-07, 1.62444e-05, 0)"{}
+                       Rotation:Vector3="(0, -0, 0)"{}
+                       Scale:Vector3="(1, 1, 1)"{}
+                      >
+            </Transform>
+            <MeshRenderer id:String="Scene_LowPolyTree11_Top0_Component1"{Hidden,Readonly}
+                          enabled:Bool ="true"{Hidden,Readonly}
+                          closedInInspector:Bool ="false"{Hidden,Readonly}
+                          Material:File="Materials/LeafMaterial.bmat"{FileExtension="bmat"}
+                          LineWidth:Float="1"{Hidden}
+                          IsTransparent:Bool ="false"{Inline}
+                          DrawWireframe:Bool ="false"{Inline}
+                          Mesh:File="Models/LowPolyTree_1.bmesh"{FileExtension="bmesh"}
+                         >
+            </MeshRenderer>
+        </GameObject>
+        <GameObject id:String="Scene_LowPolyTree11_Trunk1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    name:String="Trunk"{Hidden,Readonly}
+                   >
+            <Transform id:String="Scene_LowPolyTree11_Trunk1_Component0"{Hidden,Readonly}
+                       enabled:Bool ="true"{Hidden,Readonly}
+                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       Position:Vector3="(4.76837e-07, 1.76991, 0.0170094)"{}
+                       Rotation:Vector3="(0, -0, 0)"{}
+                       Scale:Vector3="(0.593653, 1.17516, 0.676946)"{}
+                      >
+            </Transform>
+            <MeshRenderer id:String="Scene_LowPolyTree11_Trunk1_Component1"{Hidden,Readonly}
+                          enabled:Bool ="true"{Hidden,Readonly}
+                          closedInInspector:Bool ="false"{Hidden,Readonly}
+                          Material:File="Materials/TrunkMaterial.bmat"{FileExtension="bmat"}
+                          LineWidth:Float="1"{Hidden}
+                          IsTransparent:Bool ="false"{Inline}
+                          DrawWireframe:Bool ="false"{Inline}
+                          Mesh:File="Models/LowPolyTrunk_1.bmesh"{FileExtension="bmesh"}
+                         >
+            </MeshRenderer>
+        </GameObject>
+    </GameObject>
+    <GameObject id:String="Scene_PointLight112"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="PointLight1"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_PointLight112_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(351.251, 91.5112, -242.35)"{}
+                   Rotation:Vector3="(144.736, -45, 180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <PointLight id:String="Scene_PointLight112_Component1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    closedInInspector:Bool ="false"{Hidden,Readonly}
+                    Intensity:Float="0.5"{}
+                    Color:Color="(1, 1, 0.807843, 1)"{}
+                    Range:Float="1000"{}
+                   >
+        </PointLight>
+    </GameObject>
+    <GameObject id:String="Scene_PointLight113"{Hidden,Readonly}
+                enabled:Bool ="true"{Hidden,Readonly}
+                name:String="PointLight1"{Hidden,Readonly}
+               >
+        <Transform id:String="Scene_PointLight113_Component0"{Hidden,Readonly}
+                   enabled:Bool ="true"{Hidden,Readonly}
+                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   Position:Vector3="(351.251, 91.5112, 244.686)"{}
+                   Rotation:Vector3="(144.736, -45, 180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <PointLight id:String="Scene_PointLight113_Component1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    closedInInspector:Bool ="false"{Hidden,Readonly}
+                    Intensity:Float="0.5"{}
+                    Color:Color="(0.972549, 1, 0.792157, 1)"{}
+                    Range:Float="1000"{}
+                   >
+        </PointLight>
+    </GameObject>
+</Scene>

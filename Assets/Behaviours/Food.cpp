@@ -19,7 +19,7 @@ void Food::OnUpdate()
 
     m_time += Time::deltaTime;
     float scale = Math::Sin(m_time * 4.0f);
-    scale = Math::Map(scale, -1.0f, 1.0f, 0.5f, 0.8f);
+    scale = Math::Map(scale, -1.0f, 1.0f, 0.3f, 0.6f);
 
     Sphere foodSphere = gameObject->GetBoundingSphere();
     if ( snakeHead->GetBoundingSphere().CheckCollision(foodSphere) )

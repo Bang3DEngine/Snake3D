@@ -306,7 +306,7 @@
                     >
         </AudioSource>
         <PostProcessEffect id:String="Scene_Camera5_Component4"{Hidden,Readonly}
-                           enabled:Bool ="true"{Hidden,Readonly}
+                           enabled:Bool ="false"{Hidden,Readonly}
                            closedInInspector:Bool ="false"{Hidden,Readonly}
                            PostProcessShader:File="Shaders/SP_FXAA.frag_pp"{FileExtension="frag_pp",IsEngineFile}
                            Priority:Int="1"{}
@@ -333,18 +333,19 @@
         <Transform id:String="Scene_Directional Light6_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   Position:Vector3="(-5, 28.3818, -5)"{}
+                   Position:Vector3="(-102.22, 67.0894, -76.2403)"{}
                    Rotation:Vector3="(144.736, -45, 180)"{}
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <DirectionalLight id:String="Scene_Directional Light6_Component1"{Hidden,Readonly}
-                          enabled:Bool ="true"{Hidden,Readonly}
-                          closedInInspector:Bool ="false"{Hidden,Readonly}
-                          Intensity:Float="0"{}
-                          Color:Color="(1, 1, 1, 1)"{}
-                         >
-        </DirectionalLight>
+        <PointLight id:String="Scene_Directional Light6_Component1"{Hidden,Readonly}
+                    enabled:Bool ="true"{Hidden,Readonly}
+                    closedInInspector:Bool ="false"{Hidden,Readonly}
+                    Intensity:Float="1"{}
+                    Color:Color="(0.588235, 0.47451, 0.12549, 1)"{}
+                    Range:Float="500"{}
+                   >
+        </PointLight>
     </GameObject>
     <GameObject id:String="Scene_Scenario7"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
@@ -1377,25 +1378,24 @@
         </MeshRenderer>
     </GameObject>
     <GameObject id:String="Scene_Directional Light17"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool ="false"{Hidden,Readonly}
                 name:String="Directional Light"{Hidden,Readonly}
                >
         <Transform id:String="Scene_Directional Light17_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   Position:Vector3="(-12.7187, 9.43365, -17.0877)"{}
+                   Position:Vector3="(82.8982, 57.4031, 81.9396)"{}
                    Rotation:Vector3="(144.736, -45, 180)"{}
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_Directional Light17_Component1"{Hidden,Readonly}
-                    enabled:Bool ="true"{Hidden,Readonly}
-                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                    Intensity:Float="0.5"{}
-                    Color:Color="(0.886275, 0, 1, 1)"{}
-                    Range:Float="100"{}
-                   >
-        </PointLight>
+        <DirectionalLight id:String="Scene_Directional Light17_Component1"{Hidden,Readonly}
+                          enabled:Bool ="true"{Hidden,Readonly}
+                          closedInInspector:Bool ="false"{Hidden,Readonly}
+                          Intensity:Float="0.85"{}
+                          Color:Color="(1, 0.992157, 0.741176, 1)"{}
+                         >
+        </DirectionalLight>
     </GameObject>
     <GameObject id:String="Scene_Directional Light18"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
@@ -1404,17 +1404,17 @@
         <Transform id:String="Scene_Directional Light18_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   Position:Vector3="(-12.7187, 9.43365, 22.8183)"{}
-                   Rotation:Vector3="(144.736, -45, 180)"{}
-                   Scale:Vector3="(1, 1, 1)"{}
+                   Position:Vector3="(213.601, 14.8559, 45.4967)"{}
+                   Rotation:Vector3="(11.0608, -5.26428, -155.797)"{}
+                   Scale:Vector3="(1, 0.429497, 0.494586)"{}
                   >
         </Transform>
         <PointLight id:String="Scene_Directional Light18_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
-                    Intensity:Float="0.5"{}
-                    Color:Color="(1, 1, 1, 1)"{}
-                    Range:Float="100"{}
+                    Intensity:Float="2"{}
+                    Color:Color="(0.886275, 0, 1, 1)"{}
+                    Range:Float="40"{}
                    >
         </PointLight>
     </GameObject>
@@ -1425,54 +1425,12 @@
         <Transform id:String="Scene_Directional Light19_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                   Position:Vector3="(14.221, 43.8095, 17.8168)"{}
-                   Rotation:Vector3="(144.736, -45, 180)"{}
-                   Scale:Vector3="(1, 1, 1)"{}
-                  >
-        </Transform>
-        <PointLight id:String="Scene_Directional Light19_Component1"{Hidden,Readonly}
-                    enabled:Bool ="true"{Hidden,Readonly}
-                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                    Intensity:Float="0.5"{}
-                    Color:Color="(1, 1, 1, 1)"{}
-                    Range:Float="2000"{}
-                   >
-        </PointLight>
-    </GameObject>
-    <GameObject id:String="Scene_Directional Light20"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                name:String="Directional Light"{Hidden,Readonly}
-               >
-        <Transform id:String="Scene_Directional Light20_Component0"{Hidden,Readonly}
-                   enabled:Bool ="true"{Hidden,Readonly}
-                   closedInInspector:Bool ="false"{Hidden,Readonly}
-                   Position:Vector3="(213.601, 14.8559, 45.4967)"{}
-                   Rotation:Vector3="(11.0608, -5.26428, -155.797)"{}
-                   Scale:Vector3="(1, 0.429497, 0.494586)"{}
-                  >
-        </Transform>
-        <PointLight id:String="Scene_Directional Light20_Component1"{Hidden,Readonly}
-                    enabled:Bool ="true"{Hidden,Readonly}
-                    closedInInspector:Bool ="false"{Hidden,Readonly}
-                    Intensity:Float="2"{}
-                    Color:Color="(0.886275, 0, 1, 1)"{}
-                    Range:Float="40"{}
-                   >
-        </PointLight>
-    </GameObject>
-    <GameObject id:String="Scene_Directional Light21"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                name:String="Directional Light"{Hidden,Readonly}
-               >
-        <Transform id:String="Scene_Directional Light21_Component0"{Hidden,Readonly}
-                   enabled:Bool ="true"{Hidden,Readonly}
-                   closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(239.157, 14.8559, 14.9684)"{}
                    Rotation:Vector3="(11.0608, -5.26428, -155.797)"{}
                    Scale:Vector3="(1, 0.429497, 0.494586)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_Directional Light21_Component1"{Hidden,Readonly}
+        <PointLight id:String="Scene_Directional Light19_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="2"{}

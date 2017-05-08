@@ -22,7 +22,7 @@
                enabled:Bool ="true"{Hidden,Readonly}
                closedInInspector:Bool ="false"{Hidden,Readonly}
                BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
-               CreateNew...:Button="CreateNew..."{DontWriteToFile,Listener="0x42ca308"}
+               CreateNew...:Button="CreateNew..."{DontWriteToFile,Listener="0xba56ba8"}
               >
     </Behaviour>
 </GameObject>

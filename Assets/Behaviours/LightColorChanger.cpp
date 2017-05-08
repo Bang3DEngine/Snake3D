@@ -13,7 +13,7 @@ void LightColorChanger::OnUpdate()
 
     if (Time::GetNow() >= nextChangeTime)
     {
-        nextIntensity = Random::Range(0.1f, 1.0f);
+        nextIntensity = Random::Range(0.1f, 0.5f);
         nextRange = Random::Range(5.0f, 30.0f);
         nextColor = Random::GetColorOpaque();
         nextChangeTime = Time::GetNow() + Random::Range(1000, 2000);

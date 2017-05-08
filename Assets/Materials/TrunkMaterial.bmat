@@ -1,8 +1,8 @@
-<Material DiffuseColor:Color="(0.509804, 0.423529, 0.360784, 1)"{}
+<Material DiffuseColor:Color="(0.713726, 0.419608, 0.121569, 1)"{}
           Shininess:Float="100000"{}
           ReceivesLighting:Bool ="true"{}
           UvMultiply:Vector2="(5, 5)"{}
-          Texture:File="Textures/GroundTexture.btex2d"{FileExtension="btex2d"}
+          Texture:File=""{FileExtension="btex2d"}
           VertexShader:File="Shaders/G_Default.vert_g"{FileExtension="vert_g vert_pp vert_sel vert",IsEngineFile}
           FragmentShader:File="Shaders/G_Default.frag_g"{FileExtension="frag_g frag_pp frag_sel frag",IsEngineFile}
          >
