@@ -1,3 +1,6 @@
-<AudioClip AudioFilepath:File="./Music/GameMusic.wav"{FileExtension="ogg wav"}
-          >
-</AudioClip>
+<SerializableObject AudioFilepath:File="Music/GameMusic.wav"{FileExtension="ogg wav"}
+                    Length:String="122.566528 seconds"{Readonly}
+                    Stop:Button="Stop"{Hidden,DontWriteToFile,Listener="0x772f740"}
+                    Play:Button="Play"{DontWriteToFile,Listener="0x772f740"}
+                   >
+</SerializableObject>

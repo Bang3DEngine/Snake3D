@@ -1,5 +1,7 @@
 #include "MenuSpaceButton.h" 
 
+int MenuSpaceButton::score = 0;
+
 // This function will be executed once when created 
 void MenuSpaceButton::OnStart() 
 { 
@@ -13,7 +15,13 @@ void MenuSpaceButton::OnUpdate()
 
     if (Input::GetKeyDown(Input::Key::Space))
     {
-        SceneManager::LoadScene("Scenes/InGame");
+        SceneManager::LoadScene("Scenes/InGame2");
+    }
+
+    if (SceneManager::GetActiveScene()->GetName().Contains("Lose"))
+    {
+        UIText *scoreText = GameObject::Find("ScoreText")->GetComponent<UIText>();
+        scoreText->SetContent( String::ToString(MenuSpaceButton::score) );
     }
 } 
 

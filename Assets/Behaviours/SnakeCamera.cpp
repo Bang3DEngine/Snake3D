@@ -18,9 +18,13 @@ void SnakeCamera::OnUpdate()
 
     Vector3 snakeHeadPos = snakeHead->transform->GetPosition();
 
-    m_angleVerticalDest += Input::GetMouseAxisY() * 60.0f;
-    m_angleVertical      = Math::Lerp(m_angleVertical, m_angleVerticalDest, Time::deltaTime);
-    m_angleVertical      = Math::Clamp(m_angleVertical, -60.0f, -5.0f);
+    float mouseY = Input::GetMouseCoordsNDC().y;
+    if (Math::Abs(mouseY) >= 0.3f)
+    {
+        m_angleVerticalDest  = Math::Map(mouseY, -1.0f, 1.0f, -60.0f, -5.0f);
+    }
+    m_angleVertical = Math::Lerp(m_angleVertical, m_angleVerticalDest,
+                                 Time::deltaTime);
 
     Vector3 offset = -snakeHead->transform->GetForward();
     offset = Quaternion::AngleAxis(Math::Deg2Rad(m_angleVertical),

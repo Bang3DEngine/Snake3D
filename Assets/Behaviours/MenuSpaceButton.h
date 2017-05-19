@@ -9,6 +9,8 @@ class MenuSpaceButton : public Behaviour
 { 
 OBJECT(MenuSpaceButton) 
 public: 
+    static int score;
+
     void OnStart() override; 
     void OnUpdate() override; 
 }; 

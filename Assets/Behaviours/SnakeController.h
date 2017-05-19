@@ -32,7 +32,9 @@ public:
 
     int m_level = 0;
 
+    int m_score = 0;
     List<BodyPart> m_bodyParts;
+    UIText *p_scoreText     = nullptr;
     Prefab *p_tailPrefab    = nullptr;
     GameObject *p_body      = nullptr;
     GameObject *p_head      = nullptr;

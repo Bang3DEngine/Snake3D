@@ -1,6 +1,0 @@
-<AudioClipAssetFileInspectable AudioFilepath:File="./Music/MenuMusic.wav"{FileExtension="ogg wav mp3"}
-                               Length:String="-nan seconds"{Readonly}
-                               Stop:Button="Stop"{Hidden,DontWriteToFile,Listener="0x67fe7b0"}
-                               Play:Button="Play"{DontWriteToFile,Listener="0x67fe7b0"}
-                              >
-</AudioClipAssetFileInspectable>

@@ -1,9 +1,0 @@
-<Material DiffuseColor:Color="(0.0470588, 0.756863, 0, 1)"{}
-          Shininess:Float="1e+06"{}
-          ReceivesLighting:Bool ="true"{}
-          UvMultiply:Vector2="(1, 1)"{}
-          Texture:File="Textures/GrassTexture.btex2d"{FileExtension="btex2d"}
-          VertexShader:File="Shaders/G_Default.vert_g"{FileExtension="vert_g vert_pp vert_sel vert",IsEngineFile}
-          FragmentShader:File="Shaders/G_Default.frag_g"{FileExtension="frag_g frag_pp frag_sel frag",IsEngineFile}
-         >
-</Material>

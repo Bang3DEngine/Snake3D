@@ -5,6 +5,7 @@
 #include "SkyCamera.h"
 #include "SnakeCamera.h"
 #include "WallsManager.h"
+#include "MenuSpaceButton.h"
 
 // This function will be executed once when created 
 void SnakeController::OnStart() 
@@ -18,6 +19,9 @@ void SnakeController::OnStart()
     p_collider1 = gameObject->FindInChildren("Collider1");
     p_collider2 = gameObject->FindInChildren("Collider2");
     p_collider3 = gameObject->FindInChildren("Collider3");
+
+    p_scoreText = GameObject::Find("ScoreText")->GetComponent<UIText>();
+    p_scoreText->SetContent("0");
 
     BodyPart bodyPart;
     bodyPart.snake        = this;
@@ -36,6 +40,7 @@ void SnakeController::OnUpdate()
     m_moveSpeed = 15.0f + m_level * 0.5f;
     m_rotSpeed  = 2.0f + m_level * 0.1f;
 
+    p_scoreText->SetContent( String::ToString(m_score) );
     if (Input::GetKeyDown(Input::Key::Z)) { m_fpsCamera = !m_fpsCamera; }
     p_camera->gameObject->GetComponent<SkyCamera>()->SetEnabled(!m_fpsCamera);
     p_camera->gameObject->GetComponent<SnakeCamera>()->SetEnabled(m_fpsCamera);
@@ -54,6 +59,8 @@ void SnakeController::OnUpdate()
 
 void SnakeController::OnFoodEat()
 {
+    m_score += 100;
+
     AudioSource *as = gameObject->GetComponent<AudioSource>();
     as->Play();
 
@@ -103,6 +110,7 @@ void SnakeController::MoveBodyParts()
 
 void SnakeController::Lose()
 {
+    MenuSpaceButton::score = m_score;
     SceneManager::LoadScene( "Scenes/Lose" );
 }
 

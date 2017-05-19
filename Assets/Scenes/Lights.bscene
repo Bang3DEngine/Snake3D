@@ -1,8 +1,8 @@
-<Scene id:String="Scene_BANG_EditorCamera2_BANG_EditorYawNode0_Component1"{Hidden,Readonly}
+<Scene id:String="Lights_BANG_EditorCamera2_BANG_EditorYawNode0_Component1"{Hidden,Readonly}
        enabled:Bool ="true"{Hidden,Readonly}
-       name:String="Scene"{Hidden,Readonly}
+       name:String="Lights"{Hidden,Readonly}
       >
-    <Transform id:String="Scene_Component0"{Hidden,Readonly}
+    <Transform id:String="Lights_Component0"{Hidden,Readonly}
                enabled:Bool ="true"{Hidden,Readonly}
                closedInInspector:Bool ="false"{Hidden,Readonly}
                Position:Vector3="(0, 0, 0)"{}
@@ -10,11 +10,11 @@
                Scale:Vector3="(1, 1, 1)"{}
               >
     </Transform>
-    <GameObject id:String="Scene_Cube4"{Hidden,Readonly}
+    <GameObject id:String="Lights_Cube4"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="Cube"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_Cube4_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_Cube4_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(0.8, -5.79, 5.52)"{}
@@ -22,22 +22,21 @@
                    Scale:Vector3="(55.33, 71.85, 1.45)"{}
                   >
         </Transform>
-        <MeshRenderer id:String="Scene_Cube4_Component1"{Hidden,Readonly}
+        <MeshRenderer id:String="Lights_Cube4_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
                       Material:File="Materials/EyeMaterial.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
-                      IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
                       Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight5"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight5"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight5_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight5_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(12.6418, 9.14473, -14.3672)"{}
@@ -45,7 +44,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight5_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight5_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -53,18 +52,18 @@
                     Range:Float="100"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight5_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight5_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight6"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight6"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight6_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight6_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(12.6418, -3.03392, 27.2134)"{}
@@ -72,7 +71,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight6_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight6_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -80,18 +79,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight6_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight6_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight7"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight7"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight7_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight7_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(12.6418, -3.03392, 21.4973)"{}
@@ -99,7 +98,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight7_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight7_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -107,18 +106,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight7_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight7_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight8"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight8"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight8_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight8_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(12.6418, -3.03392, 15.1581)"{}
@@ -126,7 +125,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight8_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight8_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -134,18 +133,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight8_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight8_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight9"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight9"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight9_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight9_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(12.6418, -3.03392, 10.1057)"{}
@@ -153,7 +152,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight9_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight9_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -161,18 +160,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight9_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight9_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight10"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight10"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight10_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight10_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(12.6418, -3.03392, 3.69829)"{}
@@ -180,7 +179,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight10_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight10_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -188,18 +187,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight10_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight10_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight11"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight11"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight11_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight11_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(12.6418, -3.03392, -4.25788)"{}
@@ -207,7 +206,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight11_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight11_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -215,18 +214,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight11_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight11_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight12"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight12"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight12_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight12_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(23.0593, -3.03392, -4.25788)"{}
@@ -234,7 +233,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight12_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight12_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -242,18 +241,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight12_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight12_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight13"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight13"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight13_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight13_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(23.0593, -3.03392, 3.50649)"{}
@@ -261,7 +260,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight13_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight13_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -269,18 +268,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight13_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight13_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight14"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight14"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight14_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight14_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(23.0593, -3.03392, 11.3796)"{}
@@ -288,7 +287,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight14_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight14_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -296,18 +295,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight14_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight14_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight15"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight15"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight15_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight15_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(23.0593, -3.03392, 16.6052)"{}
@@ -315,7 +314,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight15_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight15_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -323,18 +322,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight15_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight15_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight16"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight16"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight16_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight16_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(23.0593, -3.03392, 22.1843)"{}
@@ -342,7 +341,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight16_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight16_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -350,18 +349,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight16_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight16_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight17"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight17"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight17_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight17_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(23.0593, -3.03392, 26.3523)"{}
@@ -369,7 +368,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight17_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight17_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -377,18 +376,18 @@
                     Range:Float="4"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight17_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight17_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight18"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight18"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight18_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight18_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(-0.381689, 0.583705, 26.3523)"{}
@@ -396,7 +395,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight18_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight18_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -404,18 +403,18 @@
                     Range:Float="15"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight18_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight18_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight19"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight19"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight19_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight19_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(-0.381689, 0.583705, 10.7341)"{}
@@ -423,7 +422,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight19_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight19_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -431,18 +430,18 @@
                     Range:Float="15"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight19_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight19_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight20"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight20"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight20_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight20_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(-10.9426, 0.583705, -11.3418)"{}
@@ -450,7 +449,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight20_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight20_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -458,18 +457,18 @@
                     Range:Float="15"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight20_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight20_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight21"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight21"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight21_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight21_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(-18.3347, 0.583705, 7.97351)"{}
@@ -477,7 +476,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight21_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight21_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -485,18 +484,18 @@
                     Range:Float="15"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight21_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight21_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_ColorPointLight22"{Hidden,Readonly}
+    <GameObject id:String="Lights_ColorPointLight22"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ColorPointLight"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_ColorPointLight22_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_ColorPointLight22_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(-19.3539, 6.15538, 37.8248)"{}
@@ -504,7 +503,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <PointLight id:String="Scene_ColorPointLight22_Component1"{Hidden,Readonly}
+        <PointLight id:String="Lights_ColorPointLight22_Component1"{Hidden,Readonly}
                     enabled:Bool ="true"{Hidden,Readonly}
                     closedInInspector:Bool ="false"{Hidden,Readonly}
                     Intensity:Float="0.5"{}
@@ -512,18 +511,18 @@
                     Range:Float="15"{}
                    >
         </PointLight>
-        <Behaviour id:String="Scene_ColorPointLight22_Component2"{Hidden,Readonly}
+        <Behaviour id:String="Lights_ColorPointLight22_Component2"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/LightColorChanger.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
-    <GameObject id:String="Scene_Camera23"{Hidden,Readonly}
+    <GameObject id:String="Lights_Camera23"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="Camera"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_Camera23_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_Camera23_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(0, 15.5655, 43.6342)"{}
@@ -531,7 +530,7 @@
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
-        <Camera id:String="Scene_Camera23_Component1"{Hidden,Readonly}
+        <Camera id:String="Lights_Camera23_Component1"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 closedInInspector:Bool ="false"{Hidden,Readonly}
                 ClearColor:Color="(0.3, 0.3, 0.3, 1)"{}
@@ -543,11 +542,11 @@
                >
         </Camera>
     </GameObject>
-    <GameObject id:String="Scene_Cube24"{Hidden,Readonly}
+    <GameObject id:String="Lights_Cube24"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="Cube"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_Cube24_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_Cube24_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(-23.4412, 6.42041, 5.52)"{}
@@ -555,22 +554,21 @@
                    Scale:Vector3="(33.8986, 71.85, 1.45)"{}
                   >
         </Transform>
-        <MeshRenderer id:String="Scene_Cube24_Component1"{Hidden,Readonly}
+        <MeshRenderer id:String="Lights_Cube24_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
                       Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
-                      IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
                       Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
-    <GameObject id:String="Scene_Cube25"{Hidden,Readonly}
+    <GameObject id:String="Lights_Cube25"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="Cube"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_Cube25_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_Cube25_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(27.7863, 6.42041, 5.52)"{}
@@ -578,22 +576,21 @@
                    Scale:Vector3="(33.8986, 71.85, 1.45)"{}
                   >
         </Transform>
-        <MeshRenderer id:String="Scene_Cube25_Component1"{Hidden,Readonly}
+        <MeshRenderer id:String="Lights_Cube25_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
                       Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
-                      IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
                       Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
-    <GameObject id:String="Scene_Cube26"{Hidden,Readonly}
+    <GameObject id:String="Lights_Cube26"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="Cube"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_Cube26_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_Cube26_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(3.82252, 6.42, -19.1234)"{}
@@ -601,22 +598,21 @@
                    Scale:Vector3="(33.9, 71.85, 1.45)"{}
                   >
         </Transform>
-        <MeshRenderer id:String="Scene_Cube26_Component1"{Hidden,Readonly}
+        <MeshRenderer id:String="Lights_Cube26_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
                       Material:File="Materials/WallMaterial_2.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
-                      IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
                       Mesh:File="Meshes/Cube.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
-    <GameObject id:String="Scene_Sphere27"{Hidden,Readonly}
+    <GameObject id:String="Lights_Sphere27"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="Sphere"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_Sphere27_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_Sphere27_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(0, -3.38612, 0)"{}
@@ -624,22 +620,21 @@
                    Scale:Vector3="(6.47334, 6.47334, 6.47334)"{}
                   >
         </Transform>
-        <MeshRenderer id:String="Scene_Sphere27_Component1"{Hidden,Readonly}
+        <MeshRenderer id:String="Lights_Sphere27_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
                       Material:File="Materials/GroundMaterial.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
-                      IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
                       Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
-    <GameObject id:String="Scene_Sphere28"{Hidden,Readonly}
+    <GameObject id:String="Lights_Sphere28"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="Sphere"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_Sphere28_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_Sphere28_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(-17.2145, -3.38612, 24.7608)"{}
@@ -647,22 +642,21 @@
                    Scale:Vector3="(6.47334, 6.47334, 6.47334)"{}
                   >
         </Transform>
-        <MeshRenderer id:String="Scene_Sphere28_Component1"{Hidden,Readonly}
+        <MeshRenderer id:String="Lights_Sphere28_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
                       Material:File="Materials/EyeMaterial.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
-                      IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
                       Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
-    <GameObject id:String="Scene_Sphere29"{Hidden,Readonly}
+    <GameObject id:String="Lights_Sphere29"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="Sphere"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_Sphere29_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_Sphere29_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(-17.2145, 9.61937, -9.98706)"{}
@@ -670,22 +664,21 @@
                    Scale:Vector3="(6.47334, 6.47334, 6.47334)"{}
                   >
         </Transform>
-        <MeshRenderer id:String="Scene_Sphere29_Component1"{Hidden,Readonly}
+        <MeshRenderer id:String="Lights_Sphere29_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
                       Material:File="Materials/TongueMaterial.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
-                      IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
                       Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >
         </MeshRenderer>
     </GameObject>
-    <GameObject id:String="Scene_Sphere30"{Hidden,Readonly}
+    <GameObject id:String="Lights_Sphere30"{Hidden,Readonly}
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="Sphere"{Hidden,Readonly}
                >
-        <Transform id:String="Scene_Sphere30_Component0"{Hidden,Readonly}
+        <Transform id:String="Lights_Sphere30_Component0"{Hidden,Readonly}
                    enabled:Bool ="true"{Hidden,Readonly}
                    closedInInspector:Bool ="false"{Hidden,Readonly}
                    Position:Vector3="(18.9461, -7.62657, 15.1329)"{}
@@ -693,12 +686,11 @@
                    Scale:Vector3="(6.47334, 6.47334, 6.47334)"{}
                   >
         </Transform>
-        <MeshRenderer id:String="Scene_Sphere30_Component1"{Hidden,Readonly}
+        <MeshRenderer id:String="Lights_Sphere30_Component1"{Hidden,Readonly}
                       enabled:Bool ="true"{Hidden,Readonly}
                       closedInInspector:Bool ="false"{Hidden,Readonly}
                       Material:File="Materials/SnakeMaterial.bmat"{FileExtension="bmat"}
                       LineWidth:Float="1"{Hidden}
-                      IsTransparent:Bool ="false"{Inline}
                       DrawWireframe:Bool ="false"{Inline}
                       Mesh:File="Meshes/Sphere.bmesh"{FileExtension="bmesh",IsEngineFile}
                      >

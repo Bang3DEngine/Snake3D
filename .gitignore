@@ -1,3 +1,4 @@
 Libraries/*
 Project/*
-*.o
+GameData
+*.exe
