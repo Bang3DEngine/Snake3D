@@ -1,50 +1,50 @@
 <Scene id:String="_Menu_BANG_EditorCamera2_BANG_EditorYawNode0_Component1"{Hidden,Readonly}
-       enabled:Bool ="true"{Hidden,Readonly}
+       enabled:Bool="true"{Hidden,Readonly}
        name:String="_Menu"{Hidden,Readonly}
       >
     <Transform id:String="_Menu_Component0"{Hidden,Readonly}
-               enabled:Bool ="true"{Hidden,Readonly}
-               closedInInspector:Bool ="false"{Hidden,Readonly}
+               enabled:Bool="true"{Hidden,Readonly}
+               closedInInspector:Bool="false"{Hidden,Readonly}
                Position:Vector3="(0, 0, 0)"{}
                Rotation:Vector3="(0, 0, 0)"{}
                Scale:Vector3="(1, 1, 1)"{}
               >
     </Transform>
     <GameObject id:String="_Menu_Directional Light4"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="Directional Light"{Hidden,Readonly}
                >
         <Transform id:String="_Menu_Directional Light4_Component0"{Hidden,Readonly}
-                   enabled:Bool ="true"{Hidden,Readonly}
-                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   enabled:Bool="true"{Hidden,Readonly}
+                   closedInInspector:Bool="false"{Hidden,Readonly}
                    Position:Vector3="(-5, 5, -5)"{}
                    Rotation:Vector3="(144.736, -45, 180)"{}
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
         <DirectionalLight id:String="_Menu_Directional Light4_Component1"{Hidden,Readonly}
-                          enabled:Bool ="true"{Hidden,Readonly}
-                          closedInInspector:Bool ="false"{Hidden,Readonly}
+                          enabled:Bool="true"{Hidden,Readonly}
+                          closedInInspector:Bool="false"{Hidden,Readonly}
                           Intensity:Float="1"{}
                           Color:Color="(1, 1, 1, 1)"{}
                          >
         </DirectionalLight>
     </GameObject>
     <GameObject id:String="_Menu_Camera5"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="Camera"{Hidden,Readonly}
                >
         <Transform id:String="_Menu_Camera5_Component0"{Hidden,Readonly}
-                   enabled:Bool ="true"{Hidden,Readonly}
-                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   enabled:Bool="true"{Hidden,Readonly}
+                   closedInInspector:Bool="false"{Hidden,Readonly}
                    Position:Vector3="(5, 5, -5)"{}
                    Rotation:Vector3="(144.736, 45, -180)"{}
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
         <Camera id:String="_Menu_Camera5_Component1"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                closedInInspector:Bool ="false"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
                 ClearColor:Color="(0.2, 0.5, 1, 1)"{}
                 ZNear:Float="0.1"{}
                 ZFar:Float="100"{}
@@ -54,24 +54,24 @@
                >
         </Camera>
         <AudioListener id:String="_Menu_Camera5_Component2"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                       >
         </AudioListener>
         <AudioSource id:String="_Menu_Camera5_Component3"{Hidden,Readonly}
-                     enabled:Bool ="true"{Hidden,Readonly}
-                     closedInInspector:Bool ="false"{Hidden,Readonly}
+                     enabled:Bool="true"{Hidden,Readonly}
+                     closedInInspector:Bool="false"{Hidden,Readonly}
                      AudioClip:File="Music/MenuMusic.baudioclip"{FileExtension="baudioclip"}
                      Volume:Float="1"{}
                      Pitch:Float="1"{}
                      Range:Float="1"{}
-                     Looping:Bool ="true"{}
-                     PlayOnStart:Bool ="true"{}
+                     Looping:Bool="true"{}
+                     PlayOnStart:Bool="true"{}
                     >
         </AudioSource>
     </GameObject>
     <GameObject id:String="_Menu_BG6"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="BG"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="-1"{}
@@ -82,19 +82,19 @@
                        AnchorMin:Vector2="(-1, -1)"{}
                        AnchorMax:Vector2="(1, 1)"{}
                        id:String="_Menu_BG6_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(-0.00260079, 0, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(1, 1, 1)"{Hidden}
                       >
         </RectTransform>
         <UIImage id:String="_Menu_BG6_Component1"{Hidden,Readonly}
-                 enabled:Bool ="true"{Hidden,Readonly}
-                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 enabled:Bool="true"{Hidden,Readonly}
+                 closedInInspector:Bool="false"{Hidden,Readonly}
                  Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
-                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool="false"{Inline,Hidden}
                  Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(1, 1, 1, 1)"{}
                  Image:File="Textures/SnakeBG.btex2d"{FileExtension="btex2d"}
@@ -102,7 +102,7 @@
         </UIImage>
     </GameObject>
     <GameObject id:String="_Menu_3DText7"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="3DText"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="68"{}
@@ -113,19 +113,19 @@
                        AnchorMin:Vector2="(0, 0.5)"{}
                        AnchorMax:Vector2="(0, 0.5)"{}
                        id:String="_Menu_3DText7_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(0.26788, 0.336158, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.0910273, 0.180791, 1)"{Hidden}
                       >
         </RectTransform>
         <UIText id:String="_Menu_3DText7_Component1"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                closedInInspector:Bool ="false"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
                 Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
-                DrawWireframe:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 0.501961, 0, 1)"{Hidden}
                 Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
@@ -133,14 +133,14 @@
                 Content:String="3D"{Inline}
                 TextSize:Float="64"{}
                 HSpacing:Float="5"{}
-                Kerning:Bool ="false"{}
+                Kerning:Bool="false"{}
                 VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
                 HorizontalAlign:Enum="0"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
                >
         </UIText>
     </GameObject>
     <GameObject id:String="_Menu_SnakeText8"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="SnakeText"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="-178"{}
@@ -151,19 +151,19 @@
                        AnchorMin:Vector2="(0, 0.501377)"{}
                        AnchorMax:Vector2="(-0.00120914, 0.501378)"{}
                        id:String="_Menu_SnakeText8_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(-0.379018, 0.433581, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.0839208, 0.186441, 1)"{Hidden}
                       >
         </RectTransform>
         <UIText id:String="_Menu_SnakeText8_Component1"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                closedInInspector:Bool ="false"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
                 Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
-                DrawWireframe:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 0, 0, 1)"{Hidden}
                 Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
@@ -171,14 +171,14 @@
                 Content:String="Snake"{Inline}
                 TextSize:Float="100"{}
                 HSpacing:Float="5"{}
-                Kerning:Bool ="false"{}
+                Kerning:Bool="false"{}
                 VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
                 HorizontalAlign:Enum="0"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
                >
         </UIText>
     </GameObject>
     <GameObject id:String="_Menu_BackButton9"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="BackButton"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="-228"{}
@@ -189,33 +189,33 @@
                        AnchorMin:Vector2="(0, -0.663647)"{}
                        AnchorMax:Vector2="(0.00291669, -0.658721)"{}
                        id:String="_Menu_BackButton9_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(0.0131619, -0.661184, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.587934, 0.143706, 1)"{Hidden}
                       >
         </RectTransform>
         <UIImage id:String="_Menu_BackButton9_Component1"{Hidden,Readonly}
-                 enabled:Bool ="true"{Hidden,Readonly}
-                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 enabled:Bool="true"{Hidden,Readonly}
+                 closedInInspector:Bool="false"{Hidden,Readonly}
                  Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
-                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool="false"{Inline,Hidden}
                  Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(0.129412, 0.521569, 1, 0.784314)"{}
                  Image:File=""{FileExtension="btex2d"}
                 >
         </UIImage>
         <Behaviour id:String="_Menu_BackButton9_Component2"{Hidden,Readonly}
-                   enabled:Bool ="true"{Hidden,Readonly}
-                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   enabled:Bool="true"{Hidden,Readonly}
+                   closedInInspector:Bool="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/MenuSpaceButton.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
     <GameObject id:String="_Menu_PressSpaceToPlayButton10"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="PressSpaceToPlayButton"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="-21"{}
@@ -226,19 +226,19 @@
                        AnchorMin:Vector2="(0, -0.663647)"{}
                        AnchorMax:Vector2="(0.00291669, -0.658721)"{}
                        id:String="_Menu_PressSpaceToPlayButton10_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(0.000157954, -0.658359, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.0547743, 0.112632, 1)"{Hidden}
                       >
         </RectTransform>
         <UIText id:String="_Menu_PressSpaceToPlayButton10_Component1"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                closedInInspector:Bool ="false"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
                 Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
-                DrawWireframe:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 1, 1, 1)"{Hidden}
                 Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
@@ -246,14 +246,14 @@
                 Content:String="Press Space to play"{Inline}
                 TextSize:Float="64"{}
                 HSpacing:Float="5"{}
-                Kerning:Bool ="false"{}
+                Kerning:Bool="false"{}
                 VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
                 HorizontalAlign:Enum="1"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
                >
         </UIText>
         <Behaviour id:String="_Menu_PressSpaceToPlayButton10_Component2"{Hidden,Readonly}
-                   enabled:Bool ="true"{Hidden,Readonly}
-                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   enabled:Bool="true"{Hidden,Readonly}
+                   closedInInspector:Bool="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/MenuSpaceButton.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>

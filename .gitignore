@@ -2,3 +2,5 @@ Libraries/*
 Project/*
 GameData
 *.exe
+*.refl.h
+*.exe

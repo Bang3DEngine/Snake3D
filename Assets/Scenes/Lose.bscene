@@ -105,13 +105,13 @@
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ButtonPanel"{Hidden,Readonly}
                >
-        <RectTransform MarginLeft:Int="-111"{}
-                       MarginTop:Int="-33"{}
-                       MarginRight:Int="-104"{}
-                       MarginBot:Int="-32"{}
+        <RectTransform MarginLeft:Int="0"{}
+                       MarginTop:Int="0"{}
+                       MarginRight:Int="0"{}
+                       MarginBot:Int="0"{}
                        PivotPosition:Vector2="(0, 0)"{}
-                       AnchorMin:Vector2="(-0.00400239, 0.737219)"{}
-                       AnchorMax:Vector2="(-0.00344619, 0.734523)"{}
+                       AnchorMin:Vector2="(-1, 0.65)"{}
+                       AnchorMax:Vector2="(1, 1)"{}
                        id:String="Lose_ButtonPanel7_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
@@ -136,13 +136,13 @@
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="DeadImage"{Hidden,Readonly}
                >
-        <RectTransform MarginLeft:Int="-162"{}
-                       MarginTop:Int="-209"{}
-                       MarginRight:Int="-69"{}
-                       MarginBot:Int="1"{}
+        <RectTransform MarginLeft:Int="34"{}
+                       MarginTop:Int="-171"{}
+                       MarginRight:Int="-224"{}
+                       MarginBot:Int="2"{}
                        PivotPosition:Vector2="(0, 0)"{}
-                       AnchorMin:Vector2="(-0.5, -0.9)"{}
-                       AnchorMax:Vector2="(-0.5, -0.9)"{}
+                       AnchorMin:Vector2="(-0.982382, -0.913378)"{}
+                       AnchorMax:Vector2="(-0.994532, -0.933445)"{}
                        id:String="Lose_DeadImage8_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
@@ -172,8 +172,8 @@
                        MarginRight:Int="0"{}
                        MarginBot:Int="0"{}
                        PivotPosition:Vector2="(0, 0)"{}
-                       AnchorMin:Vector2="(-0.20902, -0.578552)"{}
-                       AnchorMax:Vector2="(0.936505, 0.5)"{}
+                       AnchorMin:Vector2="(-0.207195, -0.616564)"{}
+                       AnchorMax:Vector2="(0.936505, 0.322656)"{}
                        id:String="Lose_RightPanel9_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
@@ -198,13 +198,13 @@
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="RightPanelHeader"{Hidden,Readonly}
                >
-        <RectTransform MarginLeft:Int="-1"{}
-                       MarginTop:Int="1"{}
+        <RectTransform MarginLeft:Int="-7"{}
+                       MarginTop:Int="-4"{}
                        MarginRight:Int="0"{}
-                       MarginBot:Int="0"{}
+                       MarginBot:Int="2"{}
                        PivotPosition:Vector2="(0, 0)"{}
-                       AnchorMin:Vector2="(-0.20902, 0.224403)"{}
-                       AnchorMax:Vector2="(0.94191, 0.5)"{}
+                       AnchorMin:Vector2="(-0.194656, 0.298486)"{}
+                       AnchorMax:Vector2="(0.93959, 0.524937)"{}
                        id:String="Lose_RightPanelHeader10_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
@@ -230,11 +230,11 @@
                 name:String="ButtonPanel"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="1"{}
-                       MarginTop:Int="-23"{}
+                       MarginTop:Int="-25"{}
                        MarginRight:Int="-1"{}
-                       MarginBot:Int="-17"{}
+                       MarginBot:Int="-24"{}
                        PivotPosition:Vector2="(0, 0)"{}
-                       AnchorMin:Vector2="(-0.20902, -0.821159)"{}
+                       AnchorMin:Vector2="(-0.20902, -0.787714)"{}
                        AnchorMax:Vector2="(0.936505, -0.810145)"{}
                        id:String="Lose_ButtonPanel11_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
@@ -305,18 +305,18 @@
                 name:String="YouLoseText"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="-31"{}
-                       MarginTop:Int="-34"{}
-                       MarginRight:Int="-34"{}
-                       MarginBot:Int="-32"{}
+                       MarginTop:Int="-32"{}
+                       MarginRight:Int="-33"{}
+                       MarginBot:Int="-29"{}
                        PivotPosition:Vector2="(0, 0)"{}
-                       AnchorMin:Vector2="(-0.022973, 0.746798)"{}
-                       AnchorMax:Vector2="(-0.0121621, 0.739409)"{}
+                       AnchorMin:Vector2="(0, 0.828671)"{}
+                       AnchorMax:Vector2="(0.000443577, 0.839624)"{}
                        id:String="Lose_YouLoseText13_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(-0.01394, 0.748753, 0)"{Hidden}
+                       Position:Vector3="(-0.01, 0.75, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
-                       Scale:Vector3="(0.0840028, 0.182746, 1)"{Hidden}
+                       Scale:Vector3="(0.08, 0.18, 1)"{Hidden}
                       >
         </RectTransform>
         <UIText id:String="Lose_YouLoseText13_Component1"{Hidden,Readonly}
@@ -342,19 +342,19 @@
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ScoreLabel"{Hidden,Readonly}
                >
-        <RectTransform MarginLeft:Int="-15"{}
-                       MarginTop:Int="-14"{}
-                       MarginRight:Int="-18"{}
-                       MarginBot:Int="-18"{}
+        <RectTransform MarginLeft:Int="0"{}
+                       MarginTop:Int="0"{}
+                       MarginRight:Int="0"{}
+                       MarginBot:Int="0"{}
                        PivotPosition:Vector2="(0, 0)"{}
-                       AnchorMin:Vector2="(0.342733, 0.36441)"{}
-                       AnchorMax:Vector2="(0.351058, 0.375555)"{}
+                       AnchorMin:Vector2="(0.331774, 0.343738)"{}
+                       AnchorMax:Vector2="(0.416452, 0.523898)"{}
                        id:String="Lose_ScoreLabel14_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(0.350523, 0.358683, 0)"{Hidden}
+                       Position:Vector3="(0.35, 0.36, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
-                       Scale:Vector3="(0.0440658, 0.095968, 1)"{Hidden}
+                       Scale:Vector3="(0.04, 0.1, 1)"{Hidden}
                       >
         </RectTransform>
         <UIText id:String="Lose_ScoreLabel14_Component1"{Hidden,Readonly}
@@ -380,19 +380,19 @@
                 enabled:Bool ="true"{Hidden,Readonly}
                 name:String="ScoreText"{Hidden,Readonly}
                >
-        <RectTransform MarginLeft:Int="-16"{}
-                       MarginTop:Int="-16"{}
-                       MarginRight:Int="-13"{}
-                       MarginBot:Int="-18"{}
+        <RectTransform MarginLeft:Int="0"{}
+                       MarginTop:Int="0"{}
+                       MarginRight:Int="0"{}
+                       MarginBot:Int="0"{}
                        PivotPosition:Vector2="(0, 0)"{}
-                       AnchorMin:Vector2="(0.374335, -0.16022)"{}
-                       AnchorMax:Vector2="(0.385425, -0.149075)"{}
+                       AnchorMin:Vector2="(0.33, -0.229872)"{}
+                       AnchorMax:Vector2="(0.41514, 0)"{}
                        id:String="Lose_ScoreText15_Component0"{Hidden,Readonly}
                        enabled:Bool ="true"{Hidden,Readonly}
                        closedInInspector:Bool ="false"{Hidden,Readonly}
-                       Position:Vector3="(0.373105, -0.142701, 0)"{Hidden}
+                       Position:Vector3="(0.37, -0.14, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
-                       Scale:Vector3="(0.0420393, 0.0996625, 1)"{Hidden}
+                       Scale:Vector3="(0.04, 0.1, 1)"{Hidden}
                       >
         </RectTransform>
         <UIText id:String="Lose_ScoreText15_Component1"{Hidden,Readonly}

@@ -37,7 +37,6 @@ void SnakeController::OnUpdate()
 
     m_time += Time::deltaTime;
     m_level = m_bodyParts.Size();
-    m_moveSpeed = 15.0f + m_level * 0.5f;
     m_rotSpeed  = 2.0f + m_level * 0.1f;
 
     p_scoreText->SetContent( String::ToString(m_score) );
@@ -59,26 +58,11 @@ void SnakeController::OnUpdate()
 
 void SnakeController::OnFoodEat()
 {
-    m_score += 100;
-
     AudioSource *as = gameObject->GetComponent<AudioSource>();
     as->Play();
 
-    GameObject *newTail = p_tailPrefab->Instantiate();
-    // newTail->GetComponent<Renderer>()->UseMaterialCopy();
-    // newTail->GetComponent<Renderer>()->GetMaterial()->SetDiffuseColor(
-    //          Random::GetColorOpaque());
-
-    BodyPart bodyPart;
-    bodyPart.snake        = this;
-    bodyPart.p_gameObject = newTail;
-    bodyPart.p_prevPart   = &(m_bodyParts.Back());
-    m_bodyParts.PushBack(bodyPart);
-
-    Vector3 latestTailPos = p_body->GetChildren().Back()->transform->GetPosition();
-    Vector3 newTailPos = latestTailPos - p_head->transform->GetForward() * 1.0f;
-    newTail->transform->SetPosition(newTailPos);
-    newTail->SetParent(p_body);
+    GrowSnake();
+    GrowSnake();
 }
 
 void SnakeController::CheckSelfCollision()
@@ -112,6 +96,28 @@ void SnakeController::Lose()
 {
     MenuSpaceButton::score = m_score;
     SceneManager::LoadScene( "Scenes/Lose" );
+}
+
+void SnakeController::GrowSnake()
+{
+    m_score += 100;
+    m_moveSpeed += 1.0f;
+
+    GameObject *newTail = p_tailPrefab->Instantiate();
+    // newTail->GetComponent<Renderer>()->UseMaterialCopy();
+    // newTail->GetComponent<Renderer>()->GetMaterial()->SetDiffuseColor(
+    //          Random::GetColorOpaque());
+
+    BodyPart bodyPart;
+    bodyPart.snake        = this;
+    bodyPart.p_gameObject = newTail;
+    bodyPart.p_prevPart   = &(m_bodyParts.Back());
+    m_bodyParts.PushBack(bodyPart);
+
+    Vector3 latestTailPos = p_body->GetChildren().Back()->transform->GetPosition();
+    Vector3 newTailPos = latestTailPos - p_head->transform->GetForward() * 1.0f;
+    newTail->transform->SetPosition(newTailPos);
+    newTail->SetParent(p_body);
 }
 
 void BodyPart::MovePart()

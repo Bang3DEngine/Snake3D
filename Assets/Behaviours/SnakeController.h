@@ -2,6 +2,7 @@
 #define SnakeController_H 
 
 #include "Bang/Behaviour.h" 
+#include ".SnakeController.refl.h"
 
 class SnakeController;
 struct BodyPart
@@ -13,7 +14,8 @@ struct BodyPart
     void MovePart();
 };
 
-class SnakeController : public Behaviour 
+BP_REFLECT_CLASS(SnakeController)
+class SnakeController : public Behaviour
 { 
 OBJECT(SnakeController) 
 public: 
@@ -24,8 +26,12 @@ public:
     void CheckSelfCollision();
     void MoveBodyParts();
     void Lose();
+    void GrowSnake();
 
-    float m_rotSpeed, m_moveSpeed;
+    float m_rotSpeed;
+
+    BP_REFLECT_VARIABLE(MoveSpeed)
+    float m_moveSpeed = 15.0f;
 
     bool m_fpsCamera = true;
     Camera *p_camera   = nullptr;
@@ -43,6 +49,8 @@ public:
     GameObject *p_collider3 = nullptr;
 
     float m_time = Math::Infinity<float>();
+
+    BP_REFLECT_DEFINITIONS_SnakeController();
 }; 
 
 #endif // SnakeController_H 
