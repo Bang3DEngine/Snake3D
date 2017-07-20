@@ -1,4 +1,4 @@
-<Scene id:String="_Menu_BANG_EditorCamera2_BANG_EditorYawNode0_Component1"{Hidden,Readonly}
+<Scene id:String="_Menu_BANG_EditorCamera2_BANG_EditorYawNode0_Component1"{Hidden}
        enabled:Bool="true"{Hidden,Readonly}
        name:String="_Menu"{Hidden,Readonly}
       >
@@ -128,7 +128,7 @@
                 DrawWireframe:Bool="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 0.501961, 0, 1)"{Hidden}
-                Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Font:File="Fonts/UbuntuFont.bfont"{FileExtension="bfont",IsEngineFile}
                 Color:Color="(1, 0.501961, 0, 1)"{}
                 Content:String="3D"{Inline}
                 TextSize:Float="64"{}
@@ -166,7 +166,7 @@
                 DrawWireframe:Bool="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 0, 0, 1)"{Hidden}
-                Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Font:File="Fonts/UbuntuFont.bfont"{FileExtension="bfont",IsEngineFile}
                 Color:Color="(1, 0, 0, 1)"{}
                 Content:String="Snake"{Inline}
                 TextSize:Float="100"{}
@@ -241,7 +241,7 @@
                 DrawWireframe:Bool="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 1, 1, 1)"{Hidden}
-                Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Font:File="Fonts/UbuntuFont.bfont"{FileExtension="bfont",IsEngineFile}
                 Color:Color="(1, 1, 1, 1)"{}
                 Content:String="Press Space to play"{Inline}
                 TextSize:Float="64"{}

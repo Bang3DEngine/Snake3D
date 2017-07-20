@@ -11,7 +11,7 @@ void MenuSpaceButton::OnStart()
 // This function will be executed every frame 
 void MenuSpaceButton::OnUpdate() 
 { 
-    Behaviour::OnUpdate(); 
+    Behaviour::OnUpdate();
 
     if (Input::GetKeyDown(Input::Key::Space))
     {

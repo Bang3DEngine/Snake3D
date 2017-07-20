@@ -1,30 +1,25 @@
-<GameObject id:String="FoodBall"{Hidden,Readonly}
-            enabled:Bool ="true"{Hidden,Readonly}
-            name:String="FoodBall"{Hidden,Readonly}
+<GameObject id:String="FoodBall"{}
+            enabled:Bool="true"{}
+            name:String="FoodBall"{}
            >
-    <Transform id:String="FoodBall_Component0"{Hidden,Readonly}
-               enabled:Bool ="true"{Hidden,Readonly}
-               closedInInspector:Bool ="false"{Hidden,Readonly}
-               Position:Vector3="(0, 0, 0)"{}
+    <Transform id:String="FoodBall_Component0"{}
+               enabled:Bool="true"{}
+               Position:Vector3="(12.323, 0, 0)"{}
                Rotation:Vector3="(0, 0, 0)"{}
                Scale:Vector3="(0.6, 0.6, 0.6)"{}
               >
     </Transform>
-    <MeshRenderer id:String="FoodBall_Component1"{Hidden,Readonly}
-                  enabled:Bool ="true"{Hidden,Readonly}
-                  closedInInspector:Bool ="false"{Hidden,Readonly}
-                  Material:File="Materials/FoodMaterial.bmat"{FileExtension="bmat"}
-                  LineWidth:Float="1"{Hidden}
-                  IsTransparent:Bool ="false"{Inline}
-                  DrawWireframe:Bool ="false"{Inline}
-                  Mesh:File="Models/Apple.bmesh"{FileExtension="bmesh"}
+    <MeshRenderer id:String="FoodBall_Component1"{}
+                  enabled:Bool="true"{}
+                  Material:File="Materials/FoodMaterial.bmat"{}
+                  LineWidth:Float="1"{}
+                  DrawWireframe:Bool="false"{}
+                  Mesh:File="Models/Apple.bmesh"{}
                  >
     </MeshRenderer>
-    <Behaviour id:String="FoodBall_Component2"{Hidden,Readonly}
-               enabled:Bool ="true"{Hidden,Readonly}
-               closedInInspector:Bool ="false"{Hidden,Readonly}
-               BehaviourScript:File="Behaviours/Food.cpp"{FileExtension="cpp"}
-               CreateNew...:Button="CreateNew..."{DontWriteToFile,Listener="0xc17c9c8"}
+    <Behaviour id:String="FoodBall_Component2"{}
+               enabled:Bool="true"{}
+               BehaviourScript:File="Behaviours/Food.cpp"{}
               >
     </Behaviour>
 </GameObject>

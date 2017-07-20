@@ -1,9 +1,9 @@
-<Material DiffuseColor:Color="(0.635294, 0.796078, 1, 1)"{}
+<Material DiffuseColor:Color="(0, 0.984314, 1, 1)"{}
           Shininess:Float="200"{}
-          ReceivesLighting:Bool ="true"{}
-          UvMultiply:Vector2="(10, 1.5)"{}
-          Texture:File="Textures/TileTexture.btex2d"{FileExtension="btex2d"}
-          VertexShader:File="Shaders/G_Default.vert_g"{FileExtension="vert_g vert_pp vert_sel vert",IsEngineFile}
-          FragmentShader:File="Shaders/G_Default.frag_g"{FileExtension="frag_g frag_pp frag_sel frag",IsEngineFile}
+          ReceivesLighting:Bool="true"{}
+          UvMultiply:Vector2="(2, 1.5)"{}
+          Texture:File="Textures/TileTexture.btex2d"{}
+          VertexShader:File="Shaders/G_Default.vert_g"{IsEngineFile}
+          FragmentShader:File="Shaders/G_Default.frag_g"{IsEngineFile}
          >
 </Material>

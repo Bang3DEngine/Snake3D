@@ -7,6 +7,12 @@ void Food::OnStart()
 { 
     Behaviour::OnStart(); 
     m_time = Random::Value() * 100.0f;
+    Color randColor = Color::One;
+    randColor.r = Random::Value() > 0.5f ? 1.0f : 0.0f;
+    randColor.g = Random::Value() > 0.5f ? 1.0f : 0.0f;
+    randColor.b = Random::Value() > 0.5f ? 1.0f : 0.0f;
+    gameObject->GetComponent<Renderer>()->UseMaterialCopy();
+    gameObject->GetComponent<Renderer>()->GetMaterial()->SetDiffuseColor(randColor);
     snakeHead = GameObject::Find("Snake")->FindInChildren("Body")->FindInChildren("Head");
 } 
 
@@ -19,7 +25,7 @@ void Food::OnUpdate()
 
     m_time += Time::deltaTime;
     float scale = Math::Sin(m_time * 4.0f);
-    scale = Math::Map(scale, -1.0f, 1.0f, 0.3f, 0.6f);
+    scale = Math::Map(scale, -1.0f, 1.0f, 1.0f, 1.5f);
 
     Sphere foodSphere = gameObject->GetBoundingSphere();
     if ( snakeHead->GetBoundingSphere().CheckCollision(foodSphere) )

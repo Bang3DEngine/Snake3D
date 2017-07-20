@@ -1,0 +1,162 @@
+<Scene id:String="mec_BANG_EditorCamera2_BANG_EditorYawNode0_Component1"{Hidden,Readonly}
+       enabled:Bool="true"{Hidden,Readonly}
+       name:String="mec"{Hidden,Readonly}
+      >
+    <Transform id:String="mec_Component0"{Hidden,Readonly}
+               enabled:Bool="true"{Hidden,Readonly}
+               closedInInspector:Bool="false"{Hidden,Readonly}
+               Position:Vector3="(0, 0, 0)"{}
+               Rotation:Vector3="(0, 0, 0)"{}
+               Scale:Vector3="(1, 1, 1)"{}
+              >
+    </Transform>
+    <GameObject id:String="mec_Directional Light4"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                name:String="Directional Light"{Hidden,Readonly}
+               >
+        <Transform id:String="mec_Directional Light4_Component0"{Hidden,Readonly}
+                   enabled:Bool="true"{Hidden,Readonly}
+                   closedInInspector:Bool="false"{Hidden,Readonly}
+                   Position:Vector3="(-5, 5, -5)"{}
+                   Rotation:Vector3="(144.736, -45, 180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <DirectionalLight id:String="mec_Directional Light4_Component1"{Hidden,Readonly}
+                          enabled:Bool="true"{Hidden,Readonly}
+                          closedInInspector:Bool="false"{Hidden,Readonly}
+                          Intensity:Float="1"{}
+                          Color:Color="(1, 1, 1, 1)"{}
+                         >
+        </DirectionalLight>
+    </GameObject>
+    <GameObject id:String="mec_Camera5"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                name:String="Camera"{Hidden,Readonly}
+               >
+        <Transform id:String="mec_Camera5_Component0"{Hidden,Readonly}
+                   enabled:Bool="true"{Hidden,Readonly}
+                   closedInInspector:Bool="false"{Hidden,Readonly}
+                   Position:Vector3="(5, 5, -5)"{}
+                   Rotation:Vector3="(144.736, 45, -180)"{}
+                   Scale:Vector3="(1, 1, 1)"{}
+                  >
+        </Transform>
+        <Camera id:String="mec_Camera5_Component1"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
+                ClearColor:Color="(0.2, 0.5, 1, 1)"{}
+                ZNear:Float="0.1"{}
+                ZFar:Float="100"{}
+                ProjectionMode:Enum="1"{Readonly,EnumName0="Orthographic",EnumName1="Perspective"}
+                OrthoHeight:Float="25"{Hidden}
+                FOVDegrees:Float="60"{}
+               >
+        </Camera>
+        <AudioListener id:String="mec_Camera5_Component2"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
+                      >
+        </AudioListener>
+        <AudioSource id:String="mec_Camera5_Component3"{Hidden,Readonly}
+                     enabled:Bool="true"{Hidden,Readonly}
+                     closedInInspector:Bool="false"{Hidden,Readonly}
+                     AudioClip:File="Music/MenuMusic.baudioclip"{FileExtension="baudioclip"}
+                     Volume:Float="1"{}
+                     Pitch:Float="1"{}
+                     Range:Float="1"{}
+                     Looping:Bool="true"{}
+                     PlayOnStart:Bool="true"{}
+                    >
+        </AudioSource>
+    </GameObject>
+    <GameObject id:String="mec_BG6"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                name:String="BG"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-1"{}
+                       MarginTop:Int="0"{}
+                       MarginRight:Int="1"{}
+                       MarginBot:Int="0"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(-1, -1)"{}
+                       AnchorMax:Vector2="(1, 1)"{}
+                       id:String="mec_BG6_Component0"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
+                       Position:Vector3="(-0.00260079, 0, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(1, 1, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIImage id:String="mec_BG6_Component1"{Hidden,Readonly}
+                 enabled:Bool="true"{Hidden,Readonly}
+                 closedInInspector:Bool="false"{Hidden,Readonly}
+                 Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                 LineWidth:Float="1"{Hidden}
+                 DrawWireframe:Bool="false"{Inline,Hidden}
+                 Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
+                 Tint:Color="(1, 1, 1, 1)"{}
+                 Image:File="Textures/SnakeBG.btex2d"{FileExtension="btex2d"}
+                >
+        </UIImage>
+    </GameObject>
+    <GameObject id:String="mec_3DText7"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                name:String="3DText"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="68"{}
+                       MarginTop:Int="-3"{}
+                       MarginRight:Int="-138"{}
+                       MarginBot:Int="-61"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(0, 0.5)"{}
+                       AnchorMax:Vector2="(0, 0.5)"{}
+                       id:String="mec_3DText7_Component0"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
+                       Position:Vector3="(0.26788, 0.336158, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.0910273, 0.180791, 1)"{Hidden}
+                      >
+        </RectTransform>
+        <UIText id:String="mec_3DText7_Component1"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
+                Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
+                LineWidth:Float="1"{Hidden}
+                DrawWireframe:Bool="false"{Inline,Hidden}
+                Mesh:File=""{FileExtension="bmesh",Hidden}
+                Tint:Color="(1, 0.501961, 0, 1)"{Hidden}
+                Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
+                Color:Color="(1, 0.501961, 0, 1)"{}
+                Content:String="3D"{Inline}
+                TextSize:Float="64"{}
+                HSpacing:Float="5"{}
+                Kerning:Bool="false"{}
+                VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
+                HorizontalAlign:Enum="0"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
+               >
+        </UIText>
+    </GameObject>
+    <GameObject id:String="mec_SnakeText8"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                name:String="SnakeText"{Hidden,Readonly}
+               >
+        <RectTransform MarginLeft:Int="-178"{}
+                       MarginTop:Int="-21"{}
+                       MarginRight:Int="113"{}
+                       MarginBot:Int="-45"{}
+                       PivotPosition:Vector2="(0, 0)"{}
+                       AnchorMin:Vector2="(0, 0.501377)"{}
+                       AnchorMax:Vector2="(-0.00120914, 0.501378)"{}
+                       id:String="mec_SnakeText8_Component0"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
+                       Position:Vector3="(-0.379018, 0.433581, 0)"{Hidden}
+                       Rotation:Vector3="(0, -0, 0)"{Hidden}
+                       Scale:Vector3="(0.0839208, 0.186441, 1)"{Hidden}
+                      >
+        </RectTransform>
+    </GameObject>
+</Scene>

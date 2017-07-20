@@ -18,7 +18,7 @@ void SnakeCamera::OnUpdate()
 
     Vector3 snakeHeadPos = snakeHead->transform->GetPosition();
 
-    float mouseY = Input::GetMouseCoordsNDC().y;
+    float mouseY = 0.5f; // Input::GetMouseCoordsNDC().y;
     if (Math::Abs(mouseY) >= 0.3f)
     {
         m_angleVerticalDest  = Math::Map(mouseY, -1.0f, 1.0f, -60.0f, -5.0f);

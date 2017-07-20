@@ -1,17 +1,17 @@
 <Scene id:String="Lose_BANG_EditorCamera2_BANG_EditorYawNode0_Component1"{Hidden,Readonly}
-       enabled:Bool ="true"{Hidden,Readonly}
+       enabled:Bool="true"{Hidden,Readonly}
        name:String="Lose"{Hidden,Readonly}
       >
     <Transform id:String="Lose_Component0"{Hidden,Readonly}
-               enabled:Bool ="true"{Hidden,Readonly}
-               closedInInspector:Bool ="false"{Hidden,Readonly}
+               enabled:Bool="true"{Hidden,Readonly}
+               closedInInspector:Bool="false"{Hidden,Readonly}
                Position:Vector3="(0, 0, 0)"{}
                Rotation:Vector3="(0, 0, 0)"{}
                Scale:Vector3="(1, 1, 1)"{}
               >
     </Transform>
     <GameObject id:String="Lose_BG4"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="BG"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="0"{}
@@ -22,19 +22,19 @@
                        AnchorMin:Vector2="(-1, -1)"{}
                        AnchorMax:Vector2="(1, 1)"{}
                        id:String="Lose_BG4_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(-0.0012092, 0, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.998791, 1, 1)"{Hidden}
                       >
         </RectTransform>
         <UIImage id:String="Lose_BG4_Component1"{Hidden,Readonly}
-                 enabled:Bool ="true"{Hidden,Readonly}
-                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 enabled:Bool="true"{Hidden,Readonly}
+                 closedInInspector:Bool="false"{Hidden,Readonly}
                  Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
-                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool="false"{Inline,Hidden}
                  Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(1, 1, 1, 1)"{}
                  Image:File="Textures/SnakeBG.btex2d"{FileExtension="btex2d"}
@@ -42,40 +42,40 @@
         </UIImage>
     </GameObject>
     <GameObject id:String="Lose_Directional Light5"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="Directional Light"{Hidden,Readonly}
                >
         <Transform id:String="Lose_Directional Light5_Component0"{Hidden,Readonly}
-                   enabled:Bool ="true"{Hidden,Readonly}
-                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   enabled:Bool="true"{Hidden,Readonly}
+                   closedInInspector:Bool="false"{Hidden,Readonly}
                    Position:Vector3="(-5, 5, -5)"{}
                    Rotation:Vector3="(144.736, -45, 180)"{}
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
         <DirectionalLight id:String="Lose_Directional Light5_Component1"{Hidden,Readonly}
-                          enabled:Bool ="true"{Hidden,Readonly}
-                          closedInInspector:Bool ="false"{Hidden,Readonly}
+                          enabled:Bool="true"{Hidden,Readonly}
+                          closedInInspector:Bool="false"{Hidden,Readonly}
                           Intensity:Float="1"{}
                           Color:Color="(1, 1, 1, 1)"{}
                          >
         </DirectionalLight>
     </GameObject>
     <GameObject id:String="Lose_Camera6"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="Camera"{Hidden,Readonly}
                >
         <Transform id:String="Lose_Camera6_Component0"{Hidden,Readonly}
-                   enabled:Bool ="true"{Hidden,Readonly}
-                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   enabled:Bool="true"{Hidden,Readonly}
+                   closedInInspector:Bool="false"{Hidden,Readonly}
                    Position:Vector3="(5, 5, -5)"{}
                    Rotation:Vector3="(144.736, 45, -180)"{}
                    Scale:Vector3="(1, 1, 1)"{}
                   >
         </Transform>
         <Camera id:String="Lose_Camera6_Component1"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                closedInInspector:Bool ="false"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
                 ClearColor:Color="(0.2, 0.5, 1, 1)"{}
                 ZNear:Float="0.1"{}
                 ZFar:Float="100"{}
@@ -85,24 +85,24 @@
                >
         </Camera>
         <AudioListener id:String="Lose_Camera6_Component2"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                       >
         </AudioListener>
         <AudioSource id:String="Lose_Camera6_Component3"{Hidden,Readonly}
-                     enabled:Bool ="true"{Hidden,Readonly}
-                     closedInInspector:Bool ="false"{Hidden,Readonly}
+                     enabled:Bool="true"{Hidden,Readonly}
+                     closedInInspector:Bool="false"{Hidden,Readonly}
                      AudioClip:File="Music/LoseMusic.baudioclip"{FileExtension="baudioclip"}
                      Volume:Float="0.65"{}
                      Pitch:Float="1"{}
                      Range:Float="5"{}
-                     Looping:Bool ="false"{}
-                     PlayOnStart:Bool ="true"{}
+                     Looping:Bool="false"{}
+                     PlayOnStart:Bool="true"{}
                     >
         </AudioSource>
     </GameObject>
     <GameObject id:String="Lose_ButtonPanel7"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="ButtonPanel"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="0"{}
@@ -113,19 +113,19 @@
                        AnchorMin:Vector2="(-1, 0.65)"{}
                        AnchorMax:Vector2="(1, 1)"{}
                        id:String="Lose_ButtonPanel7_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(-0.01, 0.74, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.57, 0.12, 1)"{Hidden}
                       >
         </RectTransform>
         <UIImage id:String="Lose_ButtonPanel7_Component1"{Hidden,Readonly}
-                 enabled:Bool ="true"{Hidden,Readonly}
-                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 enabled:Bool="true"{Hidden,Readonly}
+                 closedInInspector:Bool="false"{Hidden,Readonly}
                  Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
-                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool="false"{Inline,Hidden}
                  Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(0, 0.447059, 0.611765, 0.784314)"{}
                  Image:File=""{FileExtension="btex2d"}
@@ -133,7 +133,7 @@
         </UIImage>
     </GameObject>
     <GameObject id:String="Lose_DeadImage8"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="DeadImage"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="34"{}
@@ -144,19 +144,19 @@
                        AnchorMin:Vector2="(-0.982382, -0.913378)"{}
                        AnchorMax:Vector2="(-0.994532, -0.933445)"{}
                        id:String="Lose_DeadImage8_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(-0.61, -0.16, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.24, 0.52, 1)"{Hidden}
                       >
         </RectTransform>
         <UIImage id:String="Lose_DeadImage8_Component1"{Hidden,Readonly}
-                 enabled:Bool ="true"{Hidden,Readonly}
-                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 enabled:Bool="true"{Hidden,Readonly}
+                 closedInInspector:Bool="false"{Hidden,Readonly}
                  Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
-                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool="false"{Inline,Hidden}
                  Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(1, 1, 1, 1)"{}
                  Image:File="Textures/deadSnake.btex2d"{FileExtension="btex2d"}
@@ -164,7 +164,7 @@
         </UIImage>
     </GameObject>
     <GameObject id:String="Lose_RightPanel9"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="RightPanel"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="-1"{}
@@ -175,19 +175,19 @@
                        AnchorMin:Vector2="(-0.207195, -0.616564)"{}
                        AnchorMax:Vector2="(0.936505, 0.322656)"{}
                        id:String="Lose_RightPanel9_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(0.362533, -0.0421009, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.573972, 0.536451, 1)"{Hidden}
                       >
         </RectTransform>
         <UIImage id:String="Lose_RightPanel9_Component1"{Hidden,Readonly}
-                 enabled:Bool ="true"{Hidden,Readonly}
-                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 enabled:Bool="true"{Hidden,Readonly}
+                 closedInInspector:Bool="false"{Hidden,Readonly}
                  Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
-                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool="false"{Inline,Hidden}
                  Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(1, 1, 1, 0.784314)"{}
                  Image:File=""{FileExtension="btex2d"}
@@ -195,7 +195,7 @@
         </UIImage>
     </GameObject>
     <GameObject id:String="Lose_RightPanelHeader10"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="RightPanelHeader"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="-7"{}
@@ -206,19 +206,19 @@
                        AnchorMin:Vector2="(-0.194656, 0.298486)"{}
                        AnchorMax:Vector2="(0.93959, 0.524937)"{}
                        id:String="Lose_RightPanelHeader10_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(0.365236, 0.359377, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.576674, 0.134974, 1)"{Hidden}
                       >
         </RectTransform>
         <UIImage id:String="Lose_RightPanelHeader10_Component1"{Hidden,Readonly}
-                 enabled:Bool ="true"{Hidden,Readonly}
-                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 enabled:Bool="true"{Hidden,Readonly}
+                 closedInInspector:Bool="false"{Hidden,Readonly}
                  Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
-                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool="false"{Inline,Hidden}
                  Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(0.611765, 0, 0, 1)"{}
                  Image:File=""{FileExtension="btex2d"}
@@ -226,7 +226,7 @@
         </UIImage>
     </GameObject>
     <GameObject id:String="Lose_ButtonPanel11"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="ButtonPanel"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="1"{}
@@ -237,19 +237,19 @@
                        AnchorMin:Vector2="(-0.20902, -0.787714)"{}
                        AnchorMax:Vector2="(0.936505, -0.810145)"{}
                        id:String="Lose_ButtonPanel11_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(0.366161, -0.798703, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.572762, 0.118501, 1)"{Hidden}
                       >
         </RectTransform>
         <UIImage id:String="Lose_ButtonPanel11_Component1"{Hidden,Readonly}
-                 enabled:Bool ="true"{Hidden,Readonly}
-                 closedInInspector:Bool ="false"{Hidden,Readonly}
+                 enabled:Bool="true"{Hidden,Readonly}
+                 closedInInspector:Bool="false"{Hidden,Readonly}
                  Material:File="Materials/UI/G_UIImage.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                  LineWidth:Float="1"{Hidden}
-                 DrawWireframe:Bool ="false"{Inline,Hidden}
+                 DrawWireframe:Bool="false"{Inline,Hidden}
                  Mesh:File="Meshes/UIPlane.bmesh"{FileExtension="bmesh",IsEngineFile,Hidden}
                  Tint:Color="(0, 0.447059, 0.611765, 0.784314)"{}
                  Image:File=""{FileExtension="btex2d"}
@@ -257,7 +257,7 @@
         </UIImage>
     </GameObject>
     <GameObject id:String="Lose_PressSpaceToReplayButton12"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="PressSpaceToReplayButton"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="-15"{}
@@ -268,19 +268,19 @@
                        AnchorMin:Vector2="(0.377868, -0.790762)"{}
                        AnchorMax:Vector2="(0.379437, -0.794396)"{}
                        id:String="Lose_PressSpaceToReplayButton12_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(0.38228, -0.792579, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.0406878, 0.0885785, 1)"{Hidden}
                       >
         </RectTransform>
         <UIText id:String="Lose_PressSpaceToReplayButton12_Component1"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                closedInInspector:Bool ="false"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
                 Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
-                DrawWireframe:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 1, 1, 1)"{Hidden}
                 Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
@@ -288,20 +288,20 @@
                 Content:String="Space to replay"{Inline}
                 TextSize:Float="55"{}
                 HSpacing:Float="5"{}
-                Kerning:Bool ="false"{}
+                Kerning:Bool="false"{}
                 VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
                 HorizontalAlign:Enum="1"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
                >
         </UIText>
         <Behaviour id:String="Lose_PressSpaceToReplayButton12_Component2"{Hidden,Readonly}
-                   enabled:Bool ="true"{Hidden,Readonly}
-                   closedInInspector:Bool ="false"{Hidden,Readonly}
+                   enabled:Bool="true"{Hidden,Readonly}
+                   closedInInspector:Bool="false"{Hidden,Readonly}
                    BehaviourScript:File="Behaviours/MenuSpaceButton.cpp"{FileExtension="cpp"}
                   >
         </Behaviour>
     </GameObject>
     <GameObject id:String="Lose_YouLoseText13"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="YouLoseText"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="-31"{}
@@ -312,19 +312,19 @@
                        AnchorMin:Vector2="(0, 0.828671)"{}
                        AnchorMax:Vector2="(0.000443577, 0.839624)"{}
                        id:String="Lose_YouLoseText13_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(-0.01, 0.75, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.08, 0.18, 1)"{Hidden}
                       >
         </RectTransform>
         <UIText id:String="Lose_YouLoseText13_Component1"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                closedInInspector:Bool ="false"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
                 Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
-                DrawWireframe:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 1, 1, 1)"{Hidden}
                 Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
@@ -332,14 +332,14 @@
                 Content:String="You lose"{Inline}
                 TextSize:Float="40"{}
                 HSpacing:Float="5"{}
-                Kerning:Bool ="false"{}
+                Kerning:Bool="false"{}
                 VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
                 HorizontalAlign:Enum="1"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
                >
         </UIText>
     </GameObject>
     <GameObject id:String="Lose_ScoreLabel14"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="ScoreLabel"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="0"{}
@@ -350,19 +350,19 @@
                        AnchorMin:Vector2="(0.331774, 0.343738)"{}
                        AnchorMax:Vector2="(0.416452, 0.523898)"{}
                        id:String="Lose_ScoreLabel14_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(0.35, 0.36, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.04, 0.1, 1)"{Hidden}
                       >
         </RectTransform>
         <UIText id:String="Lose_ScoreLabel14_Component1"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                closedInInspector:Bool ="false"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
                 Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
-                DrawWireframe:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 1, 1, 1)"{Hidden}
                 Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
@@ -370,14 +370,14 @@
                 Content:String="Score"{Inline}
                 TextSize:Float="60"{}
                 HSpacing:Float="5"{}
-                Kerning:Bool ="false"{}
+                Kerning:Bool="false"{}
                 VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
                 HorizontalAlign:Enum="1"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
                >
         </UIText>
     </GameObject>
     <GameObject id:String="Lose_ScoreText15"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
                 name:String="ScoreText"{Hidden,Readonly}
                >
         <RectTransform MarginLeft:Int="0"{}
@@ -388,19 +388,19 @@
                        AnchorMin:Vector2="(0.33, -0.229872)"{}
                        AnchorMax:Vector2="(0.41514, 0)"{}
                        id:String="Lose_ScoreText15_Component0"{Hidden,Readonly}
-                       enabled:Bool ="true"{Hidden,Readonly}
-                       closedInInspector:Bool ="false"{Hidden,Readonly}
+                       enabled:Bool="true"{Hidden,Readonly}
+                       closedInInspector:Bool="false"{Hidden,Readonly}
                        Position:Vector3="(0.37, -0.14, 0)"{Hidden}
                        Rotation:Vector3="(0, -0, 0)"{Hidden}
                        Scale:Vector3="(0.04, 0.1, 1)"{Hidden}
                       >
         </RectTransform>
         <UIText id:String="Lose_ScoreText15_Component1"{Hidden,Readonly}
-                enabled:Bool ="true"{Hidden,Readonly}
-                closedInInspector:Bool ="false"{Hidden,Readonly}
+                enabled:Bool="true"{Hidden,Readonly}
+                closedInInspector:Bool="false"{Hidden,Readonly}
                 Material:File="Materials/UI/G_UIText.bmat"{FileExtension="bmat",IsEngineFile,Hidden}
                 LineWidth:Float="1"{Hidden}
-                DrawWireframe:Bool ="false"{Inline,Hidden}
+                DrawWireframe:Bool="false"{Inline,Hidden}
                 Mesh:File=""{FileExtension="bmesh",Hidden}
                 Tint:Color="(1, 0, 0, 1)"{Hidden}
                 Font:File="Fonts/GreatFont.bfont"{FileExtension="bfont",IsEngineFile}
@@ -408,7 +408,7 @@
                 Content:String="12345"{Inline}
                 TextSize:Float="150"{}
                 HSpacing:Float="5"{}
-                Kerning:Bool ="false"{}
+                Kerning:Bool="false"{}
                 VerticalAlign:Enum="1"{EnumName0="Top",EnumName1="Center",EnumName2="Bot"}
                 HorizontalAlign:Enum="1"{EnumName0="Left",EnumName1="Center",EnumName2="Right"}
                >
